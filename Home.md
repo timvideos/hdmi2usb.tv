@@ -1,53 +1,269 @@
 ---
 layout: default
-title: Getting Started
-tagline: How to start contributing to TimVideos.us
-tags: home
+title: HDMI2USB - Open hardware for conference, meeting and user group recording!
 published: true
 ---
 
-# Welcome
+# HDMI2USB
 
-**Welcome to TimVideos.us!**
+The HDMI2USB project aims to develop open hardware for conference, meeting and
+user group recording.
 
-**TimVideos.us** is a _group_ of exciting projects which together create a system for doing both _recording and live event streaming_ for **conferences**, **meetings**, **user groups** and **other** presentations. 
+# Boards
 
-We hope that, through our _projects_, the costs and expertise currently required to produce live streaming events will be reduced to near zero. We wish to develop a system where everyone has the ability to record presentations and host live remote participants across the globe.
+## Actively Supported
 
-Whether you want to work hands-on with hardware or code in a variety of languages, we have a project for you. Join the team! This information should help you explore the projects and learn how to get started.
+<table class="boards">
+ <tr class="name">
+   <td>&nbsp;</td>
+   <td class="atlys"><h3>Digilent Atlys</h3></td>
+   <td class="opsis"><h3>Numato Opsis</h3></td>
+ </tr>
+ <tr class="open">
+   <td>&nbsp;</td>
+   <td class="atlys"></td>
+   <td class="opsis">
+<a href="https://github.com/timvideos/HDMI2USB-numato-opsis-hardware"
+   alt="Fully Open Source, complete schematic and PCB avaliable.">
+  <img src="/img/open-hardware.png">
+</a>
+   </td>
+ </tr>
+ <tr class="links">
+   <th>Links</th>
+   <td class="atlys">
+<a href="" title="More information on your Digilent Atlys board.">More Info</a>, 
+<a href="" title="Getting Started with your Digilent Atlys board.">Getting Started</a>
+   </td>
+   <td class="opsis">
+<a href="" title="More information on your Numato Opsis board.">More Info</a>, 
+<a href="" title="Getting Started with your Numato Opsis board.">Getting Started</a>
+   </td>
+ </tr>
+ <tr class="desc">
+   <td>&nbsp;</td>
+   <td class="atlys">
+The Digilent Atlys was the original prototyping platform for developing the
+HDMI2USB firmware.
+   </td>
+   <td class="opsis">
+The Numato Opsis is the first HDMI2USB production board developed in
+conjunction with the <a href="http://code.timvideos.us/">TimVideos project.</a>
+   </td>
+ </tr>
+ <tr class="picture">
+   <td>&nbsp;</td>
+   <td class="atlys"><img class="board-pic" src="/img/digilent-atlys.jpg"></td>
+   <td class="opsis"><img class="board-pic" src="/img/numato-opsis.jpg"></td>
+ </tr>
 
-***
+ <tr>
+   <th>Cost</th>
+   <td class="atlys">$USD 419</td>
+   <td class="opsis">$USD TBA</td>
+ </tr>
 
-## Getting Started
+ <tr>
+   <td colspan="3">
+     <h4>Specifications</h4>
+<span class="unsupported">Features listed in grey are currently unsupported by the firmware.</span>
+   </td>
+ </tr>
 
-Google Summer of Code (or similar project-based program) students should first head over to the [[Summer Of Code]] page and then head to our [[Ideas]] page.
+ <tr>
+   <th>FPGA</th>
+   <td class="atlys">Xilinx Spartan-6 LX45 FPGA</td>
+   <td class="opsis">Xilinx Spartan-6 LX45<b>T</b> FPGA</td>
+ </tr>
+ <tr>
+   <th>Memory</th>
+   <td class="atlys">128Mbyte DDR2</td>
+   <td class="opsis">128Mbyte DDR3</td>
+ </tr>
+ <tr>
+   <th>Video Interfaces</th>
+   <td class="atlys">
+<ul>
+  <li>2 x HDMI Input<a href="#atlys-hdmi-input" class="footnote">[1]</a>,</li>
+  <li>HDMI Output<a href="#atlys-hdmi-output-1" class="footnote">[2]</a>,</li>
+  <li>micro-HDMI Output<a href="#atlys-hdmi-output-1" class="footnote">[3]</a></li>
+</ul>
+   </td>
+   <td class="opsis">
+<ul>
+ <li>2 x HDMI Input<a href="#opsis-hdmi" class="footnote">[4]</a>, </li>
+ <li>2 x HDMI Output<a href="#opsis-hdmi" class="footnote">[4]</a>, </li>
+ <li class="unsupported">1 x DisplayPort Input,</li>
+ <li class="unsupported">1 x DisplayPort Output</li>
+</ul>
+   </td>
+ </tr>
+ <tr>
+   <th>Comms</th>
+   <td class="atlys">
+<ul>
+ <li>30Mbyte/s FX2 Cypress,</li>
+ <li>Gigabit Ethernet,</li>
+ <li>UART,</li> 
+ <li class="unsupported">USB v1.1 Keyboard/Mouse interface</li>
+</ul>
+   </td>
+   <td class="opsis">
+<ul>
+ <li>30Mbyte/s FX2 Cypress,</li>
+ <li>Gigabit Ethernet,</li>
+ <li class="unsupported">USB 2.0 OTG</li>
+</ul>
+   </td>
+ </tr>
+ <tr>
+   <th>Storage</th>
+   <td class="atlys">16Mbyte SPI Flash</td>
+   <td class="opsis">XXMbyte SPI Flash, <span class="unsupported">SD Card (unsupported)</span></td>
+ </tr>
+ <tr>
+   <th>Audio</th>
+   <td class="atlys unsupported">AC-97 Codec (unsupported)</td>
+   <td class="opsis">None</td>
+ </tr>
+ <tr>
+   <th>Expansion</th>
+   <td class="atlys">1 x Digilent VHDCI, 1 x PMOD<a href="#atlys-pmod" class="footnote">[5]</a></td>
+   <td class="opsis">1 x <a href="">TimVideos FPGA Expansion Connector</a></td>
+ </tr>
+ <tr>
+   <th>Power Supply</th>
+   <td class="atlys">5V @ 4A</td>
+   <td class="opsis">12V @ 1A</td>
+ </tr>
+</table>
+{::nomarkdown}
+{:/nomarkdown}
 
-If you are just interested in contributing and this is your first visit, head over to the [[Ideas]] page.
+## Under Investigation
 
-If you have a Digilent Atlys Board, head over to the [HDMI2USB Wiki](https://github.com/timvideos/HDMI2USB/wiki) and specifically look at the [Digilent Atlys Board: Getting Started](https://github.com/timvideos/HDMI2USB/wiki/Digilent-Atlys-Board%3A-Getting-Started) page.
+ * <a href="">miniSpartan6+</a>
+ * <a href="">Digilent Nexys Video</a>
 
-***
 
-## The Projects
 
-<img style="width: 100%;" src="https://docs.google.com/drawings/d/1crkdqukOAV9Alq9BOMFucDmwc_HD6qnJ4OF5MJpkrLg/pub?w=960&h=720">
+# Firmware
 
-| Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | <small>(C)ode<br>(M)ailing&nbsp;List<br>(I)RC</small>| Description |
-| -------- | ---------------------------------------------------- | ------------ |
-| <img src="http://code.timvideos.us/favicon.ico" class="favicon"> **TimVideos.us** | [(C)](http://github.com/timvideos) [(M)](https://groups.google.com/group/timvideos) [(I)](irc://irc.freenode.org/#timvideos) | Parent project. |
-| [[HDMI2USB]]         | [(C)](http://github.com/timvideos/HDMI2USB) [(M)](https://groups.google.com/group/hdmi2usb?hl=en-GB) [(I)](irc://irc.freenode.org/#hdmi2usb) | HDMI2USB is hardware for capturing HDMI, DVI and DisplayPort data. By capturing in high quality what is being presented locally it facilitates sharing with remote users and creates great recording for later viewing. The HDMI2USB hardware can also capture the HDMI output from cameras. |
-| [[gst-switch]]       | [(C)](http://github.com/timvideos/gst-switch)&nbsp;[(M)](https://groups.google.com/group/gst-switch)&nbsp;[(I)](irc://irc.freenode.org/#gst-switch)  | [[gst-switch]] aims to do interactive live mixing of incoming video streams, designed to meet the needs of conference recording. Designed as a flexible replacement for DVSwitch, and based around GStreamer.  |
-| speakertrack   | [(C)](http://github.com/timvideos/gst-switch) | Speakertrack is an extension to GStreamer and gst-switch to allow automatic tracking of speakers using remotely-operated PTZ cameras rather then relying on a camera operator. |
-| [Streaming System](https://github.com/timvideos/streaming-system) | [(C)](http://github.com/timvideos/streaming-system) [(M)](https://groups.google.com/group/timvideos) [(I)](irc://irc.freenode.org/#timvideos) | Streaming-system is a comprehensive video conferencing package that allows users to set up and deploy a live streaming system. It includes a website, setup scripts and watchdog code. |
 
-***
+There are currently two actively developed firmwares implementing the HDMI2USB
+functionality.
 
-### Partner Projects
 
-Projects not developed by TimVideos.us, but extensively used by us.
+{::nomarkdown}
+<table class="firmware">
 
-| Name     | <small>(C)ode<br>(M)ailing&nbsp;List<br>(I)RC</small>| Description | Used By |
-| -------- | ---------------------------------------------------- | ----------- | ------- |
-| <img src="http://cdn2.hubspot.net/hub/313203/file-521910805-png/Layout/images/favicon.png" class="favicon"> **flumotion**  | [(C)](https://code.flumotion.com/cgit/) [(M)](http://lists.fluendo.com/mailman/listinfo) [(I)](irc://irc.freenode.org/#fluendo) | Flumotion is an award winning streaming software created in 2006 by a group of open source developers and multimedia experts. Flumotion Streaming Software allows broadcasters and companies to stream content live and on demand in all the leading formats from a single server. | Used for live video streaming. |
-| <img src="http://gstreamer.freedesktop.org/planet/images/gstgotchi.png" class="favicon"> **gstreamer**  | [(C)](http://cgit.freedesktop.org/gstreamer) [(M)](http://gstreamer.freedesktop.org/lists/) [(I)](irc://irc.freenode.org/#gstreamer) | GStreamer is a library for constructing graphs of media-handling components. The applications it supports range from simple Ogg/Vorbis playback, audio/video streaming to complex audio (mixing) and video (non-linear editing) processing. Applications can take advantage of advances in codec and filter technology transparently. Developers can add new codecs and filters by writing a simple plugin with a clean, generic interface. | Used by **gst-switch**, **speakertrack** and **flumotion**. |
-| **eventstreamer**  | [(C)](https://github.com/lukejohnosmahi/eventstreamr) | EventStreamer is a single and multi room audio visual stream management. It is designed to scale down for a single monthly LUG talk and scale up for conferences such as linux.conf.au. The base OS image forms the foundation for eventstreamr. The goals are simple: every host has the base image installed, the base image includes all software required to perform all roles and simple setup script to go from imaged to production. | Used by **linux.conf.au 2014** and **[PLUG](http://plug.org.au)**. |
+ <tr class="name">
+   <td>&nbsp;</td>
+   <th class="fw-original">original</td>
+   <th class="fw-misoc">misoc</td>
+ </tr>
+
+ <tr class="desc">
+   <td>&nbsp;</td>
+   <td class="fw-original">
+The original HDMI2USB firmware was developed using a combination of 
+<a href="">VHDL</a>, <a href="">Verilog</a> and cores generated in 
+<a href="">Xilinx ISE<a/>.
+   </td>
+   <td>
+The misoc HDMI2USB firmware was developed using <a href="">migen</a> and <a
+href="">misoc</a> technologies.
+
+   </td>
+ </tr>
+
+ <tr class="picture">
+   <td>&nbsp;</td>
+   <td class="fw-original"><img src=""></td>
+   <td class="fw-misoc"><img src="img/misoc-logo.png"></td>
+ </tr>
+
+ <tr class="code">
+   <th>Code</th>
+   <td class="fw-original"><a href="http://github.com/timvideos/HDMI2USB">http://github.com/<wbr>timvideos/<wbr>HDMI2USB</a></td>
+   <td class="fw-misoc"><a href="http://github.com/timvideos/HDMI2USB-misoc-firmware">http://github.com/<wbr>timvideos/<wbr>HDMI2USB-misoc-firmware</a></td>
+ </tr>
+
+ <tr class="links">
+   <td>&nbsp;</td>
+   <td class="fw-original">
+<a href="" title="Getting Started with HDMI2USB Original Firmware">Getting Started</a>
+   </td>
+   <td class="fw-misoc">
+<a href="" title="Getting Started with HDMI2USB misoc Firmware">Getting Started</a>
+   </td>
+ </tr>
+
+ <tr>
+   <th colspan=3>
+     Features
+   </th>
+ </tr>
+ <tr>
+   <th>License</th>
+   <td class="fw-original"></td>
+   <td class="fw-misoc"></td>
+ </tr>
+ <tr>
+   <th>Supported Boards</th>
+   <td class="fw-original">Digilent Atlys, Numato Opsis</td>
+   <td class="fw-misoc">Digilent Atlys, Numato Opsis</td>
+ </tr>
+ <tr>
+   <th>Streaming Interfaces</th>
+   <td class="fw-original">USB 2.0 UVC Camera</td>
+   <td class="fw-misoc">USB 2.0 UVC Camera, Gigabit Ethernet</a>
+ </tr>
+ <tr>
+   <th>Control Interface</th>
+   <td class="fw-original">USB 2.0 CDC-ACM "Serial Port"</td>
+   <td class="fw-misoc">USB 2.0 CDC-ACM "Serial Port", Gigabit Ethernet</a>
+ </tr>
+</table>
+{:/nomarkdown}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+##### Footnotes
+
+{::nomarkdown}
+<div class="footnotes">
+ <ul>
+  <li>[1]: <a name="atlys-hdmi-input"></a>
+The Atlys board has the hot plug pin hard wired, hot plug detection and control
+is not supported on this board. The CEC pin is also unconnected.
+  </li>
+
+  <li>[2]: <a name="atlys-hdmi-output1"></a>
+  </li>
+
+  <li>[3]: <a name="atlys-hdmi-output2"></a>
+  </li> 
+
+  <li>[4]: <a name="opsys-hdmi"></a>
+On the Numato Opsis board, all the HDMI pins are under the FPGA control. This
+means the board support hot plug detection and control and also CEC support
+(which is missing from the firmware).
+  </li>
+
+  <li>[5]:<a name="atlys-pmod"></a>
+The PMOD header on the Atlys board is shared with the micro-HDMI connector.
+Only one can be in use at any one time.
+  </li>
+
+ </ul>
+</div>
+{:/nomarkdown}
+

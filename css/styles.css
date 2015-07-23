@@ -304,3 +304,82 @@ padding-bottom: 0;
 .spacer {
     margin-top: 20px;
 }
+
+/* --------------------------- */
+
+.unsupported {
+  color: #aaaaaa;
+  font-style: italic;
+}
+
+.open td {
+  text-align: center;
+}
+
+.open a {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.open img {
+  width: 100px;
+}
+
+
+img.board-pic {
+}
+
+.footnote {
+  font-size: xx-small;
+  vertical-align: super;
+}
+
+table.boards {
+  width: 100%;
+}
+
+table.boards > tbody > tr > th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+
+table.boards td.opsis {
+  width: 40%;
+}
+
+table.boards td.atlys {
+  width: 40%;
+}
+
+table.boards th {
+  text-align: center;
+}
+
+table.firmware {
+  width: 100%;
+}
+
+table.firmware > tbody > tr > th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+table.firmware th {
+  width: 20%;
+}
+table.firmware td {
+  width: 20%;
+}
+
+table.firmware td.fw-original {
+  width: 40%;
+}
+
+table.firmware td.fw-misoc {
+  width: 40%;
+}
