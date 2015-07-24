@@ -21,7 +21,9 @@ user group recording.
  </tr>
  <tr class="open">
    <td>&nbsp;</td>
-   <td class="atlys"></td>
+   <td class="atlys">
+    <img src="/img/not-open-hardware.png">
+   </td>
    <td class="opsis">
 <a href="https://github.com/timvideos/HDMI2USB-numato-opsis-hardware"
    alt="Fully Open Source, complete schematic and PCB avaliable.">
