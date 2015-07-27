@@ -151,7 +151,6 @@ details about them in the [[Potential Boards]] section.
 
 # Firmware
 
-
 There are currently two actively developed firmwares implementing the HDMI2USB
 functionality.
 
