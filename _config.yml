@@ -1,4 +1,5 @@
 username: timvideos
+repo: hdmi2usb.tv
 branch: master
 
 destination: ../gh-pages/
