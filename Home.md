@@ -23,12 +23,12 @@ user group recording.
  <tr class="open">
    <td>&nbsp;</td>
    <td class="atlys">
-    <img src="/img/not-open-hardware.png">
+    <img src="../img/not-open-hardware.png">
    </td>
    <td class="opsis">
 <a href="https://github.com/timvideos/HDMI2USB-numato-opsis-hardware"
    alt="Fully Open Source, complete schematic and PCB avaliable.">
-  <img src="/img/open-hardware.png">
+  <img src="../img/open-hardware.png">
 </a>
    </td>
  </tr>
@@ -56,8 +56,8 @@ conjunction with the <a href="http://code.timvideos.us/">TimVideos project.</a>
  </tr>
  <tr class="picture">
    <td>&nbsp;</td>
-   <td class="atlys"><img class="board-pic" src="/img/digilent-atlys.jpg"></td>
-   <td class="opsis"><img class="board-pic" src="/img/numato-opsis.jpg"></td>
+   <td class="atlys"><img class="board-pic" src="../img/digilent-atlys.jpg"></td>
+   <td class="opsis"><img class="board-pic" src="../img/numato-opsis.jpg"></td>
  </tr>
 
  <tr>
@@ -181,7 +181,7 @@ href="">misoc</a> technologies.
  <tr class="picture">
    <td>&nbsp;</td>
    <td class="fw-original"><img src=""></td>
-   <td class="fw-misoc"><img src="img/misoc-logo.png"></td>
+   <td class="fw-misoc"><img src="../img/misoc-logo.png"></td>
  </tr>
 
  <tr class="code">
