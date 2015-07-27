@@ -1,6 +1,7 @@
 <div class="column col-sm-3 col-md-3 col-lg-2" id="sidebar">
   <a class="logo" href="{% page_url index %}">
     <img src="{{ "/img/logo.png" | prepend: site.baseurl }}" />
+    <span>HDMI2USB</span>
   </a>
   <ul class="nav">
     <li class="{% active_class home %}">
@@ -13,20 +14,51 @@
       <a href="{% page_url hardware %}">HARDWARE</a>
     </li>
     <li class="{% active_class digilent-atlys %}">
-      <a href="{% page_url digilent-atlys %}">Digilent Atlys</a>
+     <ul>
+      <li><a href="{% page_url digilent-atlys %}">Digilent Atlys</a></li>
+     </ul>
     </li>
     <li class="{% active_class numato-opsis %}">
-      <a href="{% page_url numato-opsis %}">Numato Opsis</a>
+     <ul>
+      <li><a href="{% page_url numato-opsis %}">Numato Opsis</a></li>
+     </ul>
+    </li>
+    <li class="{% active_class potential-boards %}">
+     <ul>
+      <li><a href="{% page_url potential-boards %}">Potential Boards</a></li>
+     </ul>
     </li>
     <li class="{% active_class firmware %}">
       <a href="{% page_url firmware %}">FIRMWARE</a>
     </li>
     <li class="{% active_class firmware-original %}">
-      <a href="{% page_url firmware-original %}">Original</a>
+     <ul>
+      <li><a href="{% page_url firmware-original %}">Original</a></li>
+     </ul>
     </li>
     <li class="{% active_class firmware-misoc %}">
-      <a href="{% page_url firmware-misoc %}">misoc</a>
+     <ul>
+      <li><a href="{% page_url firmware-misoc %}">misoc</a></li>
+     </ul>
     </li>
+    <li class="{% active_class more-info %}">
+     <a href="{% page_url more-info %}">FURTHER INFORMATION</a>
+    </li>
+    <li class="{% active_class faq %}">
+     <ul>
+      <li><a href="{% page_url faq %}">FAQ</a></li>
+     </ul>
+    </li>
+    <li class="{% active_class help %}">
+     <ul>
+      <li><a href="{% page_url help %}">Getting Help</a></li>
+     </ul>
+    </li>
+    <li class="{% active_class contrib %}">
+      <a href="{% page_url contrib %}">PEOPLE</a>
+    </li>
+    <li>
+      <a href="http://code.timvideos.us">To TimVideos</a>
   </ul>
   <ul class="nav hidden-xs" id="sidebar-footer">
     <li class="social">

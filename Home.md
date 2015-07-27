@@ -2,6 +2,7 @@
 layout: default
 title: HDMI2USB - Open hardware for conference, meeting and user group recording!
 published: true
+tags: home
 ---
 
 # HDMI2USB
@@ -144,9 +145,8 @@ conjunction with the <a href="http://code.timvideos.us/">TimVideos project.</a>
 
 ## Under Investigation
 
- * <a href="">miniSpartan6+</a>
- * <a href="">Digilent Nexys Video</a>
-
+We are always investigating new possibilities of boards to support and trak
+details about them in the [[Potential Boards]] section.
 
 
 # Firmware

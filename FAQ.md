@@ -2,18 +2,9 @@
 layout: default
 title: FAQ
 tagline: Frequently Asked Questions
-tags: faq home
+tags: faq, more-info
 ---
 
-Are you interested in joining TimVideos.us as either a GSoC student or mentor?  Here are answers to some questions you may have. 
+# Frequently Asked Questions
 
-[Prospective Students](#prospective-students)
-
-[Prospective Mentors](#prospective-mentors)
-
-## Prospective Students 
-
-
-
-
-## Prospective Mentors 
+TODO: Put content here.

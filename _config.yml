@@ -11,7 +11,7 @@ kramdown:
   entity_output: as_input
 exclude: [Gemfile, Gemfile.lock, planet.yml, vendor, .travis.yml, Rakefile, README.md, DEPLOY.md, links.jsonp, pages.json]
 auto_permalinks: true 
-name: HDMI2USB - Open source hardware for live event capture.
+name: HDMI2USB - Open source for live event capture
 description: 
 url: http://hdmi2usb.tv/
 permalink: pretty
