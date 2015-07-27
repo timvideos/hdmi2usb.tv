@@ -1,6 +1,8 @@
-# TimVideos Developers Website
+# HDMI2USB.tv Website
 
-[![Build Status](https://travis-ci.org/timvideos/website.svg?branch=master)](https://travis-ci.org/timvideos/website)
+[![Build Status](https://travis-ci.org/timvideos/hdmi2usb.tv.svg?branch=master)](https://travis-ci.org/timvideos/hdmi2usb.tv)
+
+TODO: Update this information.
 
 ## How to contribute to TimVideos Developer website?
 
