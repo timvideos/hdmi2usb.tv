@@ -183,10 +183,12 @@ table > tbody > tr:nth-child(odd) > td {
 }
 
 
+/*
 #sidebar-footer {
   position:absolute;
   bottom:5px;
 }
+*/
 
 #sidebar {
   background-color: #024c7d;
