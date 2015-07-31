@@ -5,14 +5,20 @@ published: true
 tags: home
 ---
 
+TODO: Figure out how to make this page split into boxes like the people page.
+
 # HDMI2USB
 
 The HDMI2USB project aims to develop open hardware for conference, meeting and
 user group recording.
 
+TODO: Write something more to go here.
+
 # Boards
 
 ## Actively Supported
+
+TODO: Put a banner here about the crowd funding campaign.
 
 <table class="boards">
  <tr class="name">
