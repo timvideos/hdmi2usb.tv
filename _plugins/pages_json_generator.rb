@@ -26,10 +26,10 @@ module Jekyll
       site.pages.each { |page| pages['pages'] << { 'basename' => page.basename, 'data' => page.data, 'url' => page.url } }
       site.posts.each { |post| pages['posts'] << { 'slug'     => post.slug,     'data' => post.data, 'url' => post.url } }
 
-      pages_path = File.join(site.config['source'], 'pages.json')
-      File.open(pages_path, 'w') do |f|
-        f.write(pages.to_json)
-      end
+      #pages_path = File.join(site.config['source'], 'pages.json')
+      #File.open(pages_path, 'w') do |f|
+      #  f.write(pages.to_json)
+      #end
     end
   end
 end
