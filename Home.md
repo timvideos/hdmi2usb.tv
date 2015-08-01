@@ -1,18 +1,24 @@
 ---
 layout: default
-title: HDMI2USB - Open hardware for conference, meeting and user group recording!
+title: HDMI2USB - Open hardware for conference, meeting and user group HD recording!
 published: true
 tags: home
 ---
 
-TODO: Figure out how to make this page split into boxes like the people page.
-
 # HDMI2USB
 
-The HDMI2USB project aims to develop open hardware for conference, meeting and
-user group recording.
+The HDMI2USB project develops affordable hardware to record and stream HD videos (from HDMI & DisplayPort sources) at conferences, meetings and user groups.
 
-TODO: Write something more to go here.
+We are currently developing our own hardware (currently the Numato Opsis), and also provide firmware for various prototyping boards.
+
+HDMI2USB started in 2013, and is an active ongoing project in its third iteration of hardware prototyping.  Today you can download early working firmware and have real capture happen, but we actively wish to improve and are seeking assistance:
+
+  * **For video recording individuals+teams:** Be an early adopter; get a board, start using it, report back to us with feedback
+  * **For software/FPGA developers:** Get involved in contributing code both to the capture software + FPGA stack
+
+Our aim is this becomes the defacto, incredibly affordable and easy to use video recording hardware for conferences, meetings and user groups worldwide.
+
+Find out more about [HDMI2USB and why we're doing this (ABOUT + FAQ)](../faq)
 
 # Boards
 

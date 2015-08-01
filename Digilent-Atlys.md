@@ -10,8 +10,9 @@ tags: hardware, digilent-atlys
 The Digilent Atlys was the original prototyping platform for developing the
 HDMI2USB firmware and continues to be a supported platform.
 
-TODO: Put some pictures and links to information about the Digilent
-Atlys board here.
+[http://www.digilentinc.com/atlys/](http://www.digilentinc.com/atlys)
+
+![Digilent Atlys](../img/digilent-atlys.jpg)
 
 ## Getting Started
 
