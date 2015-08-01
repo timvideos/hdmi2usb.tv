@@ -385,3 +385,17 @@ table.firmware td.fw-original {
 table.firmware td.fw-misoc {
   width: 40%;
 }
+
+.image-right {
+  float: right;
+  margin: 15px;
+}
+
+.top-message {
+  background: darkred;
+  border: 1px;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px 0px;
+}
