@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Digilent Atlys - Using</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  <link rel="alternate" type="application/atom+xml" title="Tim Videos Planet Feed" href="../feed.xml" />
+  <link rel="canonical" href="http://hdmi2usb.tv//digilent-atlys-using/">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/font-awesome.min.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="../css/styles.css" rel="stylesheet">
+</head>
+
+  <body>
+    <div class="wrapper">
+      <div class="box">
+        <div class="row">
+          <div class="column col-sm-3 col-md-3 col-lg-2" id="sidebar">
+  <a class="logo" href="../">
+    <img src="/img/logo.png" />
+    <span>HDMI2USB</span>
+  </a>
+  <ul class="nav">
+    <li class="">
+      <a href="../home/">HOME</a>
+    </li>
+      <li class="">
+          <a href="../faq/">ABOUT + FAQ</a>
+      </li>
+    <li class="active">
+      <a href="../hardware/">HARDWARE</a>
+    </li>
+    <li class="active">
+     <ul>
+      <li><a href="../digilent-atlys/">Digilent Atlys</a></li>
+     </ul>
+    </li>
+    <li class="">
+     <ul>
+      <li><a href="../numato-opsis/">Numato Opsis</a></li>
+     </ul>
+    </li>
+    <li class="">
+     <ul>
+      <li><a href="../potential-boards/">Potential Boards</a></li>
+     </ul>
+    </li>
+    <li class="">
+      <a href="../firmware/">FIRMWARE</a>
+    </li>
+    <li class="">
+     <ul>
+      <li><a href="../firmware-original/">Original</a></li>
+     </ul>
+    </li>
+    <li class="">
+     <ul>
+      <li><a href="../firmware-misoc/">misoc</a></li>
+     </ul>
+    </li>
+    <li class="">
+      <a href="../help/">GETTING HELP</a>
+    </li>
+    <li class="">
+          <a href="../news/">NEWS</a>
+    </li>
+    <li>
+      <a href="http://code.timvideos.us">To TimVideos</a>
+  </ul>
+  <ul class="nav hidden-xs" id="sidebar-footer">
+    <li class="social">
+      <a href="http://planet.timvideos.us/feed.xml"><i class="fa fa-rss"></i></a>
+      <a href="http://www.twitter.com/TimVideosUs"><i class="fa fa-twitter"></i></a>
+    </li>
+    <li>
+      <span>Proudly hosted by <a id="github" href="http://www.github.com">GitHub</a>
+      </span>
+    </li>
+  </ul>
+</div>
+
+          <div class="column col-sm-9 col-md-9 col-lg-10" id="main">
+            <div class="padding">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+        <span class="edit-link pull-right">
+          <a href="http://editor.timvideos.us/#timvideos/hdmi2usb.tv/edit/master/Digilent-Atlys-Using.md" target="_blank">
+            <i class="fa fa-edit"></i>
+          </a>
+        </span>  
+      <div class="panel-body">
+        <h1 id="using-the-digilent-atlys">Using the Digilent Atlys</h1>
+
+<h2 id="cabling">Cabling</h2>
+<p><img src="https://googledrive.com/host/0B5VlNZ_Rvdw6dHRnNzgtZHVWYW8" alt="Ports" /></p>
+<pre>
+USB Micro PROG --&gt; Capture Computer
+
+Presenters Laptop --&gt; HDMI Input 0
+Capture Computer  --&gt; HDMI Input 1
+
+HDMI Output 0 --&gt; Projector
+HDMI Output 1 --&gt; Confidence Monitor
+</pre>
+
+<p>Notes:
+ * HDMI Input 0 is the <em>primary input</em>, it
+ * HDMI Output 1 on the Atlys board is <strong>unamplified</strong> use cables of 1m or less!</p>
+
+<h2 id="testing-on-linux">Testing on Linux</h2>
+
+<h1 id="read-edid">read-edid</h1>
+
+<ul>
+  <li><a href="http://manpages.ubuntu.com/manpages/oneiric/man1/get-edid.1.html">get-edid man page</a></li>
+  <li><a href="http://manpages.ubuntu.com/manpages/oneiric/man1/parse-edid.1.html">parse-edid man page</a></li>
+  <li><a href="http://www.polypux.org/projects/read-edid/">read-edid home page</a></li>
+</ul>
+
+<pre>
+$ sudo apt-get install read-edid
+...
+$ sudo get-edid | parse-edid
+</pre>
+
+<h3 id="xrandr">xrandr</h3>
+
+<p>On Linux you can use xrandr to see if the display is correctly detected.</p>
+
+<h4 id="xrandr-example-output">xrandr example output</h4>
+
+<p>In the below example the LVDS1 is the internal screen.</p>
+
+<p>The HDMI2USB is connected to DisplayPort port on a X220 Laptop via a [DisplayPort to HDMI adapter]. As this device has a DP++ port, this configuration appears as HDMI1 rather than DP1. (In this configuration the [DisplayPort to HDMI adapter] is a <em>passive</em> device and the conversion is happening in your computer!)</p>
+
+<pre>
+# xrandr
+LVDS1 connected primary 1366x768+0+0 (normal left inverted right x axis y axis) 277mm x 156mm
+   1366x768       60.0*+
+   1360x768       59.8     60.0
+   1024x768       60.0
+   800x600        60.3     56.2
+   640x480        59.9
+VGA1 disconnected (normal left inverted right x axis y axis)
+HDMI1 connected 1024x768+1366+0 (normal left inverted right x axis y axis) 0mm x 0mm
+   1024x768       60.0*+
+DP1 disconnected (normal left inverted right x axis y axis)
+HDMI2 disconnected (normal left inverted right x axis y axis)
+HDMI3 disconnected (normal left inverted right x axis y axis)
+DP2 disconnected (normal left inverted right x axis y axis)
+DP3 disconnected (normal left inverted right x axis y axis)
+VIRTUAL1 disconnected (normal left inverted right x axis y axis)
+#
+</pre>
+
+<h4 id="raspberry-pi">Raspberry Pi</h4>
+
+<p>The Raspberry Pi is a little complicated as the display isn&#8217;t renegotiated properly.</p>
+
+<p>You need to boot the Pi while connected to the HDMI2USB so it detects the correct resolution.</p>
+
+<p>You can force the Raspberry Pi into the right resolution otherwise with XXXXX boot options. FIXME: Add more information here.</p>
+
+<pre>
+pi@raspberrypi ~ $ DISPLAY=:0.0 xrandr
+xrandr: Failed to get size of gamma for output default
+Screen 0: minimum 1024 x 768, current 1024 x 768, maximum 1024 x 768
+default connected 1024x768+0+0 0mm x 0mm
+   1024x768        0.0*
+pi@raspberrypi ~ $
+</pre>
+
+<h4 id="viewing-a-video-stream-in-mplayervlcgunvview">Viewing a video stream in mplayer/VLC/gunvview</h4>
+
+<p>Before starting USB streaming, press the reset button once.</p>
+<pre>
+mplayer -tv device=/dev/video0 tv://
+</pre>
+
+<pre>
+vlc -vvv --color v4l:///dev/video0
+</pre>
+<p>To check the frame rate of HDMI2USB you can use guvcviewer.</p>
+
+<pre>
+ guvcview --device=/dev/video1 --show_fps=1 --size=1024X768
+</pre>
+<p>The frame rate will appear in the title bar of the new window.</p>
+
+<!-- gst-switch References -->
+
+<!-- gst-switch (speaker track) -->
+
+<!-- HDMI2USB References -->
+
+<!-- Streaming System -->
+
+<!-- Other -->
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -2,7 +2,7 @@
 <html>
   <head>
   <meta charset="utf-8">
-  <title>FAQ</title>
+  <title>ABOUT + FAQ</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -30,11 +30,11 @@
     <li class="">
       <a href="../home/">HOME</a>
     </li>
+      <li class="active">
+          <a href="../faq/">ABOUT + FAQ</a>
+      </li>
     <li class="">
-      <a href="../news/">NEWS</a>
-    </li>
-    <li class="">
-      <a href="../">HARDWARE</a>
+      <a href="../hardware/">HARDWARE</a>
     </li>
     <li class="">
      <ul>
@@ -52,7 +52,7 @@
      </ul>
     </li>
     <li class="">
-      <a href="../">FIRMWARE</a>
+      <a href="../firmware/">FIRMWARE</a>
     </li>
     <li class="">
      <ul>
@@ -64,21 +64,11 @@
       <li><a href="../firmware-misoc/">misoc</a></li>
      </ul>
     </li>
-    <li class="active">
-     <a href="../">FURTHER INFORMATION</a>
-    </li>
-    <li class="active">
-     <ul>
-      <li><a href="../faq/">FAQ</a></li>
-     </ul>
+    <li class="">
+      <a href="../help/">GETTING HELP</a>
     </li>
     <li class="">
-     <ul>
-      <li><a href="../help/">Getting Help</a></li>
-     </ul>
-    </li>
-    <li class="">
-      <a href="../">PEOPLE</a>
+          <a href="../news/">NEWS</a>
     </li>
     <li>
       <a href="http://code.timvideos.us">To TimVideos</a>
@@ -107,7 +97,108 @@
       <div class="panel-body">
         <h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
 
-<p>TODO: Put content here.</p>
+<p><br /></p>
+
+<h2 id="project">Project</h2>
+
+<h4 id="what-would-i-use-hdmi2usb-for">What would I use HDMI2USB for?</h4>
+
+<p>You&#8217;d use HDMI2USB as part of a solution to record multi-camera/device event video at events.  HDMI2USB captures (and passes through) video from HDMI or DisplayPort sources (video cameras, presenter laptops, etc).</p>
+
+<p><br /></p>
+
+<h4 id="is-hdmi2usb-a-complete-video-capture-solution">Is HDMI2USB a complete video capture solution?</h4>
+
+<p>HDMI2USB is part of the <a href="http://code.timvideos.us/">TimVideos</a> project, which aims to provide a complete ecosystem of hardware, software and know-how to do conference, meeting and user group recordings.</p>
+
+<p>HDMI2USB is <em>purely</em> the &#8216;video capture hardware&#8217; part of the equation.  You also need capture/mixing software, workflow automation software for larger events, somewhere to host your videos, and other elements.  Please see the <a href="http://code.timvideos.us/">TimVideos</a> site for more information.</p>
+
+<p><br /></p>
+
+<h4 id="what-makes-hdmi2usb-different-to-a-hdmi-capture-box-or-other-existing-solutions">What makes HDMI2USB different to a HDMI capture box, or other existing solutions?</h4>
+
+<p>There are a number of commercial HDMI capture boxes available, that record video to an SD card or similar for later post-production in a non-linear editor.  This isn&#8217;t what HDMI2USB aims to solve.</p>
+
+<p>You can certainly use HDMI2USB in this way (record video to recorded video files via a PC, import to an editor for manual editing later), but the hardware is aimed to be used with &#8216;live&#8217; editing/mixing software to mix together video feeds together into a final stream or saved file, avoiding lengthy post-production (as part of the wider <a href="http://code.timvideos.us/">TimVideos</a> project).  It is effectively an open USB-based HDMI+DisplayPort &#8220;scan converter&#8221;.</p>
+
+<p>HDMI2USB does not require proprietary capture drivers for most basic capture; the stream is a standard USB UVC stream (i.e. like a webcam, it plugs in and &#8220;just works&#8221;).</p>
+
+<p><br /></p>
+
+<h4 id="hdmi2usb-is-an-open-project---why-is-this-a-good-thing">HDMI2USB is an &#8216;open&#8217; project - why is this a good thing?</h4>
+
+<p>HDMI2USB was born after some existing conferences doing SD capture were reliant on a VGA scan converter which stopped being manufactured, leaving us in limbo.  We then located some vendors that made HDMI capture equipment but found many use varied capture standards (making automation difficult) and it proved impossible to find a USB capture solution that fit our criteria which we knew would be available for many years to come.</p>
+
+<p>The hardware and firmware for HDMI2USB are open and will remain open, with firmware available for common prototyping boards.  This means the community can get involved in developing new features (including those not available on existing commercial solutions), and we&#8217;re not reliant on a third party video capture specific vendor to keep producing consistent hardware.</p>
+
+<p>Additionally, hardware schematics are available for the Numato Opsis board meaning even if the board is ever no longer available from TimVideos, these can still be manufactured by anybody wanting to do so.</p>
+
+<p><br /></p>
+
+<h4 id="does-hdmi2usb-work-reliably--how-hard-is-it-to-get-hdmi2usb-working">Does HDMI2USB work reliably?  How hard is it to get HDMI2USB working?</h4>
+
+<p>HDMI2USB is still in heavily development; use at this stage should be considered experimental.</p>
+
+<p>HDMI2USB is not currently a &#8216;plug and play&#8217; solution; you need to flash firmware onto a board to get it operational.  We do provide easy to follow instructions if you&#8217;re comfortable typing commands in and encourage people to contact us if you want assistance - we want to make this accessible to everyone.</p>
+
+<p><br /></p>
+
+<h4 id="what-do-i-need-to-do-to-use-hdmi2usb">What do I need to do to use HDMI2USB?</h4>
+
+<p>You&#8217;ll need to do the following to do capture from 2 sources:</p>
+
+<ul>
+  <li>Buy some suitable capture hardware.  See the <a href="../hardware">Hardware</a> page.</li>
+  <li>Flash the firmware onto the device.  See the <a href="../firmware">Firmware</a> page.</li>
+  <li>Make sure you&#8217;ve got HDMI/Displayport cables and other equipment required to hook all your sources in.  See the <a href="http://code.timvideos.us/">TimVideos</a> site.</li>
+  <li>Get some capture/mixing software that supports HDMI2USB.  This is still under heavy development.  See the <a href="http://code.timvideos.us/">TimVideos</a> site.</li>
+</ul>
+
+<p>If you need help, look at the [Getting Help] page.</p>
+
+<h2 id="hardware">Hardware</h2>
+
+<h2 id="firmware">Firmware</h2>
+
+<h3 id="how-can-the-capture-hardware-interface-to-my-computer">How can the capture hardware interface to my computer?</h3>
+
+<ul>
+  <li>
+    <p>USB2.0 is currently supported.</p>
+  </li>
+  <li>
+    <p>Gigabit Ethernet is currently under development.</p>
+  </li>
+</ul>
+
+<h3 id="what-resolutions-are-supported">What resolutions are supported?</h3>
+
+<p>The firmware is currently targeted at supporting two operating resolutions;</p>
+
+<ul>
+  <li>
+    <p>16:9 - 720p mode</p>
+  </li>
+  <li>
+    <p>4:3 - 1024x768</p>
+  </li>
+</ul>
+
+<p>The resolution limit is currently imposed by the speed at which the FPGA pins are able to operate. The DisplayPort functionality of the [Numato Opsis] board and newer Xilinx Series 7 FPGAs (such as the [Digilent Nexys Video] and [Digilent Zybo] will increase the supported resolutions.</p>
+
+<h3 id="does-it-produce-compressed-video-or-raw-video">Does it produce compressed video or raw video?</h3>
+
+<p>It produces both;
+ * mjpeg compressed video - Best for capture from a continuous source such as a camera.
+ * raw video - Best for capture of non-continuous or text heavy sources, such as a presenter&#8217;s slides.</p>
+
+<p>Both are full 1024x768 or 720p resolution (depending on if the input is DVI or HDMI).</p>
+
+<p>The problem is that USB2.0 doesn&#8217;t have enough bandwidth for raw video at 30fps, so if you want the higher frame rate you have to use the mjpeg compression mode.</p>
+
+<p>At the moment raw mode is about 10-15fps while the <a href="http://en.wikipedia.org/wiki/MJPEG">MJPEG</a> mode runs at 30fps or 25fps (dependent on capture source frequency).</p>
+
+<p>The <a href="http://en.wikipedia.org/wiki/MJPEG">MJPEG</a> compression quality is controlled via a setting.</p>
 
 <!-- gst-switch References -->
 
@@ -116,6 +207,8 @@
 <!-- HDMI2USB References -->
 
 <!-- Streaming System -->
+
+<!-- Other -->
 
 
       </div>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Firmware</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  <link rel="alternate" type="application/atom+xml" title="Tim Videos Planet Feed" href="../feed.xml" />
+  <link rel="canonical" href="http://hdmi2usb.tv//firmware/">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/font-awesome.min.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="../css/styles.css" rel="stylesheet">
+</head>
+
+  <body>
+    <div class="wrapper">
+      <div class="box">
+        <div class="row">
+          <div class="column col-sm-3 col-md-3 col-lg-2" id="sidebar">
+  <a class="logo" href="../">
+    <img src="/img/logo.png" />
+    <span>HDMI2USB</span>
+  </a>
+  <ul class="nav">
+    <li class="">
+      <a href="../home/">HOME</a>
+    </li>
+      <li class="">
+          <a href="../faq/">ABOUT + FAQ</a>
+      </li>
+    <li class="">
+      <a href="../hardware/">HARDWARE</a>
+    </li>
+    <li class="">
+     <ul>
+      <li><a href="../digilent-atlys/">Digilent Atlys</a></li>
+     </ul>
+    </li>
+    <li class="">
+     <ul>
+      <li><a href="../numato-opsis/">Numato Opsis</a></li>
+     </ul>
+    </li>
+    <li class="">
+     <ul>
+      <li><a href="../potential-boards/">Potential Boards</a></li>
+     </ul>
+    </li>
+    <li class="active">
+      <a href="../firmware/">FIRMWARE</a>
+    </li>
+    <li class="">
+     <ul>
+      <li><a href="../firmware-original/">Original</a></li>
+     </ul>
+    </li>
+    <li class="">
+     <ul>
+      <li><a href="../firmware-misoc/">misoc</a></li>
+     </ul>
+    </li>
+    <li class="">
+      <a href="../help/">GETTING HELP</a>
+    </li>
+    <li class="">
+          <a href="../news/">NEWS</a>
+    </li>
+    <li>
+      <a href="http://code.timvideos.us">To TimVideos</a>
+  </ul>
+  <ul class="nav hidden-xs" id="sidebar-footer">
+    <li class="social">
+      <a href="http://planet.timvideos.us/feed.xml"><i class="fa fa-rss"></i></a>
+      <a href="http://www.twitter.com/TimVideosUs"><i class="fa fa-twitter"></i></a>
+    </li>
+    <li>
+      <span>Proudly hosted by <a id="github" href="http://www.github.com">GitHub</a>
+      </span>
+    </li>
+  </ul>
+</div>
+
+          <div class="column col-sm-9 col-md-9 col-lg-10" id="main">
+            <div class="padding">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+        <span class="edit-link pull-right">
+          <a href="http://editor.timvideos.us/#timvideos/hdmi2usb.tv/edit/master/Firmware.md" target="_blank">
+            <i class="fa fa-edit"></i>
+          </a>
+        </span>  
+      <div class="panel-body">
+        <h1 id="firmware">Firmware</h1>
+
+<p>There are currently two actively developed firmwares implementing the HDMI2USB
+functionality.</p>
+
+<table class="firmware">
+
+ <tr class="name">
+   <td>&nbsp;</td>
+   <td class="fw-original"><h3>original</h3></td>
+   <td class="fw-misoc"><h3>misoc (recommended)</h3></td>
+ </tr>
+
+ <tr class="desc">
+   <td>&nbsp;</td>
+   <td class="fw-original">
+The original HDMI2USB firmware was developed using a combination of
+<a href="">VHDL</a>, <a href="">Verilog</a> and cores generated in
+<a href="">Xilinx ISE<a/>.
+   </td>
+   <td>
+The misoc HDMI2USB firmware was developed using <a href="">migen</a> and <a
+href="">misoc</a> technologies.
+   </td>
+ </tr>
+
+  <tr class="links">
+    <td>&nbsp;</td>
+    <td class="fw-original">
+ <a href="../firmware-original" title="Getting Started with HDMI2USB Original Firmware" class="btn btn-default">Getting Started</a>
+    </td>
+    <td class="fw-misoc">
+ <a href="../firmware-misoc" title="Getting Started with HDMI2USB misoc Firmware" class="btn btn-default">Getting Started</a>
+    </td>
+  </tr>
+
+ <tr class="picture">
+   <td>&nbsp;</td>
+   <td class="fw-original"><img src=""></td>
+   <td class="fw-misoc"><img src="../img/misoc-logo.png"></td>
+ </tr>
+
+ <tr class="code">
+   <th>Code</th>
+   <td class="fw-original"><a href="http://github.com/timvideos/HDMI2USB">http://github.com/<wbr>timvideos/<wbr>HDMI2USB</a></td>
+   <td class="fw-misoc"><a href="http://github.com/timvideos/HDMI2USB-misoc-firmware">http://github.com/<wbr>timvideos/<wbr>HDMI2USB-misoc-firmware</a></td>
+ </tr>
+
+ <tr>
+   <th colspan=3>
+     Features
+   </th>
+ </tr>
+ <tr>
+   <th>License</th>
+   <td class="fw-original"></td>
+   <td class="fw-misoc"></td>
+ </tr>
+ <tr>
+   <th>Supported Boards</th>
+   <td class="fw-original">Digilent Atlys, Numato Opsis</td>
+   <td class="fw-misoc">Digilent Atlys, Numato Opsis</td>
+ </tr>
+ <tr>
+   <th>Streaming Interfaces</th>
+   <td class="fw-original">USB 2.0 UVC Camera</td>
+   <td class="fw-misoc">USB 2.0 UVC Camera, Gigabit Ethernet</a>
+ </tr>
+ <tr>
+   <th>Control Interface</th>
+   <td class="fw-original">USB 2.0 CDC-ACM "Serial Port"</td>
+   <td class="fw-misoc">USB 2.0 CDC-ACM "Serial Port", Gigabit Ethernet</a>
+ </tr>
+</table>
+
+<!-- gst-switch References -->
+
+<!-- gst-switch (speaker track) -->
+
+<!-- HDMI2USB References -->
+
+<!-- Streaming System -->
+
+<!-- Other -->
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

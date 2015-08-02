@@ -30,11 +30,11 @@
     <li class="">
       <a href="../home/">HOME</a>
     </li>
+      <li class="">
+          <a href="../faq/">ABOUT + FAQ</a>
+      </li>
     <li class="">
-      <a href="../news/">NEWS</a>
-    </li>
-    <li class="">
-      <a href="../">HARDWARE</a>
+      <a href="../hardware/">HARDWARE</a>
     </li>
     <li class="">
      <ul>
@@ -52,7 +52,7 @@
      </ul>
     </li>
     <li class="active">
-      <a href="../">FIRMWARE</a>
+      <a href="../firmware/">FIRMWARE</a>
     </li>
     <li class="">
      <ul>
@@ -65,20 +65,10 @@
      </ul>
     </li>
     <li class="">
-     <a href="../">FURTHER INFORMATION</a>
+      <a href="../help/">GETTING HELP</a>
     </li>
     <li class="">
-     <ul>
-      <li><a href="../faq/">FAQ</a></li>
-     </ul>
-    </li>
-    <li class="">
-     <ul>
-      <li><a href="../help/">Getting Help</a></li>
-     </ul>
-    </li>
-    <li class="">
-      <a href="../">PEOPLE</a>
+          <a href="../news/">NEWS</a>
     </li>
     <li>
       <a href="http://code.timvideos.us">To TimVideos</a>
@@ -107,15 +97,49 @@
       <div class="panel-body">
         <h1 id="hdmi2usb---misoc-firmware">HDMI2USB - MiSoC Firmware</h1>
 
-<p>TODO: Put some content here.</p>
-
 <h2 id="getting-set-up">Getting Set Up</h2>
 
-<p>TODO: Put some content here.</p>
+<ol>
+  <li>
+    <p>Follow MiSoC Quick start guide <a href="https://github.com/m-labs/misoc">https://github.com/m-labs/misoc</a></p>
+  </li>
+  <li>
+    <p>Clone <a href="https://github.com/timvideos/HDMI2USB-misoc-firmware">https://github.com/timvideos/HDMI2USB-misoc-firmware</a> into same directory as misoc</p>
+  </li>
+  <li>
+    <p>Follow instructions to build the gateware and software; in the HDMI2USB-misoc-firmware directory:</p>
+  </li>
+</ol>
+<pre>make help</pre>
 
-<h2 id="contributing-guide">Contributing Guide</h2>
+<h2 id="status">Status</h2>
+<p>atlys_base:</p>
 
-<p>TODO: Put some content here.</p>
+<ul>
+  <li>BaseSoC working (CPU + DDR2 + UART)</li>
+  <li>MiniSoC working (BaseSoC + 10/100Mbps Ethernet MAC handled by the CPU)</li>
+</ul>
+
+<p>atlys_hdmi2ethernet:</p>
+
+<ul>
+  <li>EtherboneSoC working (BaseSoC + 10/100Mbps HW Ethernet UDP/IP stack and Etherbone)</li>
+  <li>VideomixerSoC working (EtherboneSoC + HDMI in + Framebuffer + Hdmi out)</li>
+  <li>HDMI2EthernetSoC working (VideomixerSoC + JPEG encoder + UDP streamer)</li>
+</ul>
+
+<p>atlys_hdmi2usb:</p>
+
+<ul>
+  <li>VideomixerSoC working (MiniSoC + HDMI in + Framebuffer + Hdmi out)</li>
+  <li>HDMI2USB working (VideomixerSoCerSoC + JPEG encoder + USB streamer)</li>
+</ul>
+
+<h2 id="links">Links</h2>
+
+<ul>
+  <li><a href="https://github.com/timvideos/HDMI2USB-misoc-firmware">https://github.com/timvideos/HDMI2USB-misoc-firmware</a></li>
+</ul>
 
 <!-- gst-switch References -->
 
@@ -124,6 +148,8 @@
 <!-- HDMI2USB References -->
 
 <!-- Streaming System -->
+
+<!-- Other -->
 
 
       </div>
