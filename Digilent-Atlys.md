@@ -15,7 +15,7 @@ HDMI2USB firmware and continues to be a supported platform.
 ## Getting Started
 
   * Purchase a board (links below).
-  * Load the firmware (see [Firmware]).
+  * Load the firmware (see [Firmware](../firmware)).
   * Test and use the device.  (see [Digilent Atlys - Using](../digilent-atlys-using)).
 
 ## Useful Resources
@@ -106,7 +106,7 @@ At the moment raw mode is about 10-15fps while the target for mjpeg mode is a fu
 
 The jpeg compression quality is controlled via a setting.
 
-### Can this board record two cameras, or a camera and a laptop?
+### Can this board record two simultaneous separate cameras, or a camera and a laptop?
 
 No, again USB 2.0 doesn't have enough bandwidth for recording two streams at once. When we move to USB 3.0 this might become possible.
 

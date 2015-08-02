@@ -5,11 +5,10 @@ tagline: Hardware
 tags: hardware
 ---
 
-## Actively Supported
+
+# Actively Supported Boards
 
 The Numato Opsis is a board created specifically for HDMI2USB, especially built for the use-case of recording video.  This is the strongly recommended option.  However, we make available firmware for prototyping boards to ensure this project has longevity beyond Numato Opsis availability.
-
-# Boards
 
 {::nomarkdown}
 <table class="boards">
@@ -33,12 +32,10 @@ The Numato Opsis is a board created specifically for HDMI2USB, especially built 
  <tr class="links">
    <th>Links</th>
    <td class="atlys">
-<a href="" title="More information on your Digilent Atlys board.">More Info</a>,
-<a href="" title="Getting Started with your Digilent Atlys board.">Getting Started</a>
+<a href="../digilent-atlys/" title="Getting Started with your Digilent Atlys board." class="btn btn-default">Getting Started</a>
    </td>
    <td class="opsis">
-<a href="" title="More information on your Numato Opsis board.">More Info</a>,
-<a href="" title="Getting Started with your Numato Opsis board.">Getting Started</a>
+<a href="../numato-opsis/" title="Getting Started with your Numato Opsis board." class="btn btn-default">Getting Started</a>
    </td>
  </tr>
  <tr class="desc">
