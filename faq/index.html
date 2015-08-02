@@ -188,9 +188,12 @@
 
 <h3 id="does-it-produce-compressed-video-or-raw-video">Does it produce compressed video or raw video?</h3>
 
-<p>It produces both;
- * mjpeg compressed video - Best for capture from a continuous source such as a camera.
- * raw video - Best for capture of non-continuous or text heavy sources, such as a presenter&#8217;s slides.</p>
+<p>It produces both;</p>
+
+<ul>
+  <li>mjpeg compressed video - Best for capture from a continuous source such as a camera.</li>
+  <li>raw video - Best for capture of non-continuous or text heavy sources, such as a presenter&#8217;s slides.</li>
+</ul>
 
 <p>Both are full 1024x768 or 720p resolution (depending on if the input is DVI or HDMI).</p>
 
@@ -199,6 +202,19 @@
 <p>At the moment raw mode is about 10-15fps while the <a href="http://en.wikipedia.org/wiki/MJPEG">MJPEG</a> mode runs at 30fps or 25fps (dependent on capture source frequency).</p>
 
 <p>The <a href="http://en.wikipedia.org/wiki/MJPEG">MJPEG</a> compression quality is controlled via a setting.</p>
+
+<h3 id="what-kind-of-usb-device-does-it-present-to-the-host">What kind of USB device does it present to the host?</h3>
+
+<p>The device appears as:</p>
+
+<ul>
+  <li>
+    <p>UVC Webcam - This device is very common (pretty much every web-cam under the sun uses this format) and well supported under Linux.</p>
+  </li>
+  <li>
+    <p>CDC Serial Port - This device allows you to control the various options of the HDMI2USB and get status about which ports have active inputs, get hot plug events and such.</p>
+  </li>
+</ul>
 
 <!-- gst-switch References -->
 

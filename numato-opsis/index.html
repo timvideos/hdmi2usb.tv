@@ -189,61 +189,6 @@
 </table>
 
 
-<h2 id="common-questions">Common questions:</h2>
-<p>TODO: Tim fill out for accuracy, this is just copied from the Atlys page for consistency</p>
-
-<h3 id="is-the-board-capable-of-encoding-analogue-signals---dvi-a-or-vga-with-a-dvi-plug">Is the board capable of encoding analogue signals - DVI-A or VGA with a DVI plug?</h3>
-
-<p>The base board only supports digital signals (mainly because the development board we are using also only supports digital signals). It supports HDMI, DVI and DisplayPort (in their many connector forms).</p>
-
-<p>The board includes a powerful extension port which we will be developing daughterboards for. We currently have a VGA daughterboard in development, but yet to actually get anything like results yet.</p>
-
-<h3 id="does-it-produce-compressed-video-or-raw-video">Does it produce compressed video or raw video?</h3>
-
-<p>It produces both;
- * mjpeg compressed video - Best for capture from a continuous source such as a camera.
- * raw video - Best for capture of non-continuous or text heavy sources, such as a presenter&#8217;s slides.</p>
-
-<p>Both are full 1024x768 or 720p resolution (depending on if the input is DVI or HDMI).</p>
-
-<p>The problem is that USB2.0 doesn&#8217;t have enough bandwidth for raw video at 30fps, so if you want the higher frame rate you have to use the mjpeg compression mode.</p>
-
-<p>At the moment raw mode is about 10-15fps while the target for mjpeg mode is a full 30fps/25fps (but we only get around 20ish at the moment, but that is a software problem with our  JPEG encoder core we hope to solve rather than a hardware issue).</p>
-
-<p>The jpeg compression quality is controlled via a setting.</p>
-
-<h3 id="can-this-board-record-two-simultaneous-separate-cameras-or-a-camera-and-a-laptop">Can this board record two simultaneous separate cameras, or a camera and a laptop?</h3>
-
-<p>No, again USB 2.0 doesn&#8217;t have enough bandwidth for recording two streams at once. When we move to USB 3.0 this might become possible.</p>
-
-<p>It can work as a matrix type device. It has two independent inputs (which can come from different sources) and two linked outputs (ie they must display the same output).</p>
-
-<p>The idea would be:</p>
-
-<pre>
- Presenter's computer ----&gt; HDMI Input 1 /          \ HDMI Output 1 ---&gt; Speaker confidence screen
-                                         | HDMI2USB |
- Podium computer      ----&gt; HDMI Input 2 \          / HDMI Output 2 ---&gt; In room projector
-</pre>
-
-<p>This allows you to switch the in room projector to display something when not presenting. It could have details about the room (IE name, what is up next, etc) or something similar.</p>
-
-<h3 id="what-kind-of-usb-device-does-it-present-to-the-host">What kind of USB device does it present to the host?</h3>
-
-<p>The device appears as:</p>
-
-<ul>
-  <li>
-    <p>UVC Webcam - This device is very common (pretty much every web-cam under the sun uses this format) and well supported under Linux.</p>
-  </li>
-  <li>
-    <p>CDC Serial Port - This device allows you to control the various options of the HDMI2USB and get status about which ports have active inputs, get hot plug events and such.</p>
-  </li>
-</ul>
-
-<p><br />
-<br /></p>
-
 <h5 id="footnotes">Footnotes</h5>
 
 <div class="footnotes">
