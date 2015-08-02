@@ -88,9 +88,9 @@ HDMI2USB firmware and continues to be a supported platform.
 
 ### Is the board capable of encoding analogue signals - DVI-A or VGA with a DVI plug?
 
-The base board only supports digital signals (mainly because the development board we are using also only supports digital signals). It supports HDMI, DVI and DisplayPort (in their many connector forms).
+The base board only supports digital signals (mainly because the development board we are using also only supports digital signals). It supports HDMI and DVI (in their many connector forms).
 
-The board includes a powerful extension port which we will be developing daughterboards for. We currently have a VGA daughterboard in development, but yet to actually get anything like results yet.
+The board includes a powerful extension port which we will be developing daughter boards for. We currently have a VGA daughter board in development, but yet to actually get anything like results yet.
 
 ### Does it produce compressed video or raw video?
 
@@ -102,9 +102,9 @@ Both are full 1024x768 or 720p resolution (depending on if the input is DVI or H
 
 The problem is that USB2.0 doesn't have enough bandwidth for raw video at 30fps, so if you want the higher frame rate you have to use the mjpeg compression mode.
 
-At the moment raw mode is about 10-15fps while the target for mjpeg mode is a full 30fps/25fps (but we only get around 20ish at the moment, but that is a software problem with our  JPEG encoder core we hope to solve rather than a hardware issue).
+At the moment raw mode is about 10-15fps while the [MJPEG] mode runs at 30fps or 25fps (dependent on capture source frequency).
 
-The jpeg compression quality is controlled via a setting.
+The [MJPEG] compression quality is controlled via a setting.
 
 ### Can this board record two cameras, or a camera and a laptop?
 
