@@ -234,6 +234,49 @@ $ dmesg
   * Step 4 - Use the device as required.
     * See the [Hardware Using](../digilent-atlys-using) page for information on how to use the board.
 
+
+## Common Questions
+
+## Common questions:
+
+### Can this board record two simultaneous separate cameras, or a camera and a laptop?
+
+No, again USB 2.0 doesn't have enough bandwidth for recording two streams at once. When we move to USB 3.0 this might become possible.
+
+It can work as a matrix type device. It has two independent inputs (which can come from different sources) and two linked outputs (ie they must display the same output).
+
+The idea would be:
+
+![HDMI2USB Diagram](../img/hdmi2usb-diagram.png "HDMI2USB Diagram")
+
+This allows you to switch the in room projector to display something when not presenting. It could have details about the room (IE name, what is up next, etc) or something similar.
+
+
+### Is the board capable of encoding analogue signals - DVI-A or VGA with a DVI plug?
+
+The base board only supports digital signals (mainly because the development board we are using also only supports digital signals). It supports HDMI and DVI (in their many connector forms).
+
+The board includes a powerful extension port which we will be developing daughter boards for. We currently have a VGA daughter board in development, but yet to actually get anything like results yet.
+
+### Does it produce compressed video or raw video?
+
+It produces both;
+ * mjpeg compressed video - Best for capture from a continuous source such as a camera.
+ * raw video - Best for capture of non-continuous or text heavy sources, such as a presenter's slides.
+
+Both are full 1024x768 or 720p resolution (depending on if the input is DVI or HDMI).
+
+The problem is that USB2.0 doesn't have enough bandwidth for raw video at 30fps, so if you want the higher frame rate you have to use the mjpeg compression mode.
+
+At the moment raw mode is about 10-15fps while the [MJPEG] mode runs at 30fps or 25fps (dependent on capture source frequency).
+
+The [MJPEG] compression quality is controlled via a setting.
+
+<br>
+<br>
+
+
+
 ## Extra Resources / Links
 
   * [Firmware Load Scripts](https://github.com/timvideos/HDMI2USB/wiki/Firmware-load-scripts)

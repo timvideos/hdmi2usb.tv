@@ -402,9 +402,20 @@ table.firmware td.fw-misoc {
   color: white;
   font-weight: bold;
   padding: 10px;
+  border-radius: 25px;
+  border: 2px solid darkred;
   margin: 10px 0px;
+
 }
 
 .top-message a {
-  color: red;
+  margin-top: 10px;
+  color: yellow;
+  font-weight: bolder;
+}
+
+.twitter-widget {
+  float: right;
+  margin-top: 20px;
+  height: 400px;
 }

@@ -16,7 +16,8 @@ tags: news
         </span>
       <div class="panel-body">
         <h1>{{ post.title }}</h1>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h4 class="post-date">{{ post.date | date: "%b %-d, %Y" }}</h4>
+        <p>{{ post.content }}</p>
       </div>
     </div>
   </div>
