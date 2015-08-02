@@ -55,11 +55,6 @@ Our aim is this becomes the defacto, incredibly affordable and easy to use video
 <div class="padding">
   <div class="col-sm-12">
     <div class="panel panel-default">
-        <span class="edit-link pull-right">
-          <a href="{% edit_url %}{{ page.path }}" target="_blank">
-            <i class="fa fa-edit"></i>
-          </a>
-        </span>
 
       <div class="panel-body">
 
