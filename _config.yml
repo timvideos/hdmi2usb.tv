@@ -5,6 +5,8 @@ branch: master
 safe: false
 lsi: false
 
+destination: ../gh-pages
+
 markdown: kramdown
 kramdown:
   entity_output: as_input
