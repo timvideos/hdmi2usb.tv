@@ -64,7 +64,22 @@ Our aim is this becomes the defacto, incredibly affordable and easy to use video
 
 <h1>Recent News</h1>
 
-TODO: Put some news snippets here.
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+
+<div style="float: right; border: 1px solid black;">
+ TODO: Embed twitter thingy here.
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+</div>
 
       </div>
     </div>
