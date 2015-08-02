@@ -2,15 +2,13 @@ username: timvideos
 repo: hdmi2usb.tv
 branch: master
 
-destination: ../gh-pages/
-
 safe: false
 lsi: false
 
 markdown: kramdown
 kramdown:
   entity_output: as_input
-exclude: [Gemfile, Gemfile.lock, planet.yml, vendor, .travis.yml, Rakefile, README.md, DEPLOY.md, links.jsonp, pages.json]
+exclude: [Gemfile, Gemfile.lock, planet.yml, vendor, .travis.yml, Rakefile, README.md, DEPLOY.md]
 auto_permalinks: true 
 name: HDMI2USB - Open source for live event capture
 description: 

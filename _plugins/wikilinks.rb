@@ -65,7 +65,7 @@ module Jekyll
       alias origin_convert convert
 
       def convert(content)
-        @@pages_path ||= File.join(@config['source'], 'pages.json')
+        @@pages_path ||= File.join(@config['destination'], 'pages.json')
         @@pages_info ||= File.open(@@pages_path, 'r') { |f| JSON.load(f) }
 
         pat = /\[\[(.+?)\]\]/

@@ -7,12 +7,17 @@
 # Copyright Maciej Paruszewski 2014
 
 module Jekyll
+  class PagesJSON < StaticFile
+    def write(dest)
+      true
+    end
+  end
+
   class PagesJsonGenerator < Generator
     priority :low
     safe true
 
     # Generates an pages.json
-    # FIXME: Make this put the pages.json in the output directory.
     #
     # site - the site
     #
@@ -27,10 +32,11 @@ module Jekyll
       site.pages.each { |page| pages['pages'] << { 'basename' => page.basename, 'data' => page.data, 'url' => page.url } }
       site.posts.each { |post| pages['posts'] << { 'slug'     => post.slug,     'data' => post.data, 'url' => post.url } }
 
-      #pages_path = File.join(site.config['source'], 'pages.json')
-      #File.open(pages_path, 'w') do |f|
-      #  f.write(pages.to_json)
-      #end
+      pages_path = File.join(site.dest, 'pages.json')
+      File.open(pages_path, 'w') do |f|
+        f.write(pages.to_json)
+      end
+      site.static_files << Jekyll::PagesJSON.new(site, site.source, '', 'pages.json')
     end
   end
 end
