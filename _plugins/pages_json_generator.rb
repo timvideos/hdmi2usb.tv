@@ -12,6 +12,7 @@ module Jekyll
     safe true
 
     # Generates an pages.json
+    # FIXME: Make this put the pages.json in the output directory.
     #
     # site - the site
     #
