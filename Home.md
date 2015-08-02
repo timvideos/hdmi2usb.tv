@@ -10,8 +10,8 @@ tags: home
   <div class="col-sm-12">
     <div class="panel-default">
       <div class="top-message">
-    <a href="../numato-opsis/">The Numato Opsis board</a>, the first open hardware for the HDMI2USB will soon be avaliable.<br>
-    <a href="http://bit.ly/get-opsis">Sign up to be notified when that happens!</a>
+   The <a href="../numato-opsis">Numato Opsis board</a>, the first open hardware for the HDMI2USB will soon be available.<br>
+    <a href="http://bit.ly/get-opsis" class="btn btn-danger">Sign up to be notified when the Numato Opsis can be purchased!</a>
       </div>
     </div>
   </div>
@@ -60,28 +60,26 @@ Our aim is this becomes the defacto, incredibly affordable and easy to use video
             <i class="fa fa-edit"></i>
           </a>
         </span>
+
       <div class="panel-body">
 
-<h1>Recent News</h1>
+           <div class="twitter-widget col-md-6">
+             <a class="twitter-timeline pull-right" href="https://twitter.com/TimVideosUs" data-widget-id="627672542765977600">Tweets by @TimVideosUs</a>
+             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+           </div>
 
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
+            <div class="col-md-6">
+                <h1>Recent News</h1>
 
-<div style="float: right; border: 1px solid black;">
- TODO: Embed twitter thingy here.
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
-</div>
+                {% for post in site.posts %}
+                  <li>
+                    <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                  </li>
+                {% endfor %}
+            </div>
 
-      </div>
+     </div>
     </div>
   </div>
 </div>

@@ -89,8 +89,9 @@ The resolution limit is currently imposed by the speed at which the FPGA pins ar
 ### Does it produce compressed video or raw video?
 
 It produces both;
- * mjpeg compressed video - Best for capture from a continuous source such as a camera.
- * raw video - Best for capture of non-continuous or text heavy sources, such as a presenter's slides.
+
+  * mjpeg compressed video - Best for capture from a continuous source such as a camera.
+  * raw video - Best for capture of non-continuous or text heavy sources, such as a presenter's slides.
 
 Both are full 1024x768 or 720p resolution (depending on if the input is DVI or HDMI).
 
@@ -99,6 +100,14 @@ The problem is that USB2.0 doesn't have enough bandwidth for raw video at 30fps,
 At the moment raw mode is about 10-15fps while the [MJPEG] mode runs at 30fps or 25fps (dependent on capture source frequency).
 
 The [MJPEG] compression quality is controlled via a setting.
+
+### What kind of USB device does it present to the host?
+
+The device appears as:
+
+  * UVC Webcam - This device is very common (pretty much every web-cam under the sun uses this format) and well supported under Linux.
+
+  * CDC Serial Port - This device allows you to control the various options of the HDMI2USB and get status about which ports have active inputs, get hot plug events and such.
 
 
 
