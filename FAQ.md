@@ -57,8 +57,8 @@ HDMI2USB is not currently a 'plug and play' solution; you need to flash firmware
 
 You'll need to do the following to do capture from 2 sources:
 
-  * Buy some suitable capture hardware.  See the [Hardware] page.
-  * Flash the firmware onto the device.  See the [Firmware] page.
+  * Buy some suitable capture hardware.  See the [Hardware](../hardware) page.
+  * Flash the firmware onto the device.  See the [Firmware](../firmware) page.
   * Make sure you've got HDMI/Displayport cables and other equipment required to hook all your sources in.  See the [TimVideos] site.
   * Get some capture/mixing software that supports HDMI2USB.  This is still under heavy development.  See the [TimVideos] site.
 

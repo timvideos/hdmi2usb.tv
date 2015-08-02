@@ -16,8 +16,8 @@ functionality.
 
  <tr class="name">
    <td>&nbsp;</td>
-   <th class="fw-original">original</td>
-   <th class="fw-misoc">misoc</td>
+   <td class="fw-original"><h3>original</h3></td>
+   <td class="fw-misoc"><h3>misoc (recommended)</h3></td>
  </tr>
 
  <tr class="desc">
@@ -30,9 +30,18 @@ The original HDMI2USB firmware was developed using a combination of
    <td>
 The misoc HDMI2USB firmware was developed using <a href="">migen</a> and <a
 href="">misoc</a> technologies.
-
    </td>
  </tr>
+
+  <tr class="links">
+    <td>&nbsp;</td>
+    <td class="fw-original">
+ <a href="../firmware-original" title="Getting Started with HDMI2USB Original Firmware" class="btn btn-default">Getting Started</a>
+    </td>
+    <td class="fw-misoc">
+ <a href="../firmware-misoc" title="Getting Started with HDMI2USB misoc Firmware" class="btn btn-default">Getting Started</a>
+    </td>
+  </tr>
 
  <tr class="picture">
    <td>&nbsp;</td>
@@ -44,16 +53,6 @@ href="">misoc</a> technologies.
    <th>Code</th>
    <td class="fw-original"><a href="http://github.com/timvideos/HDMI2USB">http://github.com/<wbr>timvideos/<wbr>HDMI2USB</a></td>
    <td class="fw-misoc"><a href="http://github.com/timvideos/HDMI2USB-misoc-firmware">http://github.com/<wbr>timvideos/<wbr>HDMI2USB-misoc-firmware</a></td>
- </tr>
-
- <tr class="links">
-   <td>&nbsp;</td>
-   <td class="fw-original">
-<a href="" title="Getting Started with HDMI2USB Original Firmware">Getting Started</a>
-   </td>
-   <td class="fw-misoc">
-<a href="" title="Getting Started with HDMI2USB misoc Firmware">Getting Started</a>
-   </td>
  </tr>
 
  <tr>
