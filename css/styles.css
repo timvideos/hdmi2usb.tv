@@ -392,10 +392,15 @@ table.firmware td.fw-misoc {
 }
 
 .top-message {
+  text-align: center;
   background: darkred;
   border: 1px;
   color: white;
   font-weight: bold;
   padding: 10px;
   margin: 10px 0px;
+}
+
+.top-message a {
+  color: red;
 }
