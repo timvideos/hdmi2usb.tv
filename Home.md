@@ -6,6 +6,7 @@ tags: home
 ---
 
 {::nomarkdown}
+
 <div class="padding">
   <div class="col-sm-12">
     <div class="panel-default">
@@ -82,15 +83,85 @@ Our aim is this becomes the defacto, incredibly affordable and easy to use video
 <div class="padding">
   <div class="col-sm-12">
     <div class="panel panel-default">
-        <span class="edit-link pull-right">
-          <a href="{% edit_url %}{{ page.path }}" target="_blank">
-            <i class="fa fa-edit"></i>
-          </a>
-        </span>
       <div class="panel-body">
 
-# TODO: Put some type of image carousal here.
+<br />
+  <div class="imageslick">
 
+
+        <div> 
+            <a class="fancybox" rel="group" href="/img/gallery/atlys.jpg">
+               {% thumbnail img/gallery/atlys.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/img7.jpg">
+               {% thumbnail img/gallery/img7.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/HDMI2USB.jpg">
+               {% thumbnail img/gallery/HDMI2USB.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/sprint-team-lca2015.jpg">
+               {% thumbnail img/gallery/sprint-team-lca2015.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/oss-hardware.png">
+               {% thumbnail img/gallery/oss-hardware.png 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/img4.jpg">
+               {% thumbnail img/gallery/img4.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/img0.jpg">
+               {% thumbnail img/gallery/img0.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/img5.jpg">
+               {% thumbnail img/gallery/img5.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/img3.jpg">
+               {% thumbnail img/gallery/img3.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/img1.jpg">
+               {% thumbnail img/gallery/img1.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/img8.jpg">
+               {% thumbnail img/gallery/img8.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/timvideos.jpg">
+               {% thumbnail img/gallery/timvideos.jpg 200x150 %}
+            </a>
+        </div>
+
+  </div>
       </div>
     </div>
   </div>

@@ -8,9 +8,10 @@ TODO: Update this information for HDMI2USB information.
 
 ```
 sudo apt-get install build-essential ruby ruby-dev gem bundler rake nodejs
+imagemagick
 
 bundle install
-bundle exec jekyll serve --watch
+rake site:watch
 ```
 
 ## How to contribute to TimVideos Developer website?
