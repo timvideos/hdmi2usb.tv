@@ -9,8 +9,8 @@ tags: help, more-info
 
 If you need help with anything, from getting a device running to wanting to develop on HDMI2USB, please get in touch:
 
- * Sign up to our mailing list: [https://groups.google.com/forum/#!forum/hdmi2usb](https://groups.google.com/forum/#!forum/hdmi2usb
-)
+ * Sign up to our mailing list (Google Account not required): [https://groups.google.com/forum/#!forum/gst-switch/join](https://groups.google.com/forum/#!forum/gst-switch/join)
+
  * Ask a question on IRC: [#timvideos on irc.freenode.org](http://webchat.freenode.net?channels=%23timvideos)
  * Ping us at [@timvideosus](https://twitter.com/timvideosus) on Twitter
 

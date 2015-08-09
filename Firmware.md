@@ -45,8 +45,8 @@ href="">misoc</a> technologies.
 
  <tr class="picture">
    <td>&nbsp;</td>
-   <td class="fw-original"><img src=""></td>
-   <td class="fw-misoc"><img src="../img/misoc-logo.png"></td>
+   <td class="fw-original"><img class="firmware-pic" src=""></td>
+   <td class="fw-misoc"><img class="firmware-pic" src="../img/misoc-logo.png"></td>
  </tr>
 
  <tr class="code">
