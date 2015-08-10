@@ -15,7 +15,7 @@ tags: news
           </a>
         </span>
       <div class="panel-body">
-        <h1>{{ post.title }}</h1>
+        <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
         <h4 class="post-date">{{ post.date | date: "%b %-d, %Y" }}</h4>
         <p>{{ post.content }}</p>
       </div>

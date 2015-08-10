@@ -1,12 +1,9 @@
 ---
-layout: default-noedit
+layout: base
 ---
 <div class="col-sm-12">
   <div class="panel panel-default" id="featured">
     <div class="panel-body">
-      {% if page.categories %}
-        <h4>{{ page.categories }}</h4>
-      {% endif %}
       <h1>{{ page.title }}</h1>
       <div class="article">
         <p class="meta description">
@@ -14,6 +11,16 @@ layout: default-noedit
           {% if page.author %} • {{ page.author }}{% endif %}
           {% if page.meta %} • {{ page.meta }}{% endif %}
         </p>
+        {% if page.categories %}
+          <p class="categories">
+            <span>Categories: </span>
+            {% for category in page.categories %}
+              <span class="label label-category">
+                {{ category }}
+              </span>
+            {% endfor %}
+          </p>
+        {% endif %}
         {% if page.tags %}
           <p class="tags">
             <span>Tags: </span>
