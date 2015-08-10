@@ -6,16 +6,6 @@ tags: home
 ---
 
 {::nomarkdown}
-<div class="padding">
-  <div class="col-sm-12">
-    <div class="panel-default">
-      <div class="top-message">
-   The <a href="../numato-opsis">Numato Opsis board</a>, the first open hardware for the HDMI2USB will soon be available.<br>
-    <a href="http://bit.ly/get-opsis" class="btn btn-danger">Sign up to be notified when the Numato Opsis can be purchased!</a>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div class="padding">
   <div class="col-sm-12">
@@ -31,7 +21,7 @@ tags: home
 
 # HDMI2USB: Open video capture hardware + firmware
 
-![HDMI2USB Diagram](../img/hdmi2usb-diagram.png "HDMI2USB Diagram"){: .image-right}
+![HDMI2USB Diagram](../img/hdmi2usb.jpg "HDMI2USB Diagram"){: .image-right}
 
 **The HDMI2USB project develops affordable hardware options to record and stream HD videos (from HDMI & DisplayPort sources) for conferences, meetings and user groups.**
 
@@ -59,8 +49,8 @@ Our aim is this becomes the defacto, incredibly affordable and easy to use video
       <div class="panel-body">
 
            <div class="twitter-widget col-md-6">
-             <a class="twitter-timeline pull-right" href="https://twitter.com/TimVideosUs" data-widget-id="627672542765977600">Tweets by @TimVideosUs</a>
-             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                <a class="twitter-timeline" href="https://twitter.com/TimVideosUs" data-widget-id="630373467892789250">Tweets by @TimVideosUs</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
            </div>
 
             <div class="col-md-6">
@@ -82,15 +72,85 @@ Our aim is this becomes the defacto, incredibly affordable and easy to use video
 <div class="padding">
   <div class="col-sm-12">
     <div class="panel panel-default">
-        <span class="edit-link pull-right">
-          <a href="{% edit_url %}{{ page.path }}" target="_blank">
-            <i class="fa fa-edit"></i>
-          </a>
-        </span>
       <div class="panel-body">
 
-# TODO: Put some type of image carousal here.
+<br />
+  <div class="imageslick">
 
+
+        <div> 
+            <a class="fancybox" rel="group" href="/img/gallery/atlys.jpg">
+               {% thumbnail img/gallery/atlys.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/img7.jpg">
+               {% thumbnail img/gallery/img7.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/HDMI2USB.jpg">
+               {% thumbnail img/gallery/HDMI2USB.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/sprint-team-lca2015.jpg">
+               {% thumbnail img/gallery/sprint-team-lca2015.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/oss-hardware.png">
+               {% thumbnail img/gallery/oss-hardware.png 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/img4.jpg">
+               {% thumbnail img/gallery/img4.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/img0.jpg">
+               {% thumbnail img/gallery/img0.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/img5.jpg">
+               {% thumbnail img/gallery/img5.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/img3.jpg">
+               {% thumbnail img/gallery/img3.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/img1.jpg">
+               {% thumbnail img/gallery/img1.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/img8.jpg">
+               {% thumbnail img/gallery/img8.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/timvideos.jpg">
+               {% thumbnail img/gallery/timvideos.jpg 200x150 %}
+            </a>
+        </div>
+
+  </div>
       </div>
     </div>
   </div>

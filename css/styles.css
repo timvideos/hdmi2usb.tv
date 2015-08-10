@@ -39,10 +39,6 @@ a {
   color:#024c7d;
 }
 
-img {
-  max-width: 100%;
-}
-
 img.favicon {
   height: 24px;
   width: 24px;
@@ -333,6 +329,11 @@ padding-bottom: 0;
 
 
 img.board-pic {
+  max-width: 100%;
+}
+
+img.firmware-pic {
+  max-width: 100%;
 }
 
 .footnote {
@@ -393,6 +394,7 @@ table.firmware td.fw-misoc {
 .image-right {
   float: right;
   margin: 15px;
+  max-width: 100%;
 }
 
 .top-message {
