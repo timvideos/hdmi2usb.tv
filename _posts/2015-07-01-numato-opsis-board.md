@@ -55,3 +55,14 @@ Overall, the new [Opsis board]() has the following differences with the
  * Adds UTMI USB (as well as the Cypress FX2).
 
  * Adds MicroSD connector.
+
+## About Numato Labs
+
+Numato Systems Private Limited (Numato Lab) is a limited liability company
+incorporated in India with headquarters in Electronic City, Bangalore. Numato
+Lab focuses on designing and manufacturing Embedded Systems, Logic and other
+electronics based products and cater to thousands of customers across the
+globe. Along with legacy business operations, Numato Lab is committed to share
+knowledge with the community through their own open source projects and through
+collaborating with other open source projects around the world. Numato Lab has
+been in operation for more than four years.
