@@ -2,7 +2,7 @@
 layout: post
 title:  "Sign up to get notified about Numato Opsis board"
 date:   2015-08-02 11:52:54
-categories: jekyll update
+categories: hardware opsis
 ---
 
 Do you want open hardware?
