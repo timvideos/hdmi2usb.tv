@@ -87,6 +87,11 @@ callback([
 
 
   {
+    "text": "TimVideos Sprints and Linux.conf.au 2015 Debrief",
+    "href": "/timvideos/sprints/lca2015/gsoc/2015/02/01/sprints-and-linux-conf-au/"
+  },
+
+  {
     "text": "New MiSoC based firmware",
     "href": "/firmware/misoc/2015/08/02/new-misoc-based-firmware/"
   },
