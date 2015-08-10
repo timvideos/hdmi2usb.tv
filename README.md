@@ -7,8 +7,7 @@ TODO: Update this information for HDMI2USB information.
 ## Setting up locally
 
 ```
-sudo apt-get install build-essential ruby ruby-dev gem bundler rake nodejs
-imagemagick
+sudo apt-get install build-essential ruby ruby-dev gem bundler rake nodejs imagemagick
 
 bundle install
 rake site:watch
