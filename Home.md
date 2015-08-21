@@ -21,7 +21,7 @@ tags: home
 
 # HDMI2USB: Open video capture hardware + firmware
 
-![HDMI2USB Diagram](../img/hdmi2usb.jpg "HDMI2USB Diagram"){: .image-right}
+![HDMI2USB Diagram](../img/hdmi2usb.png "HDMI2USB Diagram"){: .image-right}
 
 **The HDMI2USB project develops affordable hardware options to record and stream HD videos (from HDMI & DisplayPort sources) for conferences, meetings and user groups.**
 
