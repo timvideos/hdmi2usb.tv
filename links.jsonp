@@ -92,6 +92,11 @@ callback([
   },
 
   {
+    "text": "Announcing the Numato Opsis board",
+    "href": "/hardware/opsis/2015/07/01/numato-opsis-board/"
+  },
+
+  {
     "text": "New MiSoC based firmware",
     "href": "/firmware/misoc/2015/08/02/new-misoc-based-firmware/"
   },
