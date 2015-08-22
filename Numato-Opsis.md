@@ -29,11 +29,7 @@ The board is entirely open; both the firmware that runs on the device, and the s
 
 ## Technical Specifications
 
-<table class="boards">
- <tr class="name">
-   <td>&nbsp;</td>
-   <td class="opsis"><h3>Numato Opsis</h3></td>
- </tr>
+<table class="board">
  <tr class="open">
    <td>&nbsp;</td>
    <td class="opsis">

@@ -29,7 +29,7 @@ HDMI2USB firmware and continues to be a supported platform.
 
 <span class="unsupported">Features listed in grey are currently unsupported by the firmware.</span>
 
-<table class="boards">
+<table class="board">
  <tr class="open">
    <td>&nbsp;</td>
    <td class="atlys">
