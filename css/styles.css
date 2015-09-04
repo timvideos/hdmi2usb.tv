@@ -416,7 +416,9 @@ table.firmware td.fw-misoc {
 .image-right {
   float: right;
   margin: 15px;
-  max-width: 100%;
+  width: 40%;
+  min-width: 400px;
+  max-width: 1000px;
 }
 
 .top-message {
