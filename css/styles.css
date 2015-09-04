@@ -423,20 +423,22 @@ table.firmware td.fw-misoc {
 
 .top-message {
   text-align: center;
-  background: darkred;
+  background: #192228;
   border: 1px;
   color: white;
   font-weight: bold;
-  padding: 10px;
+  padding: 5px;
+/*
   border-radius: 25px;
-  border: 2px solid darkred;
+  border: 2px solid #d8d8d8;
+*/
   margin: 10px 0px;
 
 }
 
 .top-message a {
   margin-top: 10px;
-  color: yellow;
+  color: #00b2ad;
   font-weight: bolder;
 }
 
