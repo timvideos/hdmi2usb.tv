@@ -13,7 +13,7 @@ The board is entirely open; both the firmware that runs on the device, and the s
 
 <a href="https://www.crowdsupply.com/numato-lab/opsis">The board can now be ordered on <img src="https://www.crowdsupply.com/_teal/images/crowd-supply-logo-dark.png" style="padding: 2px; height: 2em; vertical-align: middle;"></a>
 
-<iframe src="https://player.vimeo.com/video/138276604" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="height:281px;"></iframe>
+<iframe src="https://player.vimeo.com/video/138276604" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="height:281px; width: 500px;"></iframe>
 
 
 ## Getting Started
