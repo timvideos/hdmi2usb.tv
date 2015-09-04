@@ -58,7 +58,7 @@ conjunction with the <a href="http://code.timvideos.us/">TimVideos project.</a>
  <tr>
    <th>Cost</th>
    <td class="atlys">$USD 419</td>
-   <td class="opsis">$USD TBA</td>
+   <td class="opsis"><a href="https://www.crowdsupply.com/numato-lab/opsis">$USD 349</a></td>
  </tr>
 
  <tr>
@@ -76,7 +76,7 @@ conjunction with the <a href="http://code.timvideos.us/">TimVideos project.</a>
  <tr>
    <th>Memory</th>
    <td class="atlys">128Mbyte DDR2</td>
-   <td class="opsis">128Mbyte DDR3</td>
+   <td class="opsis">256Mbyte DDR3</td>
  </tr>
  <tr>
    <th>Video Interfaces</th>

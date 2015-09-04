@@ -9,23 +9,26 @@ tags: hardware, numato-opsis
 
 The Numato Opsis is the first HDMI2USB production board developed specifically for the HDMI2USB project (as part of the TimVideos project).
 
-The board is entirely open; both the firmware that runs on the device, and the schematics for the device.  This board is currently not available from TimVideos but we are running a crowdsourcing campaign to get these manufactured.
+The board is entirely open; both the firmware that runs on the device, and the schematics for the device.  
 
-![Numato Opsis](../img/numato-opsis.jpg)
+<a href="https://www.crowdsupply.com/numato-lab/opsis">The board can now be ordered on <img src="https://www.crowdsupply.com/_teal/images/crowd-supply-logo-dark.png" style="padding: 2px; height: 2em; vertical-align: middle;"></a>
+
+<iframe src="https://player.vimeo.com/video/138276604" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="height:281px;"></iframe>
 
 
 ## Getting Started
 
  **NOTE: These boards are not currently available to purchase, but please support our crowdsourced campaign to get these produced!**
 
-  * Purchase a board, by backing the campaign [TODO: add link]
+  * Purchase a board, by [backing the campaign!](https://www.crowdsupply.com/numato-lab/opsis)
   * Load the firmware (see [Firmware](../firmware)).
   * Test and use the device.  (see [Numato Opsis - Using](../digilent-atlys-using)).
 
 ## Useful Resources
 
-  * [https://github.com/timvideos/HDMI2USB-numato-opsis-hardware](https://github.com/timvideos/HDMI2USB-numato-opsis-hardware)
-  * [https://github.com/timvideos/HDMI2USB-numato-opsis-sample-code](https://github.com/timvideos/HDMI2USB-numato-opsis-sample-code)
+  * [Numato Opsis Docs](https://opsis.hdmi2usb.tv) ([source](https://github.com/timvideos/HDMI2USB-numato-opsis-docs))
+  * [Hardware Design Repository](https://github.com/timvideos/HDMI2USB-numato-opsis-hardware)
+  * [Sample Code Repository](https://github.com/timvideos/HDMI2USB-numato-opsis-sample-code)
 
 ## Technical Specifications
 
@@ -42,7 +45,7 @@ The board is entirely open; both the firmware that runs on the device, and the s
 
  <tr>
    <th>Cost</th>
-   <td class="opsis">$USD TBA</td>
+   <td class="opsis">$USD 349</td>
  </tr>
 
  <tr>
@@ -51,7 +54,7 @@ The board is entirely open; both the firmware that runs on the device, and the s
  </tr>
  <tr>
    <th>Memory</th>
-   <td class="opsis">128Mbyte DDR3</td>
+   <td class="opsis">256Mbyte DDR3</td>
  </tr>
  <tr>
    <th>Video Interfaces</th>
