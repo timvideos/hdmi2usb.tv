@@ -127,7 +127,7 @@ conjunction with the <a href="http://code.timvideos.us/">TimVideos project.</a>
  <tr>
    <th>Expansion</th>
    <td class="atlys">1 x Digilent VHDCI, 1 x PMOD<a href="#atlys-pmod" class="footnote">[5]</a></td>
-   <td class="opsis">1 x <a href="/TOFE">Tim's Open FPGA Expansion Connector</a></td>
+   <td class="opsis">1 x <a href="/tofe">Tim's Open FPGA Expansion Connector</a></td>
  </tr>
  <tr>
    <th>Power Supply</th>

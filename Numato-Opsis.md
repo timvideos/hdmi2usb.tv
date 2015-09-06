@@ -87,7 +87,7 @@ The board is entirely open; both the firmware that runs on the device, and the s
  </tr>
  <tr>
    <th>Expansion</th>
-   <td class="opsis">1 x <a href="">TimVideos FPGA Expansion Connector</a></td>
+   <td class="opsis">1 x <a href="/tofe">Tim's Open FPGA Expansion Connector (TOFE)</a></td>
  </tr>
  <tr>
    <th>Power Supply</th>
