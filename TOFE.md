@@ -20,6 +20,10 @@ We hope that the significantly reduced cost of the TOFE interface will also
 enable the community to create new expansion boards we haven’t even dreamt of
 yet!
 
+## Specification
+
+FIXME: Add a link to + embed the Google Spreadsheet.
+
 ## Comparison
 
 <table style="font-size: 10pt; background-color: #F7F9F9">
@@ -111,3 +115,46 @@ yet!
  </tr>
 </tbody>
 </table>
+
+## Boards
+
+### Existing
+
+These boards are currently available;
+
+ * FIXME: Add some boards here.
+
+
+### Planned
+
+These boards are planned for construction or currently under development;
+
+#### Adapter Boards
+
+Boards which adapt to other standards for peripheral interfacing.
+
+ * To PMOD - Simple passive adapter which allows PMOD based peripherals be used
+   on a TOFE header.
+
+ * To VHDCI Adapter - Simple passive adapter which allows usage of peripherals
+   designed for the Digilent Atlys board.
+
+ * To Arduino Shield - Adapter which is compatible with Arduino shields.
+   Contains an ADC/DAC to be compatible with the Analog pins.
+
+ * To FMC LPC - Adapter which is allows FMC LPC compatible boards be used on
+   TOFE expansion.
+
+#### Functionality Boards
+
+Boards which add new functionality to TOFE compatible device.
+
+ * VGA Input - Adaption of Rohit's vmodvga designed with a TOFE interface
+   rather than a VHDCI interface.
+
+ * 4 x HDMI - Board which adds 4 x HDMI ports using a 8xTOFE connector.
+
+ * 3 x 1G Ethernet - Board which adds 3 (maybe 4?) x Gigabit Ethernet ports.
+
+ * ? x SDI - Board which adds SDI interfacing capabilities.
+
