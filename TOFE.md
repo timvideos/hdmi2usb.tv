@@ -20,9 +20,20 @@ We hope that the significantly reduced cost of the TOFE interface will also
 enable the community to create new expansion boards we haven’t even dreamt of
 yet!
 
+## Why?
+
+<img src="http://imgs.xkcd.com/comics/standards.png">
+
+<a href="https://docs.google.com/document/d/1KzStzKqC7nXBJ8nz8FIvqCoLN01p7YXi8MhAZCt0oXw/edit">Document examining wide variety expansion board interfaces</a>
+
 ## Specification
 
-FIXME: Add a link to + embed the Google Spreadsheet.
+
+### Spreadsheet of connections
+
+<a href="https://docs.google.com/spreadsheets/d/15rivtOcSG4kqKf0AUK_OwBfs67XQtW8byr8kc5FUTgE/edit">Edit or Comment Link</a>
+<iframe src="https://docs.google.com/spreadsheets/d/15rivtOcSG4kqKf0AUK_OwBfs67XQtW8byr8kc5FUTgE/pubhtml?widget=true&amp;headers=false" style="min-height: 900px;"></iframe>
+
 
 ## Comparison
 
