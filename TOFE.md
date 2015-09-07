@@ -22,6 +22,12 @@ yet!
 
 ## Why?
 
+We want a FPGA expansion that fits the following criteria;
+
+ * Open standard that anyone can access without NDA or other agreements.
+ * Cheap connection interface that are easily accessible to **any** hobbyists.
+ * Supports high speed signals >5 Gbit/s.
+
 <img src="http://imgs.xkcd.com/comics/standards.png">
 
 <a href="https://docs.google.com/document/d/1KzStzKqC7nXBJ8nz8FIvqCoLN01p7YXi8MhAZCt0oXw/edit">Document examining wide variety expansion board interfaces</a>
@@ -32,6 +38,7 @@ yet!
 ### Spreadsheet of connections
 
 <a href="https://docs.google.com/spreadsheets/d/15rivtOcSG4kqKf0AUK_OwBfs67XQtW8byr8kc5FUTgE/edit">Edit or Comment Link</a>
+
 <iframe src="https://docs.google.com/spreadsheets/d/15rivtOcSG4kqKf0AUK_OwBfs67XQtW8byr8kc5FUTgE/pubhtml?widget=true&amp;headers=false" style="min-height: 900px;"></iframe>
 
 
