@@ -34,6 +34,86 @@ We want a FPGA expansion that fits the following criteria;
 
 ## Specification
 
+### Naming
+
+#### Motherboard Connectors
+
+The aim with naming of a TOFE motherboard connector completely describes the
+features available.
+
+The name scheme needs to include;
+
+ * PCI Express connector size
+   * 1x
+   * 4x
+   * 8x
+   * 16x
+
+ * The number of lanes populated. To improve brevity, if the number of lanes
+   populated is left out then **all** lanes in the connector should be
+   populated.
+
+ * If the connector supports "bi-directional" or "uni-directional" signaling.
+   * B - Bi-Directional
+   * S - Uni-directional
+
+ * The maximum operating lane speed;
+   * 1500M
+   * 3125M
+   * XXXXM
+
+ * The minimum operating lane speed. If unspecified, then it is assume the lane
+   can operate down to DC.
+
+ * The compatible IO standards that are supported.
+   * Voltage levels which are compatible.
+     * 1.5V, 1.8V, 2.5V, 3.3V.
+
+   * Signalling standards.
+     * LVDS - Low Voltage Differential Signaling
+     * RSDS - Reduced Swing Differential Signaling
+     * PPDS - Point-to-Point Differential Signaling
+     * TMDS - Transition Minimized Differential Signaling
+     * BLVDS - Bus LVDS
+
+   * Line encodings which are compatible.
+     * 8b/10b - Used by pretty much everything.
+     * 64b/66b - 10 Gbit/s Ethernet
+     * 64b/67b - Interlaken
+     * 128b/130b - PCI-Express Gen 3 and higher.
+     * 128b/132b - USB3.1
+
+ * The amount of power that can be provided,
+   * All together (from both 3.3V and 12V combined).
+   * Just via the 12V pins.
+   * Just via the 3.3V pins.
+
+ * Any extra properties that could be useful like;
+   * Beacon signaling for PCI Express compatibility.
+   * SATA Out-of-Band signaling.
+
+
+#### Daughterboard
+
+The aim with naming a TOFE daughter board is to completely describe the
+features required for the daughter board to correctly operate.
+
+##### PCI-Express
+
+PCI-Express cards are actually compatible with TOFE motherboard sockets which
+meet the following requirements;
+
+| Version | Generation | Lane Speed  | Line code |
+| 1.0     | Gen 1      |  2.5 Gbit/s | 8b/10b    |
+| 2.0     | Gen 2      |  5.0 Gbit/s | 8b/10b    | 
+| 3.0     | Gen 3      |  8.0 Gbit/s | 128b/130b |
+| 4.0     | Gen 4      | 16.0 Gbit/s | 128b/130b | 
+
+
+PCI-Express 1st gen would be
+  TOFE-Xx-3000M-PS
+
+
 
 ### Spreadsheet of connections
 
