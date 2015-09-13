@@ -1,3 +1,5 @@
+[![CrowdSupply Image](http://planet.timvideos.us/numato-opsis-crowdfunding-campaign-master/badge.png)](https://www.crowdsupply.com/numato-lab/opsis)
+
 # HDMI2USB.tv Website
 
 [![Build Status](https://travis-ci.org/timvideos/hdmi2usb.tv.svg?branch=master)](https://travis-ci.org/timvideos/hdmi2usb.tv)
