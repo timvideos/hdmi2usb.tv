@@ -2,7 +2,16 @@
 
 [![Build Status](https://travis-ci.org/timvideos/hdmi2usb.tv.svg?branch=master)](https://travis-ci.org/timvideos/hdmi2usb.tv)
 
-TODO: Update this information.
+TODO: Update this information for HDMI2USB information.
+
+## Setting up locally
+
+```
+sudo apt-get install build-essential ruby ruby-dev gem bundler rake nodejs imagemagick
+
+bundle install
+rake site:watch
+```
 
 ## How to contribute to TimVideos Developer website?
 

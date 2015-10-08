@@ -31,12 +31,12 @@ h4 {
   border-bottom-color: #c80000;
 }
 
-a {
-  color:#024c7d;
+code {
+  white-space: normal;
 }
 
-img {
-  max-width: 100%;
+a {
+  color:#024c7d;
 }
 
 img.favicon {
@@ -76,6 +76,9 @@ table > tbody > tr:nth-child(odd) > td {
   background-color: #f9f9f9;
 }
 
+table > tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
 
 .center {
   text-align: center;
@@ -183,10 +186,12 @@ table > tbody > tr:nth-child(odd) > td {
 }
 
 
+/*
 #sidebar-footer {
   position:absolute;
   bottom:5px;
 }
+*/
 
 #sidebar {
   background-color: #024c7d;
@@ -316,6 +321,10 @@ padding-bottom: 0;
   text-align: center;
 }
 
+table.board .open td {
+  text-align: left;
+}
+
 .open a {
   color: #ff0000;
   font-weight: bold;
@@ -327,6 +336,11 @@ padding-bottom: 0;
 
 
 img.board-pic {
+  max-width: 100%;
+}
+
+img.firmware-pic {
+  max-width: 100%;
 }
 
 .footnote {
@@ -358,6 +372,21 @@ table.boards th {
   text-align: center;
 }
 
+table.board {
+  width: 100%;
+}
+
+table.board > tbody > tr > th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+table.board th {
+  text-align: right;
+}
+
 table.firmware {
   width: 100%;
 }
@@ -382,4 +411,18 @@ table.firmware td.fw-original {
 
 table.firmware td.fw-misoc {
   width: 40%;
+}
+
+.image-right {
+  float: right;
+  margin: 15px;
+  width: 40%;
+  min-width: 400px;
+  max-width: 1000px;
+}
+
+.twitter-widget {
+  float: right;
+  margin-top: 20px;
+  height: 400px;
 }

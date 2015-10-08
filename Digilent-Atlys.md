@@ -1,6 +1,6 @@
 ---
 layout: default
-title: HDMI2USB on the Digilent Atlys board
+title: Digilent Atlys
 published: true
 tags: hardware, digilent-atlys
 ---
@@ -10,22 +10,26 @@ tags: hardware, digilent-atlys
 The Digilent Atlys was the original prototyping platform for developing the
 HDMI2USB firmware and continues to be a supported platform.
 
-TODO: Put some pictures and links to information about the Digilent
-Atlys board here.
+![Digilent Atlys](../img/digilent-atlys.jpg)
 
 ## Getting Started
 
-TODO: Put getting started instructions here.
+  * Purchase a board (links below).
+  * Load the firmware (see [Firmware](../firmware)).
+  * Test and use the device.  (see [Digilent Atlys - Using](../digilent-atlys-using)).
 
 ## Useful Resources
 
-TODO: Put some links to useful resources here.
+  * [http://www.digilentinc.com/atlys/ - US$419](http://www.digilentinc.com/atlys)
+  * [http://www.amazon.com/Atlys-Spartan - US $414.95](http://www.amazon.com/Atlys-Spartan%C2%AE-6-FPGA-Development-Kit/dp/B004OT8CKS)
+  * [Recommended Conference Adapter Kit](https://docs.google.com/document/d/1WUU2sMINPfkzTkTPN2GTO8S1OIEZxjjl9zPdAyQJ6CI/pub)
+  * [Additional information in the HDMI2USB wiki](https://github.com/timvideos/HDMI2USB/wiki)
 
 ## Technical Specifications
 
 <span class="unsupported">Features listed in grey are currently unsupported by the firmware.</span>
 
-<table class="boards">
+<table class="board">
  <tr class="open">
    <td>&nbsp;</td>
    <td class="atlys">
