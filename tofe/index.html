@@ -126,9 +126,157 @@ standards such as PMOD and the Digilent VHDCI.</p>
 enable the community to create new expansion boards we haven’t even dreamt of
 yet!</p>
 
+<h2 id="why">Why?</h2>
+
+<p>We want a FPGA expansion that fits the following criteria;</p>
+
+<ul>
+  <li>Open standard that anyone can access without NDA or other agreements.</li>
+  <li>Cheap connection interface that are easily accessible to <strong>any</strong> hobbyists.</li>
+  <li>Supports high speed signals &gt;5 Gbit/s.</li>
+</ul>
+
+<p><img src="http://imgs.xkcd.com/comics/standards.png" /></p>
+
+<p><a href="https://docs.google.com/document/d/1KzStzKqC7nXBJ8nz8FIvqCoLN01p7YXi8MhAZCt0oXw/edit">Document examining wide variety expansion board interfaces</a></p>
+
 <h2 id="specification">Specification</h2>
 
-<p>FIXME: Add a link to + embed the Google Spreadsheet.</p>
+<h3 id="naming">Naming</h3>
+
+<h4 id="motherboard-connectors">Motherboard Connectors</h4>
+
+<p>The aim with naming of a TOFE motherboard connector completely describes the
+features available.</p>
+
+<p>The name scheme needs to include;</p>
+
+<ul>
+  <li>PCI Express connector size
+    <ul>
+      <li>1x</li>
+      <li>4x</li>
+      <li>8x</li>
+      <li>16x</li>
+    </ul>
+  </li>
+  <li>
+    <p>The number of lanes populated. To improve brevity, if the number of lanes
+populated is left out then <strong>all</strong> lanes in the connector should be
+populated.</p>
+  </li>
+  <li>If the connector supports &#8220;bi-directional&#8221; or &#8220;uni-directional&#8221; signaling.
+    <ul>
+      <li>B - Bi-Directional</li>
+      <li>S - Uni-directional</li>
+    </ul>
+  </li>
+  <li>The maximum operating lane speed;
+    <ul>
+      <li>1500M</li>
+      <li>3125M</li>
+      <li>XXXXM</li>
+    </ul>
+  </li>
+  <li>
+    <p>The minimum operating lane speed. If unspecified, then it is assume the lane
+can operate down to DC.</p>
+  </li>
+  <li>The compatible IO standards that are supported.
+    <ul>
+      <li>Voltage levels which are compatible.
+        <ul>
+          <li>1.5V, 1.8V, 2.5V, 3.3V.</li>
+        </ul>
+      </li>
+      <li>Signalling standards.
+        <ul>
+          <li>LVDS - Low Voltage Differential Signaling</li>
+          <li>RSDS - Reduced Swing Differential Signaling</li>
+          <li>PPDS - Point-to-Point Differential Signaling</li>
+          <li>TMDS - Transition Minimized Differential Signaling</li>
+          <li>BLVDS - Bus LVDS</li>
+        </ul>
+      </li>
+      <li>Line encodings which are compatible.
+        <ul>
+          <li>8b/10b - Used by pretty much everything.</li>
+          <li>64b/66b - 10 Gbit/s Ethernet</li>
+          <li>64b/67b - Interlaken</li>
+          <li>128b/130b - PCI-Express Gen 3 and higher.</li>
+          <li>128b/132b - USB3.1</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>The amount of power that can be provided,
+    <ul>
+      <li>All together (from both 3.3V and 12V combined).</li>
+      <li>Just via the 12V pins.</li>
+      <li>Just via the 3.3V pins.</li>
+    </ul>
+  </li>
+  <li>Any extra properties that could be useful like;
+    <ul>
+      <li>Beacon signaling for PCI Express compatibility.</li>
+      <li>SATA Out-of-Band signaling.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="daughterboard">Daughterboard</h4>
+
+<p>The aim with naming a TOFE daughter board is to completely describe the
+features required for the daughter board to correctly operate.</p>
+
+<h5 id="pci-express">PCI-Express</h5>
+
+<p>PCI-Express cards are actually compatible with TOFE motherboard sockets which
+meet the following requirements;</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Version</td>
+      <td>Generation</td>
+      <td>Lane Speed</td>
+      <td>Line code</td>
+    </tr>
+    <tr>
+      <td>1.0</td>
+      <td>Gen 1</td>
+      <td>2.5 Gbit/s</td>
+      <td>8b/10b</td>
+    </tr>
+    <tr>
+      <td>2.0</td>
+      <td>Gen 2</td>
+      <td>5.0 Gbit/s</td>
+      <td>8b/10b</td>
+    </tr>
+    <tr>
+      <td>3.0</td>
+      <td>Gen 3</td>
+      <td>8.0 Gbit/s</td>
+      <td>128b/130b</td>
+    </tr>
+    <tr>
+      <td>4.0</td>
+      <td>Gen 4</td>
+      <td>16.0 Gbit/s</td>
+      <td>128b/130b</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>PCI-Express 1st gen would be
+  TOFE-Xx-3000M-PS</p>
+
+<h3 id="spreadsheet-of-connections">Spreadsheet of connections</h3>
+
+<p><a href="https://docs.google.com/spreadsheets/d/15rivtOcSG4kqKf0AUK_OwBfs67XQtW8byr8kc5FUTgE/edit">Edit or Comment Link</a></p>
+
+<iframe src="https://docs.google.com/spreadsheets/d/15rivtOcSG4kqKf0AUK_OwBfs67XQtW8byr8kc5FUTgE/pubhtml?widget=true&amp;headers=false" style="min-height: 900px;"></iframe>
 
 <h2 id="comparison">Comparison</h2>
 
