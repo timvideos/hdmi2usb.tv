@@ -214,6 +214,22 @@ PCI-Express 1st gen would be
 </tbody>
 </table>
 
+### Mechanical
+
+TOFE boards should be mechanically identical to PCI-Express **half length**
+cards in either **full height** or **half height** (also called low profile).
+
+However, the only regions which matter for TOFE boards are the PCI-Express
+fingers and the mechanical drill holes. See the following diagram;
+
+![TOFE Requirements Diagram](/img/tofe/tofe-layout-full-height.png)
+
+Any of the area marked in green is free to be changed. This offers a wide range
+of mechanical designs, such as shown in this diagram;
+
+![TOFE Examples Diagram](/img/tofe/tofe-examples-full-height.png)
+
+
 ## Boards
 
 ### Existing
@@ -255,4 +271,10 @@ Boards which add new functionality to TOFE compatible device.
  * 3 x 1G Ethernet - Board which adds 3 (maybe 4?) x Gigabit Ethernet ports.
 
  * ? x SDI - Board which adds SDI interfacing capabilities.
+
+# Templates
+
+A
+[KiCad template for TOFE boards](https://github.com/timvideos/HDMI2USB-TOFE-kicad-template)
+can be found on GitHub.
 
