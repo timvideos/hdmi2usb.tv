@@ -5,7 +5,7 @@ published: true
 tags: hardware, tofe, milkymist
 ---
 
-## Milkymist Compatibility - TOFE Expansion board
+# Milkymist Compatibility - TOFE Expansion board
 
  * [Repository](https://github.com/timvideos/HDMI2USB-TOFE-Milkymist)
 
@@ -56,6 +56,14 @@ This extension board has the following features;
    [Maxim](https://www.maximintegrated.com/en/design/design-technology/fpga-design-resources/pmod-compatible-plug-in-peripheral-modules.html) and 
    [Analog](https://wiki.analog.com/resources/alliances/xilinx#pmods).
 
+
+## Purchase
+
+The Milkymist Compatibility Expansion Board
+<a href="https://www.crowdsupply.com/numato-lab/opsis">can now be ordered on 
+ <img src="https://www.crowdsupply.com/_teal/images/crowd-supply-logo-dark.png" alt="CrowdSupply">
+</a>
+
 ## License
 
 TOFE MilkyMist Compatibility Expansion board by Numato Systems Pvt. Ltd
@@ -67,6 +75,4 @@ You should have received a copy of the license along with this
 work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
 
 ![Creative Commons License Logo](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
-
-
 
