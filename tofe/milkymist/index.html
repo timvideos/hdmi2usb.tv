@@ -2,13 +2,13 @@
 <html>
   <head>
   <meta charset="utf-8">
-  <title>HDMI2USB - Getting help!</title>
+  <title>TOFE - Milkymist Compatibility Expansion Board</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <link rel="alternate" type="application/atom+xml" title="Tim Videos Planet Feed" href="/feed.xml" />
-  <link rel="canonical" href="http://hdmi2usb.tv//help/">
+  <link rel="canonical" href="http://hdmi2usb.tv//tofe/milkymist/">
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
@@ -36,7 +36,7 @@
       <li class="">
           <a href="/faq/">ABOUT + FAQ</a>
       </li>
-    <li class="">
+    <li class="active">
       <a href="/hardware/">HARDWARE</a>
     </li>
     <li class="">
@@ -54,7 +54,7 @@
       <li><a href="/potential-boards/">Potential Boards</a></li>
      </ul>
     </li>
-    <li class="">
+    <li class="active">
      <ul>
       <li><a href="/tofe/">TOFE</a></li>
      </ul>
@@ -62,12 +62,19 @@
     <li class="nav">
      <ul>
      
+      <li class="nav">
+        <ul>
+          <li class=""><a href="/tofe/lowspeedio">Low Speed IO</a></li>
+          <li class="active"><a href="/tofe/milkymist">Milkymist</a></li>
+        </ul>
+      </li>
+     
      </ul>
     </li>
     <li class="">
       <a href="/firmware/">FIRMWARE</a>
     </li>
-    <li class="active">
+    <li class="">
       <a href="/help/">GETTING HELP</a>
     </li>
     <li class="">
@@ -101,46 +108,95 @@
   <div class="col-sm-12">
     <div class="panel panel-default">
         <span class="edit-link pull-right">
-          <a href="http://editor.timvideos.us/#timvideos/hdmi2usb.tv/edit/master/Help.md" target="_blank">
+          <a href="http://editor.timvideos.us/#timvideos/hdmi2usb.tv/edit/master//home/travis/build/timvideos/hdmi2usb.tv/_tofe/milkymist/index.md" target="_blank">
             <i class="fa fa-edit"></i>
           </a>
         </span>
       <div class="panel-body">
-        <h1 id="getting-help">Getting Help</h1>
+        <h1 id="milkymist-compatibility---tofe-expansion-board">Milkymist Compatibility - TOFE Expansion board</h1>
 
-<p>If you need help with anything, from getting a device running to wanting to develop on HDMI2USB, please get in touch:</p>
+<ul>
+  <li><a href="https://github.com/timvideos/HDMI2USB-TOFE-Milkymist">Repository</a></li>
+</ul>
+
+<p>The <a href="https://www.crowdsupply.com/numato-lab/opsis">Numato Opsis board</a> is
+already very similar to the <a href="http://m-labs.hk/m1.html">Milkymist M1</a> and 
+<a href="http://m-labs.hk/mixxeo.html">Mixxeo</a> devices created by
+<a href="http://m-labs.hk/">M-Labs</a>, but lacks the DJ hardware interfaces. This
+expansion board adds these missing components.</p>
+
+<p>This board can be ordered from the 
+<a href="https://www.crowdsupply.com/numato-lab/opsis">Numato Opsis page on CrowdSupply.com</a>.</p>
+
+<p>This extension board has the following features;</p>
 
 <ul>
   <li>
-    <p>Sign up to our mailing list (Google Account not required): <a href="https://groups.google.com/forum/#!forum/gst-switch/join">https://groups.google.com/forum/#!forum/gst-switch/join</a></p>
+    <p><a href="https://en.wikipedia.org/wiki/AC%2797">AC‘97 compatible</a>
+audio interface with Microphone, Headphones, Line In + Out (on standard
+3.5mm connectors).</p>
   </li>
-  <li>Ask a question on IRC: <a href="http://webchat.freenode.net?channels=%23timvideos">#timvideos on irc.freenode.org</a></li>
   <li>
-    <p>Ping us at <a href="https://twitter.com/timvideosus">@timvideosus</a> on Twitter</p>
+    <p><a href="https://en.wikipedia.org/wiki/RS-422">RS-422</a> / <a href="https://en.wikipedia.org/wiki/RS-485">RS-485</a>
+compatible high speed (10Mbps), full duplex serial port;</p>
+
+    <ul>
+      <li>
+        <p>Compatible with wide range of interfaces including the industry standard
+<a href="https://en.wikipedia.org/wiki/DMX512">DMX512 control protocol</a>.</p>
+      </li>
+      <li>
+        <p>Connected to screw terminal headers, allowing wiring to DB-9, RJ-12,
+XLR-5, XLR-3 or RJ-45 connectors (wiring diagrams provided).</p>
+      </li>
+    </ul>
   </li>
-  <li><a href="https://github.com/timvideos/HDMI2USB/wiki/Bug-report-script">How to generate a bug report script</a></li>
+  <li>
+    <p><a href="https://en.wikipedia.org/wiki/RS-232">RS-232</a> full duplex serial port on a
+standard DB-9 connector. Supporting connection to wide range of devices with
+serial ports. (A secondary RS-232 full duplex serial port on a standard
+screw terminal.)</p>
+  </li>
+  <li>
+    <p><a href="https://en.wikipedia.org/wiki/MIDI">MIDI</a> In and Out interfaces on screw
+terminals, supporting connection to wide range of musical instruments and
+control devices.</p>
+  </li>
+  <li>
+    <p><a href="https://learn.adafruit.com/ir-sensor/ir-remote-signals">Infrared</a>
+transmitter and receiver compatible with many 
+<a href="https://en.wikipedia.org/wiki/Consumer_IR">consumer remote protocols</a>.</p>
+  </li>
+  <li>4 x Push button Switches,</li>
+  <li>
+    <p>4 x Indicator LEDs,</p>
+  </li>
+  <li>2 x <a href="http://www.digilentinc.com/Pmods/licensing.cfm">Digilent Pmod™ Compatible</a>
+headers to allow usage of existing expansion boards, including boards from 
+<a href="http://numato.com/fpga-boards/filter/cat/expansion-modules.html?limit=30">Numato Lab</a>,
+<a href="http://digilentinc.com/pmods">Digilent</a>,
+<a href="https://www.maximintegrated.com/en/design/design-technology/fpga-design-resources/pmod-compatible-plug-in-peripheral-modules.html">Maxim</a> and 
+<a href="https://wiki.analog.com/resources/alliances/xilinx#pmods">Analog</a>.</li>
 </ul>
 
-<p>Some good pages to look for tips about writing good questions can be found below (TLDR; demonstrate you&#8217;ve tried to figure it out first, and provide as much information as possible):</p>
+<h2 id="purchase">Purchase</h2>
 
-<ul>
-  <li><a href="http://www.catb.org/esr/faqs/smart-questions.html">How To Ask Questions The Smart Way - Eric Steven Raymond</a></li>
-  <li><a href="http://taz.newffr.com/TAZ/Sysadm/unix.guide/smart-questions.html">How To Ask Questions The Smart Way by Eric S. Raymond</a></li>
-  <li><a href="http://www.cplusplus.com/articles/jLzyhbRD/">How To: Ask Questions The Smart Way - C++ Articles</a></li>
-</ul>
+<p>The Milkymist Compatibility Expansion Board
+<a href="https://www.crowdsupply.com/numato-lab/opsis">can now be ordered on 
+ <img src="https://www.crowdsupply.com/_teal/images/crowd-supply-logo-dark.png" alt="CrowdSupply" />
+</a></p>
 
-<p><br /></p>
+<h2 id="license">License</h2>
 
-<h4 id="additional-resourceslinks">Additional Resources/Links:</h4>
+<p>TOFE MilkyMist Compatibility Expansion board by Numato Systems Pvt. Ltd</p>
 
-<ul>
-  <li><a href="http://code.timvideos.us">http://code.timvideos.us</a></li>
-  <li><a href="https://github.com/timvideos/HDMI2USB/issues">https://github.com/timvideos/HDMI2USB/issues</a></li>
-  <li><a href="https://github.com/timvideos/HDMI2USB/wiki">https://github.com/timvideos/HDMI2USB/wiki</a></li>
-  <li><a href="https://github.com/timvideos">https://github.com/timvideos</a></li>
-  <li>USB UART - Use Linux drivers at <a href="https://github.com/shenki/exar-uart-driver">https://github.com/shenki/exar-uart-driver</a></li>
-  <li><a href="http://j.mp/hdmi2usb-dev-gdoc">The HDMI2USB Developer Documentation</a></li>
-</ul>
+<p>TOFE MilkyMist Compatibility Expansion board is licensed under a
+Creative Commons Attribution-ShareAlike 4.0 International License.</p>
+
+<p>You should have received a copy of the license along with this
+work. If not, see <a href="http://creativecommons.org/licenses/by-sa/4.0/">http://creativecommons.org/licenses/by-sa/4.0/</a>.</p>
+
+<p><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="Creative Commons License Logo" /></p>
 
 <!-- gst-switch References -->
 
