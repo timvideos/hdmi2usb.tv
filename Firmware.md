@@ -1,85 +1,60 @@
 ---
 layout: default
-title: Firmware
-tagline: Firmware
-tags: firmware
+title: HDMI2USB misoc firmware
+published: true
+tags: firmware, firmware-misoc
+redirect_from: "/firmware-misoc/"
 ---
 
-# Firmware
+# HDMI2USB - Firmware
 
-There are currently two actively developed firmwares implementing the HDMI2USB
-functionality.
+## Quick Links
+
+ * [Firmware Repository](https://github.com/timvideos/HDMI2USB-misoc-firmware)
+ * [Report a bug](https://github.com/timvideos/HDMI2USB-misoc-firmware/issues/new)
+ * [misoc + migen website](https://m-labs.hk/gateware.html)
 
 
-{::nomarkdown}
-<table class="firmware">
+## History
 
- <tr class="name">
-   <td>&nbsp;</td>
-   <td class="fw-original"><h3>original</h3></td>
-   <td class="fw-misoc"><h3>misoc (recommended)</h3></td>
- </tr>
+The HDMI2USB firmware was originally developed by
+[Jahanzeb Ahmad](https://github.com/jahanzeb) using hand coded VHDL/Verilog and with
+cores from [OpenCores](OpenCores.org) and the
+[Xilinx LogiCORE IP Core Generator](http://www.xilinx.com/ise/products/coregen_overview.pdf). 
+This firmware (called the [Jahanzeb firmware](../firmware-jahanzeb)) **was
+replaced** by the "MiSoC Firmware" starting middle of 2015. You can find a 
+[comparison between the two firmware here](../firmware-compare).
 
- <tr class="desc">
-   <td>&nbsp;</td>
-   <td class="fw-original">
-The original HDMI2USB firmware was developed using a combination of
-<a href="">VHDL</a>, <a href="">Verilog</a> and cores generated in
-<a href="">Xilinx ISE<a/>.
-   </td>
-   <td>
-The misoc HDMI2USB firmware was developed using <a href="">migen</a> and <a
-href="">misoc</a> technologies.
-   </td>
- </tr>
+This page talks about using the **MiSoC Firmware**.
 
-  <tr class="links">
-    <td>&nbsp;</td>
-    <td class="fw-original">
- <a href="../firmware-original" title="Getting Started with HDMI2USB Original Firmware" class="btn btn-default">Getting Started</a>
-    </td>
-    <td class="fw-misoc">
- <a href="../firmware-misoc" title="Getting Started with HDMI2USB misoc Firmware" class="btn btn-default">Getting Started</a>
-    </td>
-  </tr>
 
- <tr class="picture">
-   <td>&nbsp;</td>
-   <td class="fw-original"><img class="firmware-pic" src=""></td>
-   <td class="fw-misoc"><img class="firmware-pic" src="../img/misoc-logo.png"></td>
- </tr>
 
- <tr class="code">
-   <th>Code</th>
-   <td class="fw-original"><a href="http://github.com/timvideos/HDMI2USB">http://github.com/<wbr>timvideos/<wbr>HDMI2USB</a></td>
-   <td class="fw-misoc"><a href="http://github.com/timvideos/HDMI2USB-misoc-firmware">http://github.com/<wbr>timvideos/<wbr>HDMI2USB-misoc-firmware</a></td>
- </tr>
 
- <tr>
-   <th colspan=3>
-     Features
-   </th>
- </tr>
- <tr>
-   <th>License</th>
-   <td class="fw-original"></td>
-   <td class="fw-misoc"></td>
- </tr>
- <tr>
-   <th>Supported Boards</th>
-   <td class="fw-original">Digilent Atlys, Numato Opsis</td>
-   <td class="fw-misoc">Digilent Atlys, Numato Opsis</td>
- </tr>
- <tr>
-   <th>Streaming Interfaces</th>
-   <td class="fw-original">USB 2.0 UVC Camera</td>
-   <td class="fw-misoc">USB 2.0 UVC Camera, Gigabit Ethernet</a>
- </tr>
- <tr>
-   <th>Control Interface</th>
-   <td class="fw-original">USB 2.0 CDC-ACM "Serial Port"</td>
-   <td class="fw-misoc">USB 2.0 CDC-ACM "Serial Port", Gigabit Ethernet</a>
- </tr>
-</table>
-{:/nomarkdown}
+
+## Getting Started
+
+ * TODO Put instructions here.
+
+
+## Setting up Developer Environment
+
+ * [Follow these instructions](https://github.com/timvideos/HDMI2USB-misoc-firmware)
+
+## Status
+
+atlys_base:
+
+  * BaseSoC working (CPU + DDR2 + UART)
+  * MiniSoC working (BaseSoC + 10/100Mbps Ethernet MAC handled by the CPU)
+
+atlys_hdmi2ethernet:
+
+  * EtherboneSoC working (BaseSoC + 10/100Mbps HW Ethernet UDP/IP stack and Etherbone)
+  * VideomixerSoC working (EtherboneSoC + HDMI in + Framebuffer + Hdmi out)
+  * HDMI2EthernetSoC working (VideomixerSoC + JPEG encoder + UDP streamer)
+
+atlys_hdmi2usb:
+
+  * VideomixerSoC working (MiniSoC + HDMI in + Framebuffer + Hdmi out)
+  * HDMI2USB working (VideomixerSoCerSoC + JPEG encoder + USB streamer)
 

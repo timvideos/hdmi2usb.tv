@@ -400,12 +400,16 @@ table.firmware > tbody > tr > th {
 
 table.firmware th {
   width: 20%;
+  text-align: right;
+}
+table.firmware th.head {
+  text-align: center;
 }
 table.firmware td {
   width: 20%;
 }
 
-table.firmware td.fw-original {
+table.firmware td.fw-jahanzeb {
   width: 40%;
 }
 

@@ -1,11 +1,32 @@
 ---
 layout: default
-title: HDMI2USB original firmware
+title: HDMI2USB Jahanzeb firmware
 published: true
-tags: firmware, firmware-original
+tags: firmware, firmware-original, firmware-jahanzeb
+redirect_from: "/firmware-original/"
 ---
 
-# HDMI2USB - Original Firmware
+# HDMI2USB - Jahanzeb Firmware
+
+## Use the [misoc firmware](../firmware)
+
+**This firmware is obsolete and now read-only.**
+
+This firmware has been replaced by the [misoc firmware](../firmware). This
+information is kept around for historical reasons. 
+
+The firmware was original developed by
+[Jahanzeb Ahmad](https://github.com/jahanzeb) using hand coded VHDL/Verilog and with
+cores from [OpenCores](OpenCores.org) and the
+[Xilinx LogiCORE IP Core Generator](http://www.xilinx.com/ise/products/coregen_overview.pdf).
+
+**This firmware is obsolete and now read-only.**
+
+## Use the [misoc firmware](../firmware)
+
+----
+----
+----
 
 ***
 

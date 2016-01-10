@@ -23,3 +23,6 @@ edit_interface_link: 'http://editor.timvideos.us/#timvideos/hdmi2usb.tv/edit/mas
 prose:
   siteurl: 'http://hdmi2usb.tv'
   relativeLinks: 'http://hdmi2usb.tv/links.jsonp'
+
+gems:
+  - jekyll-redirect-from

@@ -18,9 +18,9 @@ The board is entirely open; both the firmware that runs on the device, and the s
 
 ## Getting Started
 
- **NOTE: These boards are not currently available to purchase, but please support our crowdsourced campaign to get these produced!**
-
-  * Purchase a board, by [backing the campaign!](https://www.crowdsupply.com/numato-lab/opsis)
+  * Purchase a board from
+    [CrowdSupply](https://www.crowdsupply.com/numato-lab/opsis)
+    or directly from [Numato.com](http://numato.com).
   * Load the firmware (see [Firmware](../firmware)).
   * Test and use the device.  (see [Numato Opsis - Using](../digilent-atlys-using)).
 
@@ -91,7 +91,7 @@ The board is entirely open; both the firmware that runs on the device, and the s
  </tr>
  <tr>
    <th>Power Supply</th>
-   <td class="opsis">12V @ 1A</td>
+   <td class="opsis">12V @ 2A</td>
  </tr>
 </table>
 {::nomarkdown}
