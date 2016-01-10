@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "CrowdSupply.com - Announcing the Numato Opsis Champion Program"
+title:  "Announcing the Numato Opsis Champion Program"
 date:   2015-09-22 10:00:00
 categories: crowdsupply opsis numato
 ---
 
 <a href="https://www.crowdsupply.com/numato-lab/opsis/updates/1823">
-<i>This item is cross posted from the CrowdSupply.com crowd funding Campaign.</i>
+<i>This item is cross posted from the CrowdSupply.com crowdfunding campaign.</i>
 </a>
 
 > Hello Backers!

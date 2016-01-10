@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "CrowdSupply.com - 4k video output using an FOSS DisplayPort core and the Numato Opsis!"
+title:  "4k video output using an FOSS DisplayPort core and the Numato Opsis!"
 date:   2015-10-15 10:00:00
 categories: crowdsupply opsis numato
 ---
 
 <a href="https://www.crowdsupply.com/numato-lab/opsis/updates/1870">
-<i>This item is cross posted from the CrowdSupply.com crowd funding Campaign.</i>
+<i>This item is cross posted from the CrowdSupply.com crowdfunding campaign.</i>
 </a>
 
 > Last weekend, our friend 

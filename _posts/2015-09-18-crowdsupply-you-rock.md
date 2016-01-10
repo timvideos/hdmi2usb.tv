@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "CrowdSupply.com - 100% – You guys rock!"
+title:  "100% – You guys rock!"
 date:   2015-09-18 10:00:00
 categories: crowdsupply opsis numato
 ---
 
 <a href="https://www.crowdsupply.com/numato-lab/opsis/updates/1819">
-<i>This item is cross posted from the CrowdSupply.com crowd funding Campaign.</i>
+<i>This item is cross posted from the CrowdSupply.com crowdfunding campaign.</i>
 </a>
 
 > Dear Backers,

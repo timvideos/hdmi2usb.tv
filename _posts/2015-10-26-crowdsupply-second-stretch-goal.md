@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "CrowdSupply.com - Second stretch goal reached -- 'Milkymist Compatibility' TOFE board available"
+title:  "Second stretch goal reached -- 'Milkymist Compatibility' TOFE board available"
 date:   2015-10-26 10:00:00
 categories: crowdsupply opsis numato
 ---
 
 <a href="https://www.crowdsupply.com/numato-lab/opsis/updates/1891">
-<i>This item is cross posted from the CrowdSupply.com crowd funding Campaign.</i>
+<i>This item is cross posted from the CrowdSupply.com crowdfunding campaign.</i>
 </a>
 
 > Hello backers!

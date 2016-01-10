@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "CrowdSupply.com - 60%+ in less than a week!"
+title:  "60%+ in less than a week!"
 date:   2015-09-11 10:00:00
 categories: crowdsupply opsis numato
 ---
 
 <a href="https://www.crowdsupply.com/numato-lab/opsis/updates/1810">
-<i>This item is cross posted from the CrowdSupply.com crowd funding Campaign.</i>
+<i>This item is cross posted from the CrowdSupply.com crowdfunding campaign.</i>
 </a>
 
 > Firstly, I’d like to say thank you for your all your support so far! It’s

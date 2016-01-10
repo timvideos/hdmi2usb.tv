@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "CrowdSupply.com - First Stretch Goal Reached! 'Low Speed I/O' TOFE Board Available"
+title:  "First Stretch Goal Reached! 'Low Speed I/O' TOFE Board Available"
 date:   2015-10-15 11:00:00
 categories: crowdsupply opsis numato
 ---
 
 <a href="https://www.crowdsupply.com/numato-lab/opsis/updates/1874">
-<i>This item is cross posted from the CrowdSupply.com crowd funding Campaign.</i>
+<i>This item is cross posted from the CrowdSupply.com crowdfunding campaign.</i>
 </a>
 
 > Hello backers!

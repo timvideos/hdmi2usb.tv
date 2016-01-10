@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "CrowdSupply.com - An update on shipping"
+title:  "An update on shipping"
 date:   2015-12-21 10:00:00
 categories: crowdsupply opsis numato
 ---
 
 <a href="https://www.crowdsupply.com/numato-lab/opsis/updates/2002">
-<i>This item is cross posted from the CrowdSupply.com crowd funding Campaign.</i>
+<i>This item is cross posted from the CrowdSupply.com crowdfunding campaign.</i>
 </a>
 
 > Hello Backers,

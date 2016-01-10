@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "CrowdSupply.com - An update about supported video options and 1080p support"
+title:  "An update about supported video options and 1080p support"
 date:   2015-10-08 10:00:00
 categories: crowdsupply opsis numato
 ---
 
 <a href="https://www.crowdsupply.com/numato-lab/opsis/updates/1859">
-<i>This item is cross posted from the CrowdSupply.com crowd funding Campaign.</i>
+<i>This item is cross posted from the CrowdSupply.com crowdfunding campaign.</i>
 </a>
 
 > Hi everyone,
