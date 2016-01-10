@@ -2,7 +2,7 @@
 layout: default
 title: TOFE - Low Speed IO Expansion Board
 published: true
-tags: hardware, tofe, expansion
+tags: hardware, tofe, expansion, lowspeedio
 ---
 
 # Low Speed IO - TOFE Expansion board

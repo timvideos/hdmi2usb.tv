@@ -1,5 +1,5 @@
 <div class="column col-sm-3 col-md-3 col-lg-2" id="sidebar">
-  <a class="logo" href="..{% page_url index %}">
+  <a class="logo" href="{% page_url index %}">
     <img src="{{ "/img/logo.png" | prepend: site.baseurl }}" />
     <span>HDMI2USB</span>
   </a>
@@ -25,12 +25,24 @@
     </li>
     <li class="{% active_class potential-boards %}">
      <ul>
-      <li><a href="..{% page_url potential-boards %}">Potential Boards</a></li>
+      <li><a href="{% page_url potential-boards %}">Potential Boards</a></li>
      </ul>
     </li>
     <li class="{% active_class tofe %}">
      <ul>
-      <li><a href="..{% page_url tofe %}">TOFE</a></li>
+      <li><a href="{% page_url tofe %}">TOFE</a></li>
+     </ul>
+    </li>
+    <li class="nav">
+     <ul>
+     {% if page.tags contains 'tofe' %}
+      <li class="nav">
+        <ul>
+          <li class="{% active_class lowspeedio %}"><a href="/tofe/lowspeedio">Low Speed IO</a></li>
+          <li class="{% active_class milkymist %}"><a href="/tofe/milkymist">Milkymist</a></li>
+        </ul>
+      </li>
+     {% endif %}
      </ul>
     </li>
     <li class="{% active_class firmware %}">
