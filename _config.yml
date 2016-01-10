@@ -20,6 +20,13 @@ highlighter: pygments
 
 edit_interface_link: 'http://editor.timvideos.us/#timvideos/hdmi2usb.tv/edit/master/((filename))'
 
+include:
+  - _project
+
+collections:
+  tofe:
+    output: true
+
 prose:
   siteurl: 'http://hdmi2usb.tv'
   relativeLinks: 'http://hdmi2usb.tv/links.jsonp'
