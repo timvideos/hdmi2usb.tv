@@ -435,3 +435,13 @@ table.firmware td.fw-misoc {
   float: right;
   margin-top: 20px;
 }
+
+blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+blockquote img {
+  width: 100%;
+}

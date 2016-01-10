@@ -2,13 +2,13 @@
 <html>
   <head>
   <meta charset="utf-8">
-  <title>Firmware</title>
+  <title>An update about supported video options and 1080p support</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <link rel="alternate" type="application/atom+xml" title="Tim Videos Planet Feed" href="/feed.xml" />
-  <link rel="canonical" href="http://hdmi2usb.tv//firmware-compare/">
+  <link rel="canonical" href="http://hdmi2usb.tv//crowdsupply/opsis/numato/2015/10/08/crowdsupply-update-about-1080p/">
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
@@ -64,7 +64,7 @@
      
      </ul>
     </li>
-    <li class="active">
+    <li class="">
       <a href="/firmware/">FIRMWARE</a>
     </li>
     <li class="">
@@ -97,112 +97,86 @@
         </div>
     </div>
 
-            <div class="padding">
-  <div class="col-sm-12">
-    <div class="panel panel-default">
-        <span class="edit-link pull-right">
-          <a href="http://editor.timvideos.us/#timvideos/hdmi2usb.tv/edit/master/Firmware-Compare.md" target="_blank">
-            <i class="fa fa-edit"></i>
-          </a>
-        </span>
-      <div class="panel-body">
-        <h1 id="firmware-comparison">Firmware Comparison</h1>
+            <div class="col-sm-12">
+  <div class="panel panel-default" id="featured">
+    <div class="panel-body">
+      <h1>An update about supported video options and 1080p support</h1>
+      <div class="article">
+        <p class="meta description">
+          Oct 8, 2015
+          
+          
+        </p>
+<!--
+        
+          <p class="categories">
+            <span>Categories: </span>
+            
+              <span class="label label-category">
+                crowdsupply
+              </span>
+            
+              <span class="label label-category">
+                opsis
+              </span>
+            
+              <span class="label label-category">
+                numato
+              </span>
+            
+          </p>
+        
+        
+          <p class="tags">
+            <span>Tags: </span>
+            
+          </p>
+        
+ -->
+        <p class="article">
+          <p><a href="https://www.crowdsupply.com/numato-lab/opsis/updates/1859">
+<i>This item is cross posted from the CrowdSupply.com crowdfunding campaign.</i>
+</a></p>
 
-<p>Their have two firmwares create by the HDMI2USB project so far. This page shows
-the comparison between the two.</p>
+<blockquote>
+  <p>Hi everyone,</p>
 
-<table class="firmware">
+  <p>We have gotten a lot of questions about the video capabilities of 
+<a href="https://www.crowdsupply.com/numato-lab/opsis">the Opsis board</a>
+which is understandable because it took us ~3 years to understand the space!
+To help clarify things we have
+<a href="https://docs.google.com/document/d/1noNqTdLYlEru_6gWOlFqFvYe-vctUE23Tp42oRoKKKo/pub">added a new FAQ</a> 
+dealing exclusively with the details around HDMI, DisplayPort and the
+revisions, resolutions and formats that the Opsis board supports.</p>
 
- <tr class="name">
-   <td>&nbsp;</td>
-   <td class="fw-jahanzeb"><h3>jahanzeb</h3></td>
-   <td class="fw-misoc"><h3>misoc</h3></td>
- </tr>
+  <p>The important summary of the information is that on the Opsis;</p>
 
- <tr class="desc">
-   <th>Development</th>
-   <td class="fw-jahanzeb"><b>Not</b> under active development.</td>
-   <td class="fw-misoc">Under active development.</td>
- </tr>
+  <ul>
+    <li>The HDMI connectors support resolutions with equivalent bandwidth of SXGA @
+60Hz (1280×1024 @ 60Hz progressive) which includes;
+      <ul>
+        <li>XGA@85Hz (1024×768 @ 85Hz progressive),</li>
+        <li>1080p30 (1920×1080 @ 30Hz progressive),</li>
+        <li>1080i60 (1920×1080 @ 60Hz interlaced),</li>
+        <li>720p60 (1280×720 @ 60Hz progressive),</li>
+        <li>but <strong>not</strong> 1080p60 (1920×1080 @ 60Hz progressive).</li>
+      </ul>
+    </li>
+    <li>
+      <p>The DisplayPort connector supports resolutions up to a bandwidth of
+~12Gbit/s which include extremely high resolutions like 4096 × 2160 @ 24Hz.</p>
+    </li>
+    <li>The DisplayPort connector is dual-mode enabled and thus <strong>can operate as high
+speed HDMI ports</strong> using cheap adapters. When operating in HDMI modes, many
+high resolutions up to 3840 x 2160 @ 30Hz should work.</li>
+  </ul>
 
- <tr class="desc">
-   <th>Production Use</th>
-   <td class="fw-jahanzeb"><b>Not</b> used in production.</td>
-   <td class="fw-misoc">Actively used in production.</td>
- </tr>
+  <p>If you any feedback on the information, please comment on the 
+<a href="https://docs.google.com/document/d/1noNqTdLYlEru_6gWOlFqFvYe-vctUE23Tp42oRoKKKo/edit">Google Docs version</a>
+and we will try and get it incorporated into the CrowdSupply page.</p>
 
- <tr class="desc">
-   <td>&nbsp;</td>
-   <td class="fw-jahanzeb">
-The jahanzeb HDMI2USB firmware was developed using a combination of
-<a href="">VHDL</a>, <a href="">Verilog</a> and cores generated in
-<a href="">Xilinx ISE</a>.
-   </td>
-   <td>
-The misoc HDMI2USB firmware is developed using
-<a href="http://m-labs.hk/gateware.html">migen</a> and
-<a href="http://m-labs.hk/gateware.html">misoc</a> technologies.
-   </td>
- </tr>
-
-  <tr class="links">
-    <td>&nbsp;</td>
-    <td class="fw-jahanzeb">
- <a href="../firmware-jahanzeb" title="Getting Started with HDMI2USB Original Firmware" class="btn btn-default">Getting Started</a>
-    </td>
-    <td class="fw-misoc">
- <a href="../firmware-misoc" title="Getting Started with HDMI2USB misoc Firmware" class="btn btn-default">Getting Started</a>
-    </td>
-  </tr>
-
- <tr class="picture">
-   <td>&nbsp;</td>
-   <td class="fw-jahanzeb"><img class="firmware-pic" src=""></td>
-   <td class="fw-misoc"><img class="firmware-pic" src="../img/misoc-logo.png"></td>
- </tr>
-
- <tr class="code">
-   <th>Code</th>
-   <td class="fw-jahanzeb"><a href="http://github.com/timvideos/HDMI2USB-jahanzeb-firmware">http://github.com/<wbr>timvideos/<wbr>HDMI2USB-jahanzeb-firmware</a></td>
-   <td class="fw-misoc"><a href="http://github.com/timvideos/HDMI2USB-misoc-firmware">http://github.com/<wbr>timvideos/<wbr>HDMI2USB-misoc-firmware</a></td>
- </tr>
-
- <tr>
-   <th class="head" colspan=3>
-     Features
-   </th>
- </tr>
- <tr>
-   <th>License</th>
-   <td class="fw-jahanzeb">
-    <ul>
-      <li>Gateware: BSD/MIT and Xilinx (unclear)</li>
-      <li>Firmware: GPL v2.0</li>
-    </ul>
-   </td>
-   <td class="fw-misoc">
-    <ul>
-      <li>Gateware: BSD/MIT</li>
-      <li>Firmware: GPL v2.0</li>
-    </ul>
-   </td>
- </tr>
- <tr>
-   <th>Supported Boards</th>
-   <td class="fw-jahanzeb">Digilent Atlys</td>
-   <td class="fw-misoc">Digilent Atlys, Numato Opsis</td>
- </tr>
- <tr>
-   <th>Streaming Interfaces</th>
-   <td class="fw-jahanzeb">USB 2.0 UVC Camera</td>
-   <td class="fw-misoc">USB 2.0 UVC Camera, Gigabit Ethernet</a></td>
- </tr>
- <tr>
-   <th>Control Interface</th>
-   <td class="fw-jahanzeb">USB 2.0 CDC-ACM "Serial Port"</td>
-   <td class="fw-misoc">USB 2.0 CDC-ACM "Serial Port", Gigabit Ethernet</a></td>
- </tr>
-</table>
+  <p>Tim ‘mithro’ Ansell</p>
+</blockquote>
 
 <!-- gst-switch References -->
 
@@ -215,6 +189,7 @@ The misoc HDMI2USB firmware is developed using
 <!-- Other -->
 
 
+        </p>
       </div>
     </div>
   </div>

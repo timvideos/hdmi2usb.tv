@@ -2,13 +2,13 @@
 <html>
   <head>
   <meta charset="utf-8">
-  <title>Firmware</title>
+  <title>New MiSoC based firmware</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <link rel="alternate" type="application/atom+xml" title="Tim Videos Planet Feed" href="/feed.xml" />
-  <link rel="canonical" href="http://hdmi2usb.tv//firmware-compare/">
+  <link rel="canonical" href="http://hdmi2usb.tv//firmware/misoc/2015/08/08/new-misoc-based-firmware/">
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
@@ -64,7 +64,7 @@
      
      </ul>
     </li>
-    <li class="active">
+    <li class="">
       <a href="/firmware/">FIRMWARE</a>
     </li>
     <li class="">
@@ -97,19 +97,49 @@
         </div>
     </div>
 
-            <div class="padding">
-  <div class="col-sm-12">
-    <div class="panel panel-default">
-        <span class="edit-link pull-right">
-          <a href="http://editor.timvideos.us/#timvideos/hdmi2usb.tv/edit/master/Firmware-Compare.md" target="_blank">
-            <i class="fa fa-edit"></i>
-          </a>
-        </span>
-      <div class="panel-body">
-        <h1 id="firmware-comparison">Firmware Comparison</h1>
+            <div class="col-sm-12">
+  <div class="panel panel-default" id="featured">
+    <div class="panel-body">
+      <h1>New MiSoC based firmware</h1>
+      <div class="article">
+        <p class="meta description">
+          Aug 8, 2015
+          
+          
+        </p>
+<!--
+        
+          <p class="categories">
+            <span>Categories: </span>
+            
+              <span class="label label-category">
+                firmware
+              </span>
+            
+              <span class="label label-category">
+                misoc
+              </span>
+            
+          </p>
+        
+        
+          <p class="tags">
+            <span>Tags: </span>
+            
+          </p>
+        
+ -->
+        <p class="article">
+          <p>Thanks to the hard work of <a href="http://enjoy-digital.fr/">Florent from Enjoy
+Digital</a> we now have a <a href="https://github.com/timvideos/HDMI2USB-misoc-firmware">completely working HDMI2USB
+firmware</a> based off
+<a href="http://m-labs.hk/gateware.html">m-labs&#8217;s misoc+migen</a>.</p>
 
-<p>Their have two firmwares create by the HDMI2USB project so far. This page shows
-the comparison between the two.</p>
+<p>This new firmware is substantially easier to develop then the previous firmware
+and already has many new features compared to the old hand coded firmware. It
+supports the <a href="/numato-opsis/">Numato Opsis board</a>.</p>
+
+<p>For a <a href="/firmware-compare">better comparison of the two firmware see the following table</a>:</p>
 
 <table class="firmware">
 
@@ -117,18 +147,6 @@ the comparison between the two.</p>
    <td>&nbsp;</td>
    <td class="fw-jahanzeb"><h3>jahanzeb</h3></td>
    <td class="fw-misoc"><h3>misoc</h3></td>
- </tr>
-
- <tr class="desc">
-   <th>Development</th>
-   <td class="fw-jahanzeb"><b>Not</b> under active development.</td>
-   <td class="fw-misoc">Under active development.</td>
- </tr>
-
- <tr class="desc">
-   <th>Production Use</th>
-   <td class="fw-jahanzeb"><b>Not</b> used in production.</td>
-   <td class="fw-misoc">Actively used in production.</td>
  </tr>
 
  <tr class="desc">
@@ -157,8 +175,8 @@ The misoc HDMI2USB firmware is developed using
 
  <tr class="picture">
    <td>&nbsp;</td>
-   <td class="fw-jahanzeb"><img class="firmware-pic" src=""></td>
-   <td class="fw-misoc"><img class="firmware-pic" src="../img/misoc-logo.png"></td>
+   <td class="fw-jahanzeb"></td>
+   <td class="fw-misoc"><img class="firmware-pic" src="/img/misoc-logo.png"></td>
  </tr>
 
  <tr class="code">
@@ -204,6 +222,73 @@ The misoc HDMI2USB firmware is developed using
  </tr>
 </table>
 
+<hr />
+
+<h1 id="misoc-and-migen">MiSoC and migen</h1>
+
+<p>From <a href="http://m-labs.hk/gateware.html">the m-labs&#8217;s site</a>.</p>
+
+<blockquote>
+  <h1 id="migen">Migen</h1>
+
+  <p>Migen is a Python-based tool that automates further the VLSI design process.</p>
+
+  <p>Despite being faster than schematics entry, hardware design with Verilog and
+VHDL remains tedious and inefficient for several reasons. The event-driven
+model introduces issues and manual coding that are unnecessary for
+synchronous circuits, which represent the lion&#8217;s share of today&#8217;s logic
+designs.  Counter-intuitive arithmetic rules result in steeper learning
+curves and provide a fertile ground for subtle bugs in designs. Finally,
+support for procedural generation of logic (metaprogramming) through
+&#8220;generate&#8221; statements is very limited and restricts the ways code can be made
+generic, reused and organized.</p>
+
+  <p>To address those issues, we have developed the Migen FHDL library that
+replaces the event-driven paradigm with the notions of combinatorial and
+synchronous statements, has arithmetic rules that make integers always behave
+like mathematical integers, and most importantly allows the design&#8217;s logic to
+be constructed by a Python program. This last point enables hardware
+designers to take advantage of the richness of the Python language - object
+oriented programming, function parameters, generators, operator overloading,
+libraries, etc. - to build well organized, reusable and elegant designs.</p>
+
+  <p>Other Migen libraries are built on FHDL and provide various tools such as a
+system-on-chip interconnect infrastructure, a dataflow programming system, a
+more traditional high-level synthesizer that compiles Python routines into
+state machines with datapaths, and a simulator that allows test benches to be
+written in Python.</p>
+
+  <p>You can find the <a href="http://github.com/m-labs/migen">Migen source here</a>,
+released under the permissive BSD license.</p>
+
+  <h1 id="misoc">MiSoC</h1>
+
+  <p>Built on Migen, MiSoC provides a high performance, flexible and lightweight
+solution to build system-on-chips for various applications.</p>
+
+  <ul>
+    <li>CPU options:</li>
+    <li>LatticeMico32, modified to include an optional MMU (experimental).</li>
+    <li>mor1kx, a better OpenRISC implementation.</li>
+    <li>High performance memory controller capable of issuing several SDRAM
+commands per FPGA cycle.</li>
+    <li>Supports SDR, DDR, LPDDR and DDR2.</li>
+    <li>Provided peripherals: UART, GPIO, timer, GPIO, NOR flash controller, SPI
+flash controller, Ethernet MAC, and more.</li>
+    <li>High performance: on Spartan-6, 83MHz system clock frequencies, 10+Gbps DDR
+SDRAM bandwidth, 1080p 32bpp framebuffer, etc.</li>
+    <li>Low resource usage: basic implementation fits easily in Spartan-6 LX9.</li>
+    <li>Portable and easy to customize thanks to Python- and Migen-based architecture.</li>
+    <li>Design new peripherals using Migen and benefit from automatic CSR maps and
+logic, simplified DMAs, etc.</li>
+    <li>Possibility to encapsulate legacy Verilog/VHDL code.</li>
+  </ul>
+
+  <p><a href="http://github.com/m-labs/misoc">MiSoC source is here</a>, mostly covered by the
+permissive BSD license. Here is a 
+<a href="http://github.com/m-labs/blinkie">simple example</a> of how to customize MiSoC.</p>
+</blockquote>
+
 <!-- gst-switch References -->
 
 <!-- gst-switch (speaker track) -->
@@ -215,6 +300,7 @@ The misoc HDMI2USB firmware is developed using
 <!-- Other -->
 
 
+        </p>
       </div>
     </div>
   </div>

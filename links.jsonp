@@ -127,11 +127,6 @@ callback([
   },
 
   {
-    "text": "New MiSoC based firmware",
-    "href": "/firmware/misoc/2015/08/02/new-misoc-based-firmware/"
-  },
-
-  {
     "text": "Schematic and PCB Design for Numato Opsis board released!",
     "href": "/hardware/opsis/2015/08/02/numato-opsis-design-released/"
   },
@@ -139,6 +134,61 @@ callback([
   {
     "text": "Sign up to get notified about Numato Opsis board",
     "href": "/hardware/opsis/2015/08/02/sign-up-to-get-numato-opsis/"
+  },
+
+  {
+    "text": "New MiSoC based firmware",
+    "href": "/firmware/misoc/2015/08/08/new-misoc-based-firmware/"
+  },
+
+  {
+    "text": "60%+ in less than a week!",
+    "href": "/crowdsupply/opsis/numato/2015/09/11/crowdsupply-60p-in-a-week/"
+  },
+
+  {
+    "text": "100% – You guys rock!",
+    "href": "/crowdsupply/opsis/numato/2015/09/18/crowdsupply-you-rock/"
+  },
+
+  {
+    "text": "Announcing the Numato Opsis Champion Program",
+    "href": "/crowdsupply/opsis/numato/2015/09/22/crowdsupply-opsis-champion-program/"
+  },
+
+  {
+    "text": "Announcing Stretch Goals!",
+    "href": "/crowdsupply/opsis/numato/2015/09/25/crowdsupply-stretch-goals/"
+  },
+
+  {
+    "text": "Last Chance to Apply for the Champion Program!",
+    "href": "/crowdsupply/opsis/numato/2015/10/01/crowdsupply-champion-last-chance/"
+  },
+
+  {
+    "text": "An update about supported video options and 1080p support",
+    "href": "/crowdsupply/opsis/numato/2015/10/08/crowdsupply-update-about-1080p/"
+  },
+
+  {
+    "text": "4k video output using an FOSS DisplayPort core and the Numato Opsis!",
+    "href": "/crowdsupply/opsis/numato/2015/10/15/crowdsupply-4k-video-output/"
+  },
+
+  {
+    "text": "First Stretch Goal Reached! 'Low Speed I/O' TOFE Board Available",
+    "href": "/crowdsupply/opsis/numato/2015/10/15/crowdsupply-first-stretch-goal/"
+  },
+
+  {
+    "text": "Second stretch goal reached -- 'Milkymist Compatibility' TOFE board available",
+    "href": "/crowdsupply/opsis/numato/2015/10/26/crowdsupply-second-stretch-goal/"
+  },
+
+  {
+    "text": "An update on shipping",
+    "href": "/crowdsupply/opsis/numato/2015/12/21/crowdsupply-update-on-shipping/"
   }
 
 ])
