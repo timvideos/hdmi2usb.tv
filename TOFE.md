@@ -236,7 +236,8 @@ of mechanical designs, such as shown in this diagram;
 
 These boards are currently available;
 
- * FIXME: Add some boards here.
+ * [Milkymist Compatibility - TOFE Expansion Board](/tofe/milkymist)
+ * [Low Speed IO - TOFE Expansion Board](/tofe/lowspeedio)
 
 
 ### Planned
