@@ -18,6 +18,7 @@
 # https://github.com/xfxf/jekyll-thumbnailer
 
 require 'mini_magick'
+require 'fileutils'
 
 class Jekyll::Thumbnail < Liquid::Tag
   def initialize(tag_name, markup, tokens)
@@ -42,12 +43,15 @@ class Jekyll::Thumbnail < Liquid::Tag
       desc = dimensions.gsub(/[^\da-z]+/i, '')
       w, h = desc.split('x')
 
-      dest = "#{site.config['destination']}/#{File.dirname(source)}/#{File.basename(source, ext)}_#{desc}#{ext}"
+      destdir = "#{site.config['destination']}/#{File.dirname(source)}"
+      dest = "#{destdir}/#{File.basename(source, ext)}_#{desc}#{ext}"
+
 
       # only thumbnail the image if it doesn't exist tor is less recent than the source file
       # will prevent re-processing thumbnails for a ton of images...
       if !File.exists?(dest) || File.mtime(dest) <= File.mtime(source)
         # puts ENV.inspect
+        FileUtils.mkdir_p destdir
 
         puts "Thumbnailing #{source} to #{dest} (#{dimensions})"
 
