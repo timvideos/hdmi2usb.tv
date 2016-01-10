@@ -96,6 +96,11 @@ callback([
   },
 
   {
+    "text": "How to help!",
+    "href": "/early-adopter/"
+  },
+
+  {
     "text": "Digilent Atlys",
     "href": "/digilent-atlys/"
   },
