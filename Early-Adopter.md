@@ -18,9 +18,9 @@ hardware designed specifically for the open source HDMI2USB.tv firmware.
 
 We’ve been busy preparing the HDMI2USB firmware to make the board ready for you
 to use right now (see reverse). However, the possibilities that the Opsis board
-adds are numerous, we need your help to unlock them all.
+adds are numerous, **we need your help to unlock them all**.
 
-Currently we have the following features working;
+**Currently we have the following features working**;
 
  * Driverless capture via USB at 720p (1280×720) at 30fps on Linux
  * HDMI matrix / video switching (2-in, 2-out)
@@ -34,8 +34,8 @@ The community is also working on;
  * DisplayPort, 4k video support
  * New expansion boards for VGA and SDI interfacing
 
- * You don't need to be an expert to contribute, even just using the board and
-   providing feedback is extremely valuable!
+**You don't need to be an expert** to contribute, even just using the board and
+providing feedback is extremely valuable!
 
 Our community is very friendly and as an early adopter we'd love your help!
 
