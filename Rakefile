@@ -212,8 +212,8 @@ namespace :site do
     check_destination
 
     sh "git checkout #{SOURCE_BRANCH}"
-    Dir.chdir(CONFIG["destination"]) { sh "rm -rf *" }
     Dir.chdir(CONFIG["destination"]) { sh "git checkout #{DESTINATION_BRANCH}" }
+    Dir.chdir(CONFIG["destination"]) { sh "rm -rf *" }
 
     # Generate the site
     sh "bundle exec jekyll build"
@@ -225,7 +225,7 @@ namespace :site do
     Dir.chdir(CONFIG["destination"]) do
       sh "git add --all ."
       sh "git commit -m 'Updating to #{SOURCE_REPO}@#{sha}.'"
-      sh "git push --quiet origin #{DESTINATION_BRANCH}"
+      #sh "git push --quiet origin #{DESTINATION_BRANCH}"
       puts "Pushed updated branch #{DESTINATION_BRANCH} to GitHub Pages"
     end
   end
