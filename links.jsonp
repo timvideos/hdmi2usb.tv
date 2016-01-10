@@ -2,6 +2,21 @@ callback([
 
   {
     "text": "",
+    "href": "/firmware-misoc/"
+  },
+
+  {
+    "text": "",
+    "href": "/firmware.git/"
+  },
+
+  {
+    "text": "",
+    "href": "/firmware-original/"
+  },
+
+  {
+    "text": "",
     "href": "/links.jsonp"
   },
 
@@ -56,18 +71,23 @@ callback([
   },
 
   {
-    "text": "Firmware",
+    "text": "HDMI2USB misoc firmware",
     "href": "/firmware/"
   },
 
   {
-    "text": "HDMI2USB misoc firmware",
-    "href": "/firmware-misoc/"
+    "text": "Redirecting to Git repo for the firmware",
+    "href": "/firmware.git/"
   },
 
   {
-    "text": "HDMI2USB original firmware",
-    "href": "/firmware-original/"
+    "text": "HDMI2USB Jahanzeb firmware",
+    "href": "/firmware-jahanzeb/"
+  },
+
+  {
+    "text": "Firmware",
+    "href": "/firmware-compare/"
   },
 
   {

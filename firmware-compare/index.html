@@ -2,13 +2,13 @@
 <html>
   <head>
   <meta charset="utf-8">
-  <title>HDMI2USB misoc firmware</title>
+  <title>Firmware</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <link rel="alternate" type="application/atom+xml" title="Tim Videos Planet Feed" href="/feed.xml" />
-  <link rel="canonical" href="http://hdmi2usb.tv//firmware/">
+  <link rel="canonical" href="http://hdmi2usb.tv//firmware-compare/">
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
@@ -96,69 +96,108 @@
   <div class="col-sm-12">
     <div class="panel panel-default">
         <span class="edit-link pull-right">
-          <a href="http://editor.timvideos.us/#timvideos/hdmi2usb.tv/edit/master/Firmware.md" target="_blank">
+          <a href="http://editor.timvideos.us/#timvideos/hdmi2usb.tv/edit/master/Firmware-Compare.md" target="_blank">
             <i class="fa fa-edit"></i>
           </a>
         </span>
       <div class="panel-body">
-        <h1 id="hdmi2usb---firmware">HDMI2USB - Firmware</h1>
+        <h1 id="firmware-comparison">Firmware Comparison</h1>
 
-<p>This page talks about using the <strong>MiSoC Firmware</strong>, see the <a href="#history">History</a>
-section for more information about the different firmware versions.</p>
+<p>Their have two firmwares create by the HDMI2USB project so far. This page shows
+the comparison between the two.</p>
 
-<h2 id="quick-links">Quick Links</h2>
+<table class="firmware">
 
-<ul>
-  <li><a href="https://github.com/timvideos/HDMI2USB-misoc-firmware">Firmware Repository</a></li>
-  <li><a href="https://github.com/timvideos/HDMI2USB-misoc-firmware/issues/new">Report a bug</a></li>
-  <li><a href="https://m-labs.hk/gateware.html">misoc + migen website</a></li>
-</ul>
+ <tr class="name">
+   <td>&nbsp;</td>
+   <td class="fw-jahanzeb"><h3>jahanzeb</h3></td>
+   <td class="fw-misoc"><h3>misoc</h3></td>
+ </tr>
 
-<h2 id="getting-started">Getting Started</h2>
+ <tr class="desc">
+   <th>Development</th>
+   <td class="fw-jahanzeb"><b>Not</b> under active development.</td>
+   <td class="fw-misoc">Under active development.</td>
+ </tr>
 
-<ul>
-  <li>TODO Put instructions here.</li>
-</ul>
+ <tr class="desc">
+   <th>Production Use</th>
+   <td class="fw-jahanzeb"><b>Not</b> used in production.</td>
+   <td class="fw-misoc">Actively used in production.</td>
+ </tr>
 
-<h2 id="setting-up-developer-environment">Setting up Developer Environment</h2>
+ <tr class="desc">
+   <td>&nbsp;</td>
+   <td class="fw-jahanzeb">
+The jahanzeb HDMI2USB firmware was developed using a combination of
+<a href="">VHDL</a>, <a href="">Verilog</a> and cores generated in
+<a href="">Xilinx ISE</a>.
+   </td>
+   <td>
+The misoc HDMI2USB firmware is developed using
+<a href="http://m-labs.hk/gateware.html">migen</a> and
+<a href="http://m-labs.hk/gateware.html">misoc</a> technologies.
+   </td>
+ </tr>
 
-<ul>
-  <li><a href="https://github.com/timvideos/HDMI2USB-misoc-firmware">Follow these instructions</a></li>
-</ul>
+  <tr class="links">
+    <td>&nbsp;</td>
+    <td class="fw-jahanzeb">
+ <a href="../firmware-jahanzeb" title="Getting Started with HDMI2USB Original Firmware" class="btn btn-default">Getting Started</a>
+    </td>
+    <td class="fw-misoc">
+ <a href="../firmware-misoc" title="Getting Started with HDMI2USB misoc Firmware" class="btn btn-default">Getting Started</a>
+    </td>
+  </tr>
 
-<h2 id="status">Status</h2>
+ <tr class="picture">
+   <td>&nbsp;</td>
+   <td class="fw-jahanzeb"><img class="firmware-pic" src=""></td>
+   <td class="fw-misoc"><img class="firmware-pic" src="../img/misoc-logo.png"></td>
+ </tr>
 
-<p>atlys_base:</p>
+ <tr class="code">
+   <th>Code</th>
+   <td class="fw-jahanzeb"><a href="http://github.com/timvideos/HDMI2USB-jahanzeb-firmware">http://github.com/<wbr>timvideos/<wbr>HDMI2USB-jahanzeb-firmware</a></td>
+   <td class="fw-misoc"><a href="http://github.com/timvideos/HDMI2USB-misoc-firmware">http://github.com/<wbr>timvideos/<wbr>HDMI2USB-misoc-firmware</a></td>
+ </tr>
 
-<ul>
-  <li>BaseSoC working (CPU + DDR2 + UART)</li>
-  <li>MiniSoC working (BaseSoC + 10/100Mbps Ethernet MAC handled by the CPU)</li>
-</ul>
-
-<p>atlys_hdmi2ethernet:</p>
-
-<ul>
-  <li>EtherboneSoC working (BaseSoC + 10/100Mbps HW Ethernet UDP/IP stack and Etherbone)</li>
-  <li>VideomixerSoC working (EtherboneSoC + HDMI in + Framebuffer + Hdmi out)</li>
-  <li>HDMI2EthernetSoC working (VideomixerSoC + JPEG encoder + UDP streamer)</li>
-</ul>
-
-<p>atlys_hdmi2usb:</p>
-
-<ul>
-  <li>VideomixerSoC working (MiniSoC + HDMI in + Framebuffer + Hdmi out)</li>
-  <li>HDMI2USB working (VideomixerSoCerSoC + JPEG encoder + USB streamer)</li>
-</ul>
-
-<h2 id="history">History</h2>
-
-<p>The HDMI2USB firmware was originally developed by
-<a href="https://github.com/jahanzeb">Jahanzeb Ahmad</a> using hand coded VHDL/Verilog and with
-cores from <a href="OpenCores.org">OpenCores</a> and the
-<a href="http://www.xilinx.com/ise/products/coregen_overview.pdf">Xilinx LogiCORE IP Core Generator</a>. 
-This firmware (called the <a href="../firmware-jahanzeb">Jahanzeb firmware</a>) <strong>was
-replaced</strong> by the &#8220;MiSoC Firmware&#8221; starting middle of 2015. You can find a 
-<a href="../firmware-compare">comparison between the two firmware here</a>.</p>
+ <tr>
+   <th class="head" colspan=3>
+     Features
+   </th>
+ </tr>
+ <tr>
+   <th>License</th>
+   <td class="fw-jahanzeb">
+    <ul>
+      <li>Gateware: BSD/MIT and Xilinx (unclear)</li>
+      <li>Firmware: GPL v2.0</li>
+    </ul>
+   </td>
+   <td class="fw-misoc">
+    <ul>
+      <li>Gateware: BSD/MIT</li>
+      <li>Firmware: GPL v2.0</li>
+    </ul>
+   </td>
+ </tr>
+ <tr>
+   <th>Supported Boards</th>
+   <td class="fw-jahanzeb">Digilent Atlys</td>
+   <td class="fw-misoc">Digilent Atlys, Numato Opsis</td>
+ </tr>
+ <tr>
+   <th>Streaming Interfaces</th>
+   <td class="fw-jahanzeb">USB 2.0 UVC Camera</td>
+   <td class="fw-misoc">USB 2.0 UVC Camera, Gigabit Ethernet</a>
+ </tr>
+ <tr>
+   <th>Control Interface</th>
+   <td class="fw-jahanzeb">USB 2.0 CDC-ACM "Serial Port"</td>
+   <td class="fw-misoc">USB 2.0 CDC-ACM "Serial Port", Gigabit Ethernet</a>
+ </tr>
+</table>
 
 <!-- gst-switch References -->
 

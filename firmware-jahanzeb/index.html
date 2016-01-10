@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>HDMI2USB Jahanzeb firmware</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  <link rel="alternate" type="application/atom+xml" title="Tim Videos Planet Feed" href="/feed.xml" />
+  <link rel="canonical" href="http://hdmi2usb.tv//firmware-jahanzeb/">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick-theme.css"/>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
+
+  <body>
+    <div class="wrapper">
+      <div class="box">
+        <div class="row">
+          <div class="column col-sm-3 col-md-3 col-lg-2" id="sidebar">
+  <a class="logo" href="../">
+    <img src="/img/logo.png" />
+    <span>HDMI2USB</span>
+  </a>
+  <ul class="nav">
+    <li class="">
+      <a href="/home/">HOME</a>
+    </li>
+      <li class="">
+          <a href="/faq/">ABOUT + FAQ</a>
+      </li>
+    <li class="">
+      <a href="/hardware/">HARDWARE</a>
+    </li>
+    <li class="">
+     <ul>
+      <li><a href="/digilent-atlys/">Digilent Atlys</a></li>
+     </ul>
+    </li>
+    <li class="">
+     <ul>
+      <li><a href="/numato-opsis/">Numato Opsis</a></li>
+     </ul>
+    </li>
+    <li class="">
+     <ul>
+      <li><a href="../potential-boards/">Potential Boards</a></li>
+     </ul>
+    </li>
+    <li class="">
+     <ul>
+      <li><a href="../tofe/">TOFE</a></li>
+     </ul>
+    </li>
+    <li class="active">
+      <a href="/firmware/">FIRMWARE</a>
+    </li>
+    <li class="">
+      <a href="/help/">GETTING HELP</a>
+    </li>
+    <li class="">
+          <a href="/news/">NEWS</a>
+    </li>
+    <li>
+      <a href="http://code.timvideos.us">To TimVideos</a>
+  </ul>
+  <ul class="nav hidden-xs" id="sidebar-footer">
+    <li class="social">
+      <a href="http://planet.timvideos.us/feed.xml"><i class="fa fa-rss"></i></a>
+      <a href="http://www.twitter.com/TimVideosUs"><i class="fa fa-twitter"></i></a>
+    </li>
+    <li>
+      <span>Proudly hosted by <a id="github" href="http://www.github.com">GitHub</a>
+      </span>
+    </li>
+  </ul>
+</div>
+
+          <div class="column col-sm-9 col-md-9 col-lg-10" id="main">
+                <div class="col-sm-12">
+        <div class="panel-default">
+            <div class="top-message" style="height: 66px; margin: 5px;">
+               <iframe src="http://planet.timvideos.us/numato-opsis-crowdfunding-campaign-master/badge.html" style="border: none; height: 66px; padding: 0; margin: 0;"></iframe>
+            </div>
+        </div>
+    </div>
+
+            <div class="padding">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+        <span class="edit-link pull-right">
+          <a href="http://editor.timvideos.us/#timvideos/hdmi2usb.tv/edit/master/Firmware-jahanzeb.md" target="_blank">
+            <i class="fa fa-edit"></i>
+          </a>
+        </span>
+      <div class="panel-body">
+        <h1 id="hdmi2usb---jahanzeb-firmware">HDMI2USB - Jahanzeb Firmware</h1>
+
+<h2 id="use-the-misoc-firmwarefirmware">Use the <a href="../firmware">misoc firmware</a></h2>
+
+<p><strong>This firmware is obsolete and now read-only.</strong></p>
+
+<p>This firmware has been replaced by the <a href="../firmware">misoc firmware</a>. This
+information is kept around for historical reasons. </p>
+
+<p>The firmware was original developed by
+<a href="https://github.com/jahanzeb">Jahanzeb Ahmad</a> using hand coded VHDL/Verilog and with
+cores from <a href="OpenCores.org">OpenCores</a> and the
+<a href="http://www.xilinx.com/ise/products/coregen_overview.pdf">Xilinx LogiCORE IP Core Generator</a>.</p>
+
+<p><strong>This firmware is obsolete and now read-only.</strong></p>
+
+<h2 id="use-the-misoc-firmwarefirmware-1">Use the <a href="../firmware">misoc firmware</a></h2>
+
+<hr />
+<hr />
+<hr />
+
+<hr />
+
+<p><strong>FIXME(write script!)</strong> <em>If you are an testing user, please try our <a href="https://github.com/timvideos/HDMI2USB-firmware-prebuilt/blob/master/setup.sh">quick setup script</a> from the <a href="https://github.com/timvideos/HDMI2USB-firmware-prebuilt">HDMI2USB-firmware-prebuilt</a> repository.</em></p>
+
+<hr />
+
+<p>There are multiple ways to load the Digilent Atlys board with firmware. The loading process occurs in 3 stages;</p>
+
+<ul>
+  <li>[Stage -1] - Set jumpers on the FPGA correctly.</li>
+  <li>[Stage 0] - Flash the Cypress FX2 chip with firmware suitable for flashing the FPGA</li>
+  <li>[Stage 1] - Flash the Xilinx Spartan-6 FPGA with HDMI2USB firmware</li>
+  <li>[Stage 2] - Flash the Cypress FX2 chip with HDMI2USB firmware <em>(nothing happens until you complete the following steps)</em></li>
+  <li>[Stage 3] - Pull USB plug out of the computer, plug the USB plug back into the computer, the HDMI2USB device should appear.</li>
+</ul>
+
+<p>For each stage you must use at most <strong>ONE</strong> of the options.</p>
+
+<p>Prebuilt firmware blobs for the HDMI2USB can be found in the <a href="https://github.com/timvideos/HDMI2USB-firmware-prebuilt">HDMI2USB-firmware-prebuilt</a> repository.</p>
+
+<p><img src="https://docs.google.com/drawings/d/1DTWLqliTIxwiDRj7pmoYrW_TgtqNukXJaZddgkvEMb0/pub?w=996&amp;h=504" /></p>
+
+<h2 id="stage--1">Stage -1</h2>
+
+<p><strong><em>FIXME: Write instructions for the correct jumper configuration of the board.</em></strong></p>
+
+<p>As the HDMI2USB firmware manipulates the EDID information the following jumpers must be <strong>removed</strong>;
+ * JP2 (which connects the EDID lines from J1/HDMI IN to JA/HDMI OUT).
+ * JP6 and JP7 (which connects the EDID lines from J3/HDMI IN to J2/HDMI OUT).</p>
+
+<p>This is described in the <a href="http://www.digilentinc.com/Data/Products/ATLYS/Atlys_rm_V2.pdf">Atlys™ Board Reference Manual</a> on &#8220;Video Input and Output (HDMI Ports)&#8221; (page 13).</p>
+
+<h2 id="stage-0">Stage 0</h2>
+
+<p>Out of the factory the Digilent Atlys board has Adept compatible firmware loaded. If you haven&#8217;t written anything to the Cypress FX2&#8217;s <strong>flash</strong> you can skip this stage.</p>
+
+<p><strong><em>FIXME: Write instructions if you have changed the Cypress FX chip&#8217;s flash.</em></strong></p>
+
+<h2 id="stage-1">Stage 1</h2>
+
+<p>You must install <strong>either</strong>;</p>
+
+<ul>
+  <li>TODO: The [[libFPGAlink]] tool &#8211; Follow these instructions if you are just using/testing a HDMI2USB.</li>
+</ul>
+
+<p><strong>or</strong></p>
+
+<ul>
+  <li>The <a href="#xilinx-impact-tool">Xilinx IMPACT Tool</a> &#8211; Follow these instructions if you are developing HDMI2USB firmware.</li>
+</ul>
+
+<p><strong>or</strong></p>
+
+<ul>
+  <li>The <a href="#digilent-adept-tools">Digilent Adept Tools</a> &#8211; Follow these instructions if you are just using/testing a HDMI2USB and already have the Digilent Adept Tools installed or wish to use one of their special features.</li>
+</ul>
+
+<h3 id="firmware-needed---hdmi2usbbit">Firmware Needed - hdmi2usb.<strong>bit</strong></h3>
+
+<p>In both cases, you will need the hdmi2usb.<strong>bit</strong> file for this stage. Prebuilt firmware blob can be found in the <a href="https://github.com/timvideos/HDMI2USB-firmware-prebuilt">HDMI2USB-firmware-prebuilt</a> repository.</p>
+
+<ul>
+  <li><a href="https://github.com/timvideos/HDMI2USB-firmware-prebuilt/raw/master/hdmi2usb.bit">Quick link to latest stable firmware</a>.</li>
+  <li><a href="https://FIXME">Quick link to latest testing firmware</a>.</li>
+</ul>
+
+<hr />
+
+<h3 id="digilent-adept-tools">Digilent Adept Tools</h3>
+
+<p><em>Follow either this section <strong>or</strong> the <a href="#xilinx-impact-tool">Xilinx IMPACT Tool</a> section</em></p>
+
+<p>To use this method you must have the <a href="http://www.digilentinc.com/Products/Detail.cfm?NavPath=2,66,828&amp;Prod=ADEPT2">Adept 2.XX.XX Utilities</a> installed and <a href="http://www.digilentinc.com/Products/Detail.cfm?NavPath=2,66,828&amp;Prod=ADEPT2">Adept 2.XX.XX Runtime</a> installed.</p>
+
+<ul>
+  <li>Step 1 - Plug the power from your power pack into the POWER port.</li>
+  <li>Step 2 - Plug the micro-USB cable from your computer into the PROG port.</li>
+  <li>Step 3 - Run <code>djtgcfg enum</code>, output should be as follows;</li>
+</ul>
+<pre>
+$ djtgcfg enum
+No devices found
+$
+</pre>
+
+<ul>
+  <li>Step 4 - Toggle the POWER switch to the ON position</li>
+  <li>Step 5 - Run <code>djtgcfg enum</code>, output should be as follows; If it doesn&#8217;t, see the [[Troubleshooting Digilent Adept tools]] section</li>
+</ul>
+
+<pre>
+$ djtgcfg enum
+Found 1 device(s)
+
+Device: Atlys
+    Product Name:   Atlys
+    User Name:      Atlys
+    Serial Number:  210178440327
+$
+</pre>
+
+<ul>
+  <li>Step 6 - Run <code>djtgcfg init -d Atlys</code>, output should be as follows; If it doesn&#8217;t, see the [[Troubleshooting Digilent Adept tools]] section</li>
+</ul>
+
+<pre>
+$ djtgcfg init -d Atlys
+Initializing scan chain...
+Found Device ID: 44008093
+
+Found 1 device(s):
+    Device 0: XC6SLX45
+$
+</pre>
+
+<ul>
+  <li>Step 7 - Run <code>djtgcfg prog -d Atlys -i 0 -f hdmi2usb.bit</code>, output should be as follows; If it doesn&#8217;t, see the [[Troubleshooting Digilent Adept tools]] section</li>
+</ul>
+
+<pre>
+$ djtgcfg prog -d Atlys -i 0 -f hdmi2usb.bit
+Programming device. Do not touch your board. This may take a few minutes...
+Programming succeeded.
+$
+</pre>
+
+<ul>
+  <li>Step 8 - The DONE light near the red RESET button should light up.</li>
+</ul>
+
+<p>You have now completed Stage 1 - continue to Stage 2 to program the Cypress FX2 chip.</p>
+
+<hr />
+
+<h3 id="xilinx-impact-tool">Xilinx IMPACT Tool</h3>
+
+<p><em>Follow either the <a href="#digilent-adept-tools">Digilent Adept Tools</a> section <strong>or</strong> this section</em></p>
+
+<p>The Xilinx IMPACT tool is useful if you are developing HDMI2USB firmware, so you can do one click download in the Xilinx Design tools.</p>
+
+<p>IMPACT must be installed from the Xilinx Design Tools suite. Follow the [[Digilent Atlys Board: Adept Setup for Xilinx ISE]] for complete install instructions.</p>
+
+<h3 id="using-the-gui">Using the GUI</h3>
+
+<p>FIXME: Add content</p>
+
+<h3 id="using-the-command-line">Using the command line</h3>
+<p>To avoid having to use the Impact GUI, the following script can be used https://gist.github.com/shenki/5387626</p>
+<pre>
+impact -batch download.cmd
+</pre>
+
+<hr />
+
+<h3 id="checking-stage-1">Checking Stage 1</h3>
+
+<p>Once Stage 1 has been loaded onto the Atlys board, the HDMI matrix will be initialized.</p>
+
+<p>The HDMI output ports should be showing the following graphic:</p>
+
+<p>&lt;img src=&#8221;https://googledrive.com/host/0B5VlNZ_Rvdw6ejNkVFZlUWhmX2M&#8221; width=200&gt;</p>
+
+<p>If you plug a device into the HDMI input ports, it should successfully detect a 1024x768 screen input. You should be able to switch to it via the buttons. See [[Digilent Atlys Board: Switches, Buttons and Status LEDs]] page for more information.</p>
+
+<h2 id="stage-2">Stage 2</h2>
+
+<p>Once you complete Stage 2 you be unable to go back to Stage 1 without a power cycle.</p>
+
+<p>You must <strong>either</strong> use;</p>
+
+<ul>
+  <li>The <a href="#fxload">fxload</a></li>
+</ul>
+
+<p><strong>or</strong></p>
+
+<ul>
+  <li>The <a href="#fx2loader">fx2loader</a></li>
+</ul>
+
+<h3 id="firmware-needed---hdmi2usbhex">Firmware Needed - hdmi2usb.<strong>hex</strong></h3>
+
+<p>In both cases, you will need the hdmi2usb.<strong>hex</strong> file for this stage. Prebuilt firmware blob can be found in the <a href="https://github.com/timvideos/HDMI2USB-firmware-prebuilt">HDMI2USB-firmware-prebuilt</a> repository.</p>
+
+<ul>
+  <li><a href="https://github.com/timvideos/HDMI2USB-firmware-prebuilt/raw/master/hdmi2usb.hex">Quick link to latest stable firmware</a>.</li>
+  <li><a href="https://FIXME">Quick link to latest testing firmware</a>.</li>
+</ul>
+
+<hr />
+
+<h3 id="fxload">fxload</h3>
+
+<p><strong>WARNING: The version of fxload that comes with Ubuntu/Debian is too old</strong></p>
+
+<p>You can download <code>fxload</code> from https://github.com/pbatard/fxload or you can use a prebuilt version found at the same location as the prebuild hdmi2usb firmware.</p>
+
+<ul>
+  <li>Step 1 - Check your <code>fxload</code> binary is new enough;</li>
+</ul>
+
+<p><strong>Too old</strong></p>
+<pre>
+$ fxload -V
+Jun  3 2010 (development)
+$
+</pre>
+
+<p><strong>Okay</strong></p>
+<pre>
+$ ./fxload -V
+Mar 12 2013 (development)
+$
+</pre>
+
+<ul>
+  <li>Step 2 - Load the Cypress chip with the firmware using <code>./fxload -vvv -t fx2 -D 1443:0007 -I hdmi2usb.hex</code>. <strong>This command will appear to return instantly!</strong></li>
+</ul>
+
+<hr />
+
+<h3 id="fx2loader">fx2loader</h3>
+
+<p>You should also be able to use http://www.makestuff.eu/wordpress/software/fx2tools/</p>
+<pre>
+./fx2loader --vidpid=1443:0007 hdmi2usb.hex ram
+</pre>
+
+<hr />
+
+<h2 id="stage-3">Stage 3</h2>
+
+<ul>
+  <li>Step 1 - Unplug the USB micro-cable connected to PROG. <strong>DO NOT DISCONNECT THE POWER</strong></li>
+  <li>Step 2 - Plug the USB micro-cable back into the PROG port.</li>
+  <li>Step 3 - Check your kernel logs via <code>dmesg</code> to see if the device is found. It should look something like;</li>
+</ul>
+
+<pre>
+$ dmesg
+....
+[150303.829773] usb 2-1.1: config 1 interface 2 altsetting 0 endpoint 0x81 has an invalid bInterval 17, changing to 8
+[150303.830657] usb 2-1.1: New USB device found, idVendor=fb9a, idProduct=fb9a
+[150303.830668] usb 2-1.1: New USB device strings: Mfr=2, Product=1, SerialNumber=1
+[150303.830674] usb 2-1.1: Product: HDMI2USB
+[150303.830678] usb 2-1.1: Manufacturer: JANI
+[150303.830683] usb 2-1.1: SerialNumber: HDMI2USB
+[150303.832191] uvcvideo: Found UVC 1.00 device HDMI2USB (fb9a:fb9a)
+[150303.832561] uvcvideo: UVC non compliance - GET_DEF(PROBE) not supported. Enabling workaround.
+[150303.833719] cdc_acm 2-1.1:1.2: This device cannot do calls on its own. It is not a modem.
+[150303.833885] cdc_acm 2-1.1:1.2: ttyACM0: USB ACM device
+</pre>
+
+<ul>
+  <li>Step 4 - Use the device as required.
+    <ul>
+      <li>See the <a href="../digilent-atlys-using">Hardware Using</a> page for information on how to use the board.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="common-questions">Common Questions</h2>
+
+<h2 id="common-questions-1">Common questions:</h2>
+
+<h3 id="can-this-board-record-two-simultaneous-separate-cameras-or-a-camera-and-a-laptop">Can this board record two simultaneous separate cameras, or a camera and a laptop?</h3>
+
+<p>No, again USB 2.0 doesn&#8217;t have enough bandwidth for recording two streams at once. When we move to USB 3.0 this might become possible.</p>
+
+<p>It can work as a matrix type device. It has two independent inputs (which can come from different sources) and two linked outputs (ie they must display the same output).</p>
+
+<p>The idea would be:</p>
+
+<p><img src="../img/hdmi2usb-diagram.png" alt="HDMI2USB Diagram" title="HDMI2USB Diagram" /></p>
+
+<p>This allows you to switch the in room projector to display something when not presenting. It could have details about the room (IE name, what is up next, etc) or something similar.</p>
+
+<h3 id="is-the-board-capable-of-encoding-analogue-signals---dvi-a-or-vga-with-a-dvi-plug">Is the board capable of encoding analogue signals - DVI-A or VGA with a DVI plug?</h3>
+
+<p>The base board only supports digital signals (mainly because the development board we are using also only supports digital signals). It supports HDMI and DVI (in their many connector forms).</p>
+
+<p>The board includes a powerful extension port which we will be developing daughter boards for. We currently have a VGA daughter board in development, but yet to actually get anything like results yet.</p>
+
+<h3 id="does-it-produce-compressed-video-or-raw-video">Does it produce compressed video or raw video?</h3>
+
+<p>It produces both;
+ * mjpeg compressed video - Best for capture from a continuous source such as a camera.
+ * raw video - Best for capture of non-continuous or text heavy sources, such as a presenter&#8217;s slides.</p>
+
+<p>Both are full 1024x768 or 720p resolution (depending on if the input is DVI or HDMI).</p>
+
+<p>The problem is that USB2.0 doesn&#8217;t have enough bandwidth for raw video at 30fps, so if you want the higher frame rate you have to use the mjpeg compression mode.</p>
+
+<p>At the moment raw mode is about 10-15fps while the <a href="http://en.wikipedia.org/wiki/MJPEG">MJPEG</a> mode runs at 30fps or 25fps (dependent on capture source frequency).</p>
+
+<p>The <a href="http://en.wikipedia.org/wiki/MJPEG">MJPEG</a> compression quality is controlled via a setting.</p>
+
+<p><br />
+<br /></p>
+
+<h2 id="extra-resources--links">Extra Resources / Links</h2>
+
+<ul>
+  <li><a href="https://github.com/timvideos/HDMI2USB/wiki/Firmware-load-scripts">Firmware Load Scripts</a></li>
+  <li><a href="https://github.com/timvideos/HDMI2USB/wiki/">https://github.com/timvideos/HDMI2USB/wiki/</a></li>
+</ul>
+
+<!-- gst-switch References -->
+
+<!-- gst-switch (speaker track) -->
+
+<!-- HDMI2USB References -->
+
+<!-- Streaming System -->
+
+<!-- Other -->
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+            <div id=end>&nbsp;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+<script type="text/javascript" src="/js/app.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23123757-4', 'auto');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>
