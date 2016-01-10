@@ -41,7 +41,7 @@ categories: crowdsupply opsis numato
 > 
 > After boards are received by Crowd Supply, their crew will then shipped the
 > individual boards to backers. **It is important that your shipping address is
-> correct * before * Crowd Supply start this process. Please check this now and
+> correct *before* Crowd Supply start this process. Please check this now and
 > contact support to have it corrected if wrong.**
 > 
 > Wishing everyone a happy holidays! 
