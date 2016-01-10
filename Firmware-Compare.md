@@ -95,12 +95,12 @@ The misoc HDMI2USB firmware is developed using
  <tr>
    <th>Streaming Interfaces</th>
    <td class="fw-jahanzeb">USB 2.0 UVC Camera</td>
-   <td class="fw-misoc">USB 2.0 UVC Camera, Gigabit Ethernet</a>
+   <td class="fw-misoc">USB 2.0 UVC Camera, Gigabit Ethernet</a></td>
  </tr>
  <tr>
    <th>Control Interface</th>
    <td class="fw-jahanzeb">USB 2.0 CDC-ACM "Serial Port"</td>
-   <td class="fw-misoc">USB 2.0 CDC-ACM "Serial Port", Gigabit Ethernet</a>
+   <td class="fw-misoc">USB 2.0 CDC-ACM "Serial Port", Gigabit Ethernet</a></td>
  </tr>
 </table>
 {:/nomarkdown}
