@@ -31,6 +31,8 @@ class Jekyll::Thumbnail < Liquid::Tag
   def render(context)
     if @source
 
+      site = context.registers[:site]
+
       # parking
       source = @source
       dimensions = @dimensions
@@ -40,7 +42,7 @@ class Jekyll::Thumbnail < Liquid::Tag
       desc = dimensions.gsub(/[^\da-z]+/i, '')
       w, h = desc.split('x')
 
-      dest = "#{File.dirname(source)}/#{File.basename(source, ext)}_#{desc}#{ext}"
+      dest = "#{site.config['destination']}/#{File.dirname(source)}/#{File.basename(source, ext)}_#{desc}#{ext}"
 
       # only thumbnail the image if it doesn't exist tor is less recent than the source file
       # will prevent re-processing thumbnails for a ton of images...
