@@ -227,7 +227,7 @@ namespace :site do
       sh "git add --all ."
       sh "git status"
       sh "git commit -m 'Updating to #{SOURCE_REPO}@#{sha}.'"
-      #sh "git push --quiet origin #{DESTINATION_BRANCH}"
+      sh "git push --quiet origin #{DESTINATION_BRANCH}"
       puts "Pushed updated branch #{DESTINATION_BRANCH} to GitHub Pages"
     end
   end
