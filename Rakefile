@@ -214,6 +214,7 @@ namespace :site do
     sh "git checkout #{SOURCE_BRANCH}"
     Dir.chdir(CONFIG["destination"]) { sh "git checkout #{DESTINATION_BRANCH}" }
     Dir.chdir(CONFIG["destination"]) { sh "rm -rf *" }
+    Dir.chdir(CONFIG["destination"]) { sh "rm -f .gitignore" }
 
     # Generate the site
     sh "bundle exec jekyll build"
