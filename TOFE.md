@@ -28,7 +28,7 @@ We want a FPGA expansion that fits the following criteria;
  * Cheap connection interface that are easily accessible to **any** hobbyists.
  * Supports high speed signals >5 Gbit/s.
 
-<img src="http://imgs.xkcd.com/comics/standards.png">
+<img src="https://imgs.xkcd.com/comics/standards.png">
 
 <a href="https://docs.google.com/document/d/1KzStzKqC7nXBJ8nz8FIvqCoLN01p7YXi8MhAZCt0oXw/edit">Document examining wide variety expansion board interfaces</a>
 
