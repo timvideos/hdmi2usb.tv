@@ -113,6 +113,11 @@ callback([
   {
     "text": "HDMI2USB with Digilent Atlys expansion boards",
     "href": "/digilent-atlys-expansion/"
+  },
+
+  {
+    "text": "Numato Opsis Developer Manual",
+    "href": "/404.html"
   }
 
 
