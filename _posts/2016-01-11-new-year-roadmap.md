@@ -36,7 +36,7 @@ focus were;
     * Carl Karsten from [NextDayVideo](http://nextdayvideo.com) in the US for
       both PyCon ZA and Nodevember.
     * The [DebConf Video team](https://wiki.debconf.org/wiki/Videoteam) for
-      their Mini-DebConf in October.
+      their [MiniDebConf in November](https://wiki.debian.org/DebianEvents/gb/2015/MiniDebConfCambridge#Video).
     * [Myself for recording](https://www.youtube.com/user/mithro) my own talks
       on the HDMI2USB project at user groups here in Sydney!
 
@@ -120,4 +120,6 @@ Hope this update give you an idea of what we have planned for 2016! We would
 love your help making it all possible.
 
 Tim 'mithro' Ansell
+
+*Edit: Corrected the month for the MiniDebConf and added a link to the recordings.*
 
