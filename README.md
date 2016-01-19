@@ -1,4 +1,6 @@
 This repository contains the generated output of the
-[website](http://github.com/timvideos/website) repository.
+[hdmi2usb.tv](http://github.com/timvideos/hdmi2usb.tv)
+repository.
 
-It is deployed to http://code.timvideos.us/ on "GitHub Pages".
+It is deployed to http://hdmi2usb.tv/ on "GitHub Pages" behind CloudFlare for
+https://
