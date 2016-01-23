@@ -1,4 +1,6 @@
 
+ [HDMI2USB mode switch tool]: /Drivers/#HDMI2USB-mode-switch
+
 <!-- gst-switch References -->
 
  [DVSwitch]: http://dvswitch.alioth.debian.org/wiki/
