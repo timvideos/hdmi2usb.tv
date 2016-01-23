@@ -1,9 +1,24 @@
 ---
-layout: default
+layout: base
 title: Drivers for using HDMI2USB related systems
 published: true
 tags: drivers
 ---
+
+{::nomarkdown}
+
+<div class="padding">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+        <span class="edit-link pull-right">
+          <a href="{% edit_url %}{{ page.path }}" target="_blank">
+            <i class="fa fa-edit"></i>
+          </a>
+        </span>
+      <div class="panel-body">
+{:/nomarkdown}
+
+# Drivers
 
 To use a device which comes preloaded with the HDMI2USB firmware (such as the
 [Numato Opsis board](/numato-opsis)) **no drivers are needed** under;
@@ -15,7 +30,7 @@ To use a device which comes preloaded with the HDMI2USB firmware (such as the
 The HDMI2USB project provides custom tools for increased functionality, easy of
 operation and upgrading the on-board firmware.
 
-# Supported Operating Systems
+## Supported Operating Systems
 
 Currently, the HDMI2USB project actively works on the following operating
 systems (as they are what is used by the developers and CI systems);
@@ -25,6 +40,23 @@ systems (as they are what is used by the developers and CI systems);
 
 HDMI2USB devices **should work** on almost any standards compliant modern
 operating system and we will do our best effort to make that happen.
+
+{::nomarkdown}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="padding">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+        <span class="edit-link pull-right">
+          <a href="{% edit_url %}{{ page.path }}" target="_blank">
+            <i class="fa fa-edit"></i>
+          </a>
+        </span>
+      <div class="panel-body">
+{:/nomarkdown}
 
 # Windows
 
@@ -52,19 +84,24 @@ automatically detect the HDMI2USB and install drivers as needed.
 
 For other devices you can use the [Windows HDMI2USB package].
 
-## Windows HDMI2USB Package
+<br>
+<br>
+
+# Windows HDMI2USB Package
 
 To make it easier to use the HDMI2USB firmware under Windows, an installer
 package is being 
 [developed here](https://github.com/mithro/HDMI2USB-and-Numato-Opsis-Windows-Drivers). 
 
 This package will start of including;
+
  * The `.inf` files required to make Windows use it's internal drivers with
    HDMI2USB devices.
  * Graphical assets to allow distinguishing the HDMI2USB devices from other USB
    devices.
 
 Future development will add;
+
  * Putty for connecting to control channel.
  * Windows compatible version of the [HDMI2USB mode switch] tool (to allow
    firmware upgrading).
@@ -79,6 +116,23 @@ A big thank you goes to [Ryan Pavlik](https://github.com/rpavlik) from the
 for releasing the 
 [OSVR HDK Windows Drivers](https://github.com/OSVR/OSVR-HDK-Windows-Drivers)
 repository on which our package is based.
+
+{::nomarkdown}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="padding">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+        <span class="edit-link pull-right">
+          <a href="{% edit_url %}{{ page.path }}" target="_blank">
+            <i class="fa fa-edit"></i>
+          </a>
+        </span>
+      <div class="panel-body">
+{:/nomarkdown}
 
 # Linux
 
@@ -126,6 +180,23 @@ FIXME: Put udev rule information here.
 
 [Work started here.](https://github.com/timvideos/HDMI2USB-misoc-firmware/blob/master/scripts/52-hdmi2usb.rules)
 
+{::nomarkdown}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="padding">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+        <span class="edit-link pull-right">
+          <a href="{% edit_url %}{{ page.path }}" target="_blank">
+            <i class="fa fa-edit"></i>
+          </a>
+        </span>
+      <div class="panel-body">
+{:/nomarkdown}
+
 # Mac OS X
 
 To use a device which comes preloaded with the HDMI2USB firmware (such as the
@@ -134,6 +205,23 @@ automatically detect the devices.
 
 We are currently [looking for help]()
 with packaging the HDMI2USB software for Mac systems.
+
+{::nomarkdown}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="padding">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+        <span class="edit-link pull-right">
+          <a href="{% edit_url %}{{ page.path }}" target="_blank">
+            <i class="fa fa-edit"></i>
+          </a>
+        </span>
+      <div class="panel-body">
+{:/nomarkdown}
 
 # HDMI2USB Mode Switch Tool
 
@@ -146,7 +234,7 @@ load) the HDMI2USB firmware on compatible devices (temporarily or permanently).
 The [HDMI2USB Mode Switch tool] can be used to update (or load) the HDMI2USB
 firmware on compatible devices.
 
-## Firmware versions
+# Firmware versions
 
 There are currently 3 different firmware versions released at any one time and
 they act in a similar manner to the 
@@ -177,3 +265,9 @@ The `stable` track is updated after major rounds of testings (such as when the
 firmware is used at conferences). These releases are our most stable but
 released infrequently so often lack the newest features and bug fixes.
 
+{::nomarkdown}
+      </div>
+    </div>
+  </div>
+</div>
+{:/nomarkdown}
