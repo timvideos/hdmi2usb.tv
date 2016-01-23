@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Drivers for using HDMI2USB related systems</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  <link rel="alternate" type="application/atom+xml" title="Tim Videos Planet Feed" href="/feed.xml" />
+  <link rel="canonical" href="http://hdmi2usb.tv//drivers/">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick-theme.css"/>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
+
+  <body>
+    <div class="wrapper">
+      <div class="box">
+        <div class="row">
+          <div class="column col-sm-3 col-md-3 col-lg-2" id="sidebar">
+  <a class="logo" href="/">
+    <img src="/img/logo.png" />
+    <span>HDMI2USB</span>
+  </a>
+  <ul class="nav">
+    <li class="">
+      <a href="/home/">HOME</a>
+    </li>
+    <li class="">
+      <a href="/faq/">ABOUT + FAQ</a>
+    </li>
+    <li class="">
+      <a href="/news/">NEWS</a>
+    </li>
+    <li class="">
+      <a href="/hardware/">HARDWARE</a>
+    </li>
+    <li class="">
+     <ul>
+      <li><a href="/digilent-atlys/">Digilent Atlys</a></li>
+     </ul>
+    </li>
+    <li class="">
+     <ul>
+      <li><a href="/numato-opsis/">Numato Opsis</a></li>
+     </ul>
+    </li>
+    <li class="">
+     <ul>
+      <li><a href="/potential-boards/">Potential Boards</a></li>
+     </ul>
+    </li>
+    <li class="">
+     <ul>
+      <li><a href="/tofe/">TOFE</a></li>
+     </ul>
+    </li>
+    <li class="nav">
+     <ul>
+     
+     </ul>
+    </li>
+    <li class="">
+      <a href="/firmware/">FIRMWARE</a>
+    </li>
+    <li class="">
+      <a href="/help/">GETTING HELP</a>
+    </li>
+    <li class="active">
+      <a href="/drivers/">DRIVERS</a>
+    </li>
+    <li>
+      <a href="https://code.timvideos.us">To TimVideos</a>
+  </ul>
+  <ul class="nav hidden-xs" id="sidebar-footer">
+    <li class="social">
+      <a href="https://planet.timvideos.us/feed.xml"><i class="fa fa-rss"></i></a>
+      <a href="https://www.twitter.com/TimVideosUs"><i class="fa fa-twitter"></i></a>
+    </li>
+    <li>
+      <span>Proudly hosted by <a id="github" href="https://www.github.com">GitHub</a>
+      </span>
+    </li>
+  </ul>
+</div>
+
+          <div class="column col-sm-9 col-md-9 col-lg-10" id="main">
+                <div class="col-sm-12">
+        <div class="panel-default">
+            <div class="top-message" style="height: 66px; margin: 5px;">
+               <iframe src="https://planet.timvideos.us/numato-opsis-crowdfunding-campaign-master/badge.html" style="border: none; height: 66px; padding: 0; margin: 0;"></iframe>
+            </div>
+        </div>
+    </div>
+
+            
+<div class="padding">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+        <span class="edit-link pull-right">
+          <a href="http://editor.timvideos.us/#timvideos/hdmi2usb.tv/edit/master/Drivers.md" target="_blank">
+            <i class="fa fa-edit"></i>
+          </a>
+        </span>
+      <div class="panel-body">
+
+<h1 id="drivers">Drivers</h1>
+
+<p>To use a device which comes preloaded with the HDMI2USB firmware (such as the
+<a href="/numato-opsis">Numato Opsis board</a>) <strong>no drivers are needed</strong> under;</p>
+
+<ul>
+  <li>Linux</li>
+  <li>Mac OS X</li>
+  <li>Windows 10</li>
+</ul>
+
+<p>The HDMI2USB project provides custom tools for increased functionality, easy of
+operation and upgrading the on-board firmware.</p>
+
+<h2 id="supported-operating-systems">Supported Operating Systems</h2>
+
+<p>Currently, the HDMI2USB project actively works on the following operating
+systems (as they are what is used by the developers and CI systems);</p>
+
+<ul>
+  <li>Ubuntu Trusty 14.04 (on x86)</li>
+  <li>Debian Unstable (on x86)</li>
+</ul>
+
+<p>HDMI2USB devices <strong>should work</strong> on almost any standards compliant modern
+operating system and we will do our best effort to make that happen.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="padding">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+        <span class="edit-link pull-right">
+          <a href="http://editor.timvideos.us/#timvideos/hdmi2usb.tv/edit/master/Drivers.md" target="_blank">
+            <i class="fa fa-edit"></i>
+          </a>
+        </span>
+      <div class="panel-body">
+
+<h1 id="windows">Windows</h1>
+
+<p>It is recommended that <strong>all</strong> Windows users install the 
+[Windows HDMI2USB Package] for ease of use.</p>
+
+<p>If you prefer to only to install the minimal needed requirements, see the next
+sections.</p>
+
+<h2 id="windows-xp-vista-and-windows-7">Windows XP, Vista and Windows 7</h2>
+
+<p>Unlike other operating systems, older versions of Windows (such as Windows XP,
+Windows Vista and Windows 7) will not automatically use their <strong>inbuilt</strong> USB
+drivers. Instead every device must provide a <code>.inf</code> (which is plain text)
+telling Windows about the association.</p>
+
+<p>Newer versions of Windows (Windows Vista and Windows 7) also required the
+contents of the <code>.inf</code> file be signed (found in <code>.cat</code> file).</p>
+
+<h2 id="windows-10">Windows 10</h2>
+
+<p>To use a device which comes preloaded with the HDMI2USB firmware (such as the
+<a href="/numato-opsis">Numato Opsis board</a>) <strong>no drivers are needed</strong>. Windows 10 will
+automatically detect the HDMI2USB and install drivers as needed.</p>
+
+<p>For other devices you can use the [Windows HDMI2USB package].</p>
+
+<p><br />
+<br /></p>
+
+<h1 id="windows-hdmi2usb-package">Windows HDMI2USB Package</h1>
+
+<p>To make it easier to use the HDMI2USB firmware under Windows, an installer
+package is being 
+<a href="https://github.com/mithro/HDMI2USB-and-Numato-Opsis-Windows-Drivers">developed here</a>. </p>
+
+<p>This package will start of including;</p>
+
+<ul>
+  <li>The <code>.inf</code> files required to make Windows use it&#8217;s internal drivers with
+HDMI2USB devices.</li>
+  <li>Graphical assets to allow distinguishing the HDMI2USB devices from other USB
+devices.</li>
+</ul>
+
+<p>Future development will add;</p>
+
+<ul>
+  <li>Putty for connecting to control channel.</li>
+  <li>Windows compatible version of the [HDMI2USB mode switch] tool (to allow
+firmware upgrading).</li>
+  <li>A simple graphical control program to allow basic control over a boards
+input and outputs.</li>
+  <li>OpenOCD compiled for Windows, to allow FPGA development programming.</li>
+</ul>
+
+<h3 id="thank-yous">Thank yous</h3>
+
+<p>A big thank you goes to <a href="https://github.com/rpavlik">Ryan Pavlik</a> from the
+<a href="http://osvr.github.io/">Open Source Virtual Reality project</a>
+for releasing the 
+<a href="https://github.com/OSVR/OSVR-HDK-Windows-Drivers">OSVR HDK Windows Drivers</a>
+repository on which our package is based.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="padding">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+        <span class="edit-link pull-right">
+          <a href="http://editor.timvideos.us/#timvideos/hdmi2usb.tv/edit/master/Drivers.md" target="_blank">
+            <i class="fa fa-edit"></i>
+          </a>
+        </span>
+      <div class="panel-body">
+
+<h1 id="linux">Linux</h1>
+
+<p>To use a device which comes preloaded with the HDMI2USB firmware (such as the
+<a href="/numato-opsis">Numato Opsis board</a>) <strong>no drivers are needed</strong>. Linux will
+automatically detect the devices. </p>
+
+<p>For other devices you can use the packages linked to from here.</p>
+
+<h2 id="ubuntu">Ubuntu</h2>
+
+<h3 id="ppa-repositories">PPA Repositories</h3>
+
+<ul>
+  <li>https://launchpad.net/~timvideos</li>
+  <li>https://launchpad.net/~timvideos/+archive/ubuntu/hdmi2usb</li>
+  <li>https://launchpad.net/~timvideos/+archive/ubuntu/numato-opsis</li>
+</ul>
+
+<h2 id="debian">Debian</h2>
+
+<p>We are currently working on making sure all HDMI2USB packages are available on
+Debian.</p>
+
+<p>Currently you will need to have Debian experimental enabled and then you can
+install the packages with the following commands;</p>
+
+<p><code>
+FIXME: Add apt-get install instructions here.
+</code></p>
+
+<h2 id="fedora">Fedora</h2>
+
+<p>For now, follow the Other Linux Systems section.</p>
+
+<p>We are currently <a href="">looking for help</a>
+with packaging HDMI2USB software for Fedora systems. </p>
+
+<h2 id="other-linux-systems">Other Linux Systems</h2>
+
+<p>FIXME: Add instructions for installing the tools from GitHub.</p>
+
+<h3 id="udev-rules">udev rules</h3>
+
+<p>FIXME: Put udev rule information here.</p>
+
+<p><a href="https://github.com/timvideos/HDMI2USB-misoc-firmware/blob/master/scripts/52-hdmi2usb.rules">Work started here.</a></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="padding">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+        <span class="edit-link pull-right">
+          <a href="http://editor.timvideos.us/#timvideos/hdmi2usb.tv/edit/master/Drivers.md" target="_blank">
+            <i class="fa fa-edit"></i>
+          </a>
+        </span>
+      <div class="panel-body">
+
+<h1 id="mac-os-x">Mac OS X</h1>
+
+<p>To use a device which comes preloaded with the HDMI2USB firmware (such as the
+<a href="/numato-opsis">Numato Opsis board</a>) <strong>no drivers are needed</strong>. Mac OS X will
+automatically detect the devices.</p>
+
+<p>We are currently <a href="">looking for help</a>
+with packaging the HDMI2USB software for Mac systems.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="padding">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+        <span class="edit-link pull-right">
+          <a href="http://editor.timvideos.us/#timvideos/hdmi2usb.tv/edit/master/Drivers.md" target="_blank">
+            <i class="fa fa-edit"></i>
+          </a>
+        </span>
+      <div class="panel-body">
+
+<h1 id="hdmi2usb-mode-switch-tool">HDMI2USB Mode Switch Tool</h1>
+
+<p>As almost all HDMI2USB can operate in multiple different modes, a simple tool
+is provided to make this process easy. This tool also allows you to update (or
+load) the HDMI2USB firmware on compatible devices (temporarily or permanently).</p>
+
+<h2 id="updating-firmware">Updating Firmware</h2>
+
+<p>The <a href="/Drivers/#HDMI2USB-mode-switch">HDMI2USB Mode Switch tool</a> can be used to update (or load) the HDMI2USB
+firmware on compatible devices.</p>
+
+<h1 id="firmware-versions">Firmware versions</h1>
+
+<p>There are currently 3 different firmware versions released at any one time and
+they act in a similar manner to the 
+<a href="https://www.debian.org/releases/">Debian release process</a> or the 
+<a href="https://www.chromium.org/getting-involved/dev-channel">Chrome release channels</a>.</p>
+
+<h3 id="unstable">Unstable</h3>
+
+<p>The <code>unstable</code> track is automatically generated from the latest commits in the
+official [HDMI2USB firmware repository].</p>
+
+<p>These releases only undergo automated testing and have <strong>not</strong> been verified to
+be functional.</p>
+
+<p>They should be mainly used to verify bug fixes and test new features.</p>
+
+<h3 id="testing">Testing</h3>
+
+<p>The <code>testing</code> track is updated to a new version after manual testing of an
+unstable revision has been tested.</p>
+
+<p>It is recommended that most people use the <code>testing</code> track so you get a good
+mixture of stability and quick accesses to the new features.</p>
+
+<h3 id="stable">Stable</h3>
+
+<p>The <code>stable</code> track is updated after major rounds of testings (such as when the
+firmware is used at conferences). These releases are our most stable but
+released infrequently so often lack the newest features and bug fixes.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- gst-switch References -->
+
+<!-- gst-switch (speaker track) -->
+
+<!-- HDMI2USB References -->
+
+<!-- Streaming System -->
+
+<!-- Other -->
+
+
+            <div id=end>&nbsp;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+<script type="text/javascript" src="/js/app.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23123757-4', 'auto');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>
