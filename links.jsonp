@@ -204,6 +204,11 @@ callback([
   {
     "text": "TimVideos.us 2016 New Year's Resolutions",
     "href": "/timvideos/hdmi2usb/2016/01/11/new-year-roadmap/"
+  },
+
+  {
+    "text": "TimVideos.us and Google Summer of Code 2016!",
+    "href": "/gsoc/hdmi2usb/2016/03/14/gsoc-2016/"
   }
 
 ])
