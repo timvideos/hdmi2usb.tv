@@ -26,11 +26,6 @@ callback([
   },
 
   {
-    "text": "HDMI2USB with TimVideos Expansion Interface",
-    "href": "/timvideos-expansion/"
-  },
-
-  {
     "text": "TOFE - Tim's Open FPGA Expansion",
     "href": "/tofe/"
   },
