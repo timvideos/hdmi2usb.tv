@@ -1,5 +1,5 @@
 ---
-layout: base-no-sidebar
+layout: embed
 title: News
 tagline: Developers news
 tags: news
