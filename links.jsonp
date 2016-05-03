@@ -46,6 +46,11 @@ callback([
   },
 
   {
+    "text": "News",
+    "href": "/news-list/"
+  },
+
+  {
     "text": "HDMI2USB - Open hardware for conference, meeting and user group HD recording!",
     "href": "/home/"
   },
