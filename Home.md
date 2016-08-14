@@ -45,24 +45,27 @@ Our aim is this becomes the defacto, incredibly affordable and easy to use video
 <div class="padding">
   <div class="col-sm-12">
     <div class="panel panel-default">
-
       <div class="panel-body">
 
-           <div class="twitter-widget col-md-6">
-                <a class="twitter-timeline" href="https://twitter.com/TimVideosUs" data-widget-id="630373467892789250">Tweets by @TimVideosUs</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-           </div>
+        <div class="twitter-widget col-md-6">
+          <h1>
+            <a href="https://twitter.com/TimVideosUs">Recent Tweets</a>
+            <div style="float:right; font-size: small;"><a class="twitter-follow-button" href="https://twitter.com/TimVideosUs" style="float:right;">Follow @TimVideosUs</a></div>
+          </h1>
+          <a class="twitter-timeline" href="https://twitter.com/TimVideosUs" data-widget-id="630373467892789250" width="100%" data-chrome="noheader nofooter noborders transparent">Tweets by @TimVideosUs</a>
+        </div>
 
-            <div class="col-md-6">
-                <h1>Recent News</h1>
-
-                {% for post in site.posts %}
-                  <li>
-                    <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                  </li>
-                {% endfor %}
-            </div>
+        <div class="col-md-6">
+          <h1><a href="/news/">Recent News</a></h1>
+          <table>
+            {% for post in site.posts limit:15 %}
+            <tr>
+              <td class="post-date" style="text-align: right;">{{ post.date | date: "%b %-d, %Y" }}</span></td>
+              <td class="post-link"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></td>
+            </tr>
+            {% endfor %}
+          </table>
+        </div>
 
      </div>
     </div>
@@ -155,5 +158,7 @@ Our aim is this becomes the defacto, incredibly affordable and easy to use video
     </div>
   </div>
 </div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 {:/nomarkdown}
