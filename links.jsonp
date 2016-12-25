@@ -214,6 +214,11 @@ callback([
   {
     "text": "News from the start of 2016!",
     "href": "/crowdsupply/opsis/numato/2016/03/16/crowdsupply-updates-for-2016/"
+  },
+
+  {
+    "text": "Mithro speaking on Dissecting HDMI at 33C3!",
+    "href": "/33c3/hdmi/conference/talks/2016/12/25/33c3/"
   }
 
 ])
