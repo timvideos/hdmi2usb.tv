@@ -16,8 +16,16 @@
 
 <!-- HDMI2USB References -->
 
+ [Alphamax Media NeTV2]: https://alphamaxmedia.com/w/index.php?title=NeTV2
+ [Digilent Atlys]: http://store.digilentinc.com/atlys-spartan-6-fpga-trainer-board-limited-time-see-nexys-video/
+ [Digilent Nexys Video]: http://store.digilentinc.com/nexys-video-artix-7-fpga-trainer-board-for-multimedia-applications/
+ [Digilent Zybo]: http://store.digilentinc.com/zybo-zynq-7000-arm-fpga-soc-trainer-board/
+ [Numato Opsis]: http://opsis.hdmi2usb.tv
+
  [Protoboard]: /HDMI2USB.html#digilent-atlys-prototype-board
- [Atlys]: http://digilentinc.com/Products/Detail.cfm?NavPath=2,400,836&Prod=ATLYS
+
+<!-- Video standard References -->
+
  [SDI]: https://en.wikipedia.org/wiki/Serial_digital_interface
  [MJPEG]: https://en.wikipedia.org/wiki/MJPEG
  [YUV]: https://en.wikipedia.org/wiki/YUV

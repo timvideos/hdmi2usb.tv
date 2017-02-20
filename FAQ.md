@@ -80,11 +80,19 @@ If you need help, look at the [Getting Help] page.
 
 The firmware is currently targeted at supporting two operating resolutions;
 
- * 16:9 - 720p mode
+ * 16:9 - 720p60 mode
 
- * 4:3 - 1024x768
+ * 4:3 - 1024x768@60Hz
 
-The resolution limit is currently imposed by the speed at which the FPGA pins are able to operate. The DisplayPort functionality of the [Numato Opsis] board and newer Xilinx Series 7 FPGAs (such as the [Digilent Nexys Video] and [Digilent Zybo] will increase the supported resolutions.
+Other resolutions can be used but are less tested and may not work.
+
+Support depends on the type of capture hardware being used.
+
+Detailed information about the resolutions that can be used on the [Numato Opsis] are found on the [Video FAQ page](https://opsis.hdmi2usb.tv/info/video-info-faq.html).
+
+Other resolutions can work such as 1080p30, 1080i60 and on Xilinx Series 7 FPGAs 1080p60.
+
+The resolution limit are imposed by the speed at which the FPGA pins are able to operate. The DisplayPort functionality of the [Numato Opsis] board and newer Xilinx Series 7 FPGAs (such as the [Digilent Nexys Video] and [Digilent Zybo] will increase the supported resolutions.
 
 ### Does it produce compressed video or raw video?
 
