@@ -191,14 +191,22 @@
 
 <ul>
   <li>
-    <p>16:9 - 720p mode</p>
+    <p>16:9 - 720p60 mode</p>
   </li>
   <li>
-    <p>4:3 - 1024x768</p>
+    <p>4:3 - 1024x768@60Hz</p>
   </li>
 </ul>
 
-<p>The resolution limit is currently imposed by the speed at which the FPGA pins are able to operate. The DisplayPort functionality of the [Numato Opsis] board and newer Xilinx Series 7 FPGAs (such as the [Digilent Nexys Video] and [Digilent Zybo] will increase the supported resolutions.</p>
+<p>Other resolutions can be used but are less tested and may not work.</p>
+
+<p>Support depends on the type of capture hardware being used.</p>
+
+<p>Detailed information about the resolutions that can be used on the <a href="http://opsis.hdmi2usb.tv">Numato Opsis</a> are found on the <a href="https://opsis.hdmi2usb.tv/info/video-info-faq.html">Video FAQ page</a>.</p>
+
+<p>Other resolutions can work such as 1080p30, 1080i60 and on Xilinx Series 7 FPGAs 1080p60.</p>
+
+<p>The resolution limit are imposed by the speed at which the FPGA pins are able to operate. The DisplayPort functionality of the <a href="http://opsis.hdmi2usb.tv">Numato Opsis</a> board and newer Xilinx Series 7 FPGAs (such as the <a href="http://store.digilentinc.com/nexys-video-artix-7-fpga-trainer-board-for-multimedia-applications/">Digilent Nexys Video</a> and <a href="http://store.digilentinc.com/zybo-zynq-7000-arm-fpga-soc-trainer-board/">Digilent Zybo</a> will increase the supported resolutions.</p>
 
 <h3 id="does-it-produce-compressed-video-or-raw-video">Does it produce compressed video or raw video?</h3>
 
@@ -235,6 +243,8 @@
 <!-- gst-switch (speaker track) -->
 
 <!-- HDMI2USB References -->
+
+<!-- Video standard References -->
 
 <!-- Streaming System -->
 
