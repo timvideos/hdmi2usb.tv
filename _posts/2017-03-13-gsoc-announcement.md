@@ -9,6 +9,53 @@ categories: gsoc fpga hardware python linux
 .td {
  vertical-align: middle;
 }
+
+
+div.image {
+  width: 25%;
+  margin: 20px;
+}
+
+.image img {
+  width: 100%;
+  text-align: center;
+}
+
+.image p {
+  padding: 5px;
+  width: 100%;
+  font-size: small;
+  font-style: italic;
+  text-align: center;
+}
+
+div.image-right {
+  float: right;
+}
+
+div.image-left {
+  float: left;
+}
+
+table.image img {
+  width: 100%;
+  min-height: 150px;
+}
+
+iframe.video {
+  float: right;
+  width: auto;
+  margin: 20px;
+}
+
+div.image-center {
+  width: 95%;
+}
+
+hr {
+  clear: both;
+}
+
 </style>
 
 <span style='font-size: larger; font-weight: bold;'>
@@ -35,6 +82,11 @@ Not a student? **[You can help us by share this post!][3]**
 		</td>
 	</tr>
 </table>
+
+<div class="image image-right">
+<img title="Part of the setup for recording LCA2017" src="/img/gallery/lca2017-behind-scences-1.jpg">
+<p>Part of the setup for recording LCA2017</p>
+</div>
 
 The TimVideos.us project is happy to announce that it is participating in
 [Google Summer of Code 2017 (GSoC2017)][2] and is [looking for students to hack on
@@ -79,11 +131,6 @@ design](https://en.wikipedia.org/wiki/Circuit_design)!
 
 You might even get to attend one of these conferences like some of [our previous GSoC students](/timvideos/sprints/lca2015/gsoc/2015/02/01/sprints-and-linux-conf-au/).
 
-<div class="image image-right">
-<img title="Our three GSoC students enjoying the conference dinner (from left, Rohit, Ajit, Aayush)" src="/img/sprints-and-lca2015/7-gsoc-students-enjoy-dinner.jpg" style="width:100%;">
-<p>Three GSoC students enjoying the conference dinner (from left, Rohit, Ajit, Aayush)</p>
-</div>
-
 This year we have joint project ideas with other hardware based groups who are also participating in GSoC2017 including;
 
 <table style="width: auto; text-align: center; margin-top: auto; margin-left: 5%;">
@@ -113,6 +160,12 @@ This year we have joint project ideas with other hardware based groups who are a
 		</td>
 	</tr>
 </table>
+
+<div class="image image-right">
+<img title="Our three GSoC students enjoying the conference dinner (from left, Rohit, Ajit, Aayush)" src="/img/sprints-and-lca2015/7-gsoc-students-enjoy-dinner.jpg">
+<p>Three GSoC students enjoying the conference dinner (from left, Rohit, Ajit, Aayush)</p>
+</div>
+
 
 Some examples of projects that TimVideos.us is looking for students to contribute too are;
 
