@@ -64,7 +64,7 @@ programming? You could get paid to hack by [applying to the
 TimVideos.us organisation][1] for [Google Summer of Code!][2] </span>
 
 <span style='font-size: larger; font-weight: bold;'>
-Not a student? **[You can help us by share this post!][3]**
+Not a student? **[You can help us by sharing this post!][3]**
 </span>
 
   [1]: https://summerofcode.withgoogle.com/organizations/4806703267708928/
