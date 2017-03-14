@@ -148,6 +148,24 @@ Our aim is this becomes the defacto, incredibly affordable and easy to use video
         </div>
 
         <div>
+            <a class="fancybox" rel="group" href="/img/gallery/atlys.jpg">
+               {% thumbnail img/gallery/atlys.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/lca2017-behind-scences-1.jpg">
+               {% thumbnail img/gallery/lca2017-behind-scences-1.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
+            <a class="fancybox" rel="group" href="/img/gallery/lca2017-behind-scences-2.jpg">
+               {% thumbnail img/gallery/lca2017-behind-scences-2.jpg 200x150 %}
+            </a>
+        </div>
+
+        <div>
             <a class="fancybox" rel="group" href="/img/gallery/timvideos.jpg">
                {% thumbnail img/gallery/timvideos.jpg 200x150 %}
             </a>
