@@ -219,6 +219,11 @@ callback([
   {
     "text": "Mithro speaking on Dissecting HDMI at 33C3!",
     "href": "/33c3/hdmi/conference/talks/2016/12/25/33c3/"
+  },
+
+  {
+    "text": "Get paid to hack on hardware! TimVideos in GSoC",
+    "href": "/gsoc/fpga/hardware/python/linux/2017/03/15/gsoc-announcement/"
   }
 
 ])
