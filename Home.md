@@ -45,6 +45,62 @@ Our aim is this becomes the defacto, incredibly affordable and easy to use video
 <div class="padding">
   <div class="col-sm-12">
     <div class="panel panel-default">
+        <span class="edit-link pull-right">
+          <a href="{% edit_url %}{{ page.path }}" target="_blank">
+            <i class="fa fa-edit"></i>
+          </a>
+        </span>
+      <div class="panel-body">
+{:/nomarkdown}
+
+![LCA2017 Behind the Scenes](../img/gallery/lca2017-behind-scences-2.jpg){: .image-right}
+
+# People using HDMI2USB hardware!
+
+HDMI2USB project has been used to record numerous FOSS conference around the world, including;
+
+<table style="width: auto; text-align: center; margin-top: auto; margin-left: 5%;">
+	<tr>
+		<td>
+			<a href="https://linux.conf.au">Linux.conf.au</a>
+		</td><td>
+			<a href="http://www.pycon.org/">many PyCons around the world,</a>
+		</td><td>
+			and <a href="https://debconf.org">DebConf</a>.
+		</td>
+	</tr><tr>
+		<td>
+			<img style="height: 61px;" src="http://lca2017.linux.org.au/site_media/static/lca2017/images/svgs/illustrations/tuz.svg">
+		</td><td>
+			<img style="height: 61px;" src="http://www.pycon.org/logo-sitemasthead.gif">
+		</td><td>
+			<img style="height: 61px;" src="https://www.debian.org/Pics/openlogo-50.png">
+		</td>
+	</tr><tr>
+		<td>
+			<a href="https://www.youtube.com/user/linuxconfau2017">LCA2017</a>
+		</td><td>
+			<a href="https://www.youtube.com/user/pyconau">PyCon AU</a>,
+			<a href="http://pyvideo.org/events/pyohio-2016.html">pyOhio</a>,
+			<a href="http://pyvideo.org/events/kiwi-pycon-2016.html">Kiwi PyCon</a> &
+			<a href="https://www.youtube.com/c/PyConSouthAfrica">PyCon ZA</a>
+		</td><td>
+			<a href="http://meetings-archive.debian.net/pub/debian-meetings/2016/">DebConf2016</a>
+		</td>
+	</tr>
+</table>
+
+Are you using HDMI2USB stuff? Mail [contact@timvideos.us](mailto:contact@timvideos.us) to get added here!
+
+{::nomarkdown}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="padding">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
       <div class="panel-body">
 
         <div class="twitter-widget col-md-6">
