@@ -121,44 +121,51 @@ section for more information about the different firmware versions.</p>
   <li>TODO Put instructions here.</li>
 </ul>
 
-<h2 id="setting-up-developer-environment">Setting up Developer Environment</h2>
+<p>If you are a developer, look at &#8216;Setting up a Developer Environment&#8217; section
+below. If you are user, look at the &#8216;Flashing prebuilt firmware&#8217; section.</p>
 
-<ul>
-  <li><a href="https://github.com/timvideos/HDMI2USB-misoc-firmware">Follow these instructions</a></li>
-</ul>
+<h3 id="flashing-prebuilt-firmware">Flashing prebuilt firmware</h3>
+
+<p><a href="https://github.com/timvideos/HDMI2USB-firmware-prebuilt">The HDMI2USB project provides prebuilt binaries in the
+TimVideos/HDMI2USB-firmware-prebuilt repo.</a>.</p>
+
+<p>You will need to install the
+<a href="https://github.com/timvideos/HDMI2USB-mode-switch">HDMI2USB-mode-switch tool</a>.</p>
+
+<p>Install the tool following the instructions in the repo. On Linux you will
+probably need to install the udev rules in the repo or via your systems package
+manager (possibly using a TimVideos PPA - TODO: Put link here).</p>
+
+<p>You can then update / upgrade using the tool. The <code>--help</code> output should
+provide info on the possible options.</p>
+
+<p>For now you will have to manually download firmware from the repo.
+TODO: Eventually we hope the mode-switch tool will automatically download
+firmware from the repo.</p>
+
+<p>TODO: Can someone please write better, more comprehensive user update
+instructions.</p>
+
+<h3 id="setting-up-developer-environment">Setting up Developer Environment</h3>
+
+<p>To setup a developer environment
+<a href="https://github.com/timvideos/HDMI2USB-litex-firmware/blob/master/getting-started.md">follow the &#8216;Getting Started&#8217; instructions in the TimVideos/HDMI2USB-litex-firmware repo</a>.</p>
+
+<p>TODO: Currently installing the method for flashing the prebuilt firmware can
+interfere with the developer setup. Figure out how to fix this.</p>
 
 <h2 id="status">Status</h2>
 
-<p>atlys_base:</p>
-
-<ul>
-  <li>BaseSoC working (CPU + DDR2 + UART)</li>
-  <li>MiniSoC working (BaseSoC + 10/100Mbps Ethernet MAC handled by the CPU)</li>
-</ul>
-
-<p>atlys_hdmi2ethernet:</p>
-
-<ul>
-  <li>EtherboneSoC working (BaseSoC + 10/100Mbps HW Ethernet UDP/IP stack and Etherbone)</li>
-  <li>VideomixerSoC working (EtherboneSoC + HDMI in + Framebuffer + Hdmi out)</li>
-  <li>HDMI2EthernetSoC working (VideomixerSoC + JPEG encoder + UDP streamer)</li>
-</ul>
-
-<p>atlys_hdmi2usb:</p>
-
-<ul>
-  <li>VideomixerSoC working (MiniSoC + HDMI in + Framebuffer + Hdmi out)</li>
-  <li>HDMI2USB working (VideomixerSoCerSoC + JPEG encoder + USB streamer)</li>
-</ul>
+<p>TODO: Can someone update the status info here.</p>
 
 <h2 id="history">History</h2>
 
 <p>The HDMI2USB firmware was originally developed by
 <a href="https://github.com/jahanzeb">Jahanzeb Ahmad</a> using hand coded VHDL/Verilog and with
 cores from <a href="OpenCores.org">OpenCores</a> and the
-<a href="http://www.xilinx.com/ise/products/coregen_overview.pdf">Xilinx LogiCORE IP Core Generator</a>. 
+<a href="http://www.xilinx.com/ise/products/coregen_overview.pdf">Xilinx LogiCORE IP Core Generator</a>.
 This firmware (called the <a href="../firmware-jahanzeb">Jahanzeb firmware</a>) <strong>was
-replaced</strong> by the &#8220;MiSoC Firmware&#8221; starting middle of 2015. You can find a 
+replaced</strong> by the &#8220;MiSoC Firmware&#8221; starting middle of 2015. You can find a
 <a href="../firmware-compare">comparison between the two firmware here</a>.</p>
 
 <!-- gst-switch References -->
