@@ -7,7 +7,7 @@ tags: hardware, numato-opsis
 
 # flash-gateware
 
-Known Probmes 
+Known Problems 
 
 ```
 If you see: 
