@@ -22,46 +22,28 @@ section for more information about the different firmware versions.
 
 ## Getting Started
 
- * TODO Put instructions here.
-
+If you are user, look at the 'Flashing prebuilt firmware' section.
 If you are a developer, look at 'Setting up a Developer Environment' section
-below. If you are user, look at the 'Flashing prebuilt firmware' section.
+below. 
 
 ### Flashing prebuilt firmware
-
-[The HDMI2USB project provides prebuilt binaries in the
-TimVideos/HDMI2USB-firmware-prebuilt repo.](https://github.com/timvideos/HDMI2USB-firmware-prebuilt).
-
-You will need to install the
-[HDMI2USB-mode-switch tool](https://github.com/timvideos/HDMI2USB-mode-switch).
-
-Install the tool following the instructions in the repo. On Linux you will
-probably need to install the udev rules in the repo or via your systems package
-manager (possibly using a TimVideos PPA - TODO: Put link here).
-
-You can then update / upgrade using the tool. The `--help` output should
-provide info on the possible options.
-
-For now you will have to manually download firmware from the repo.
-TODO: Eventually we hope the mode-switch tool will automatically download
-firmware from the repo.
-
-TODO: Can someone please write better, more comprehensive user update
-instructions.
-
+```
+sudo add-apt-repository --yes --update ppa:timvideos/fpga-support
+sudo apt install hdmi2usb-mode-switch  hdmi2usb-udev
+git clone https://github.com/timvideos/HDMI2USB-firmware-prebuilt.git  
+cd HDMI2USB-firmware-prebuilt/opsis/firmware/testing
+hdmi2usb-modeswitch --flash-gateware --flash-gateware opsis_hdmi2usb-hdmi2usbsoc-opsis.bin
+```
+[problems and solutions](flash-gateware)
 
 ### Setting up Developer Environment
 
 To setup a developer environment
 [follow the 'Getting Started' instructions in the TimVideos/HDMI2USB-litex-firmware repo](https://github.com/timvideos/HDMI2USB-litex-firmware/blob/master/getting-started.md).
 
-TODO: Currently installing the method for flashing the prebuilt firmware can
-interfere with the developer setup. Figure out how to fix this.
-
 ## Status
 
-TODO: Can someone update the status info here.
-
+[What works on what boards](status)
 
 ## History
 
