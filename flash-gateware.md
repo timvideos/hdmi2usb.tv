@@ -6,6 +6,9 @@ tags: hardware, numato-opsis
 ---
 
 # flash-gateware
+
+Known Probmes 
+
 ```
 If you see: 
 DNA = 110000001100000011000000110000001100000011000000110000001 (0x181818181818181)  
