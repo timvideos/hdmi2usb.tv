@@ -117,46 +117,28 @@ section for more information about the different firmware versions.</p>
 
 <h2 id="getting-started">Getting Started</h2>
 
-<ul>
-  <li>TODO Put instructions here.</li>
-</ul>
-
-<p>If you are a developer, look at &#8216;Setting up a Developer Environment&#8217; section
-below. If you are user, look at the &#8216;Flashing prebuilt firmware&#8217; section.</p>
+<p>If you are user, look at the &#8216;Flashing prebuilt firmware&#8217; section.
+If you are a developer, look at &#8216;Setting up a Developer Environment&#8217; section
+below. </p>
 
 <h3 id="flashing-prebuilt-firmware">Flashing prebuilt firmware</h3>
-
-<p><a href="https://github.com/timvideos/HDMI2USB-firmware-prebuilt">The HDMI2USB project provides prebuilt binaries in the
-TimVideos/HDMI2USB-firmware-prebuilt repo.</a>.</p>
-
-<p>You will need to install the
-<a href="https://github.com/timvideos/HDMI2USB-mode-switch">HDMI2USB-mode-switch tool</a>.</p>
-
-<p>Install the tool following the instructions in the repo. On Linux you will
-probably need to install the udev rules in the repo or via your systems package
-manager (possibly using a TimVideos PPA - TODO: Put link here).</p>
-
-<p>You can then update / upgrade using the tool. The <code>--help</code> output should
-provide info on the possible options.</p>
-
-<p>For now you will have to manually download firmware from the repo.
-TODO: Eventually we hope the mode-switch tool will automatically download
-firmware from the repo.</p>
-
-<p>TODO: Can someone please write better, more comprehensive user update
-instructions.</p>
+<p><code>
+sudo add-apt-repository --yes --update ppa:timvideos/fpga-support
+sudo apt install hdmi2usb-mode-switch  hdmi2usb-udev
+git clone https://github.com/timvideos/HDMI2USB-firmware-prebuilt.git  
+cd HDMI2USB-firmware-prebuilt/opsis/firmware/testing
+hdmi2usb-modeswitch --flash-gateware --flash-gateware opsis_hdmi2usb-hdmi2usbsoc-opsis.bin
+</code>
+<a href="flash-gateware">problems and solutions</a></p>
 
 <h3 id="setting-up-developer-environment">Setting up Developer Environment</h3>
 
 <p>To setup a developer environment
 <a href="https://github.com/timvideos/HDMI2USB-litex-firmware/blob/master/getting-started.md">follow the &#8216;Getting Started&#8217; instructions in the TimVideos/HDMI2USB-litex-firmware repo</a>.</p>
 
-<p>TODO: Currently installing the method for flashing the prebuilt firmware can
-interfere with the developer setup. Figure out how to fix this.</p>
-
 <h2 id="status">Status</h2>
 
-<p>TODO: Can someone update the status info here.</p>
+<p><a href="status">What works on what boards</a></p>
 
 <h2 id="history">History</h2>
 
