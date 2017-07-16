@@ -32,7 +32,7 @@ sudo add-apt-repository --yes --update ppa:timvideos/fpga-support
 sudo apt install hdmi2usb-mode-switch  hdmi2usb-udev
 git clone https://github.com/timvideos/HDMI2USB-firmware-prebuilt.git  
 cd HDMI2USB-firmware-prebuilt/opsis/firmware/testing
-hdmi2usb-modeswitch --flash-gateware opsis_hdmi2usb-hdmi2usbsoc-opsis.bin
+hdmi2usb-modeswitch --flash-gateware flash.bin
 ```
 [problems and solutions](flash-gateware)
 
