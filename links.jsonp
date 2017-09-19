@@ -224,6 +224,11 @@ callback([
   {
     "text": "Get paid to hack on hardware! TimVideos in GSoC",
     "href": "/gsoc/fpga/hardware/python/linux/2017/03/15/gsoc-announcement/"
+  },
+
+  {
+    "text": "AXIOM Team Talk Volume 13.1- SDI Module, SMT Workshop and Exhibition",
+    "href": "/axiom/fpga/hardware/python/sdi/photon-sdi/photonsdi/2017/09/18/axiom-team-talk/"
   }
 
 ])
