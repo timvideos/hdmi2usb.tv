@@ -2,13 +2,13 @@
 <html>
   <head>
   <meta charset="utf-8">
-  <title>HDMI2USB misoc firmware</title>
+  <title>flash-gateware</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <link rel="alternate" type="application/atom+xml" title="Tim Videos Planet Feed" href="/feed.xml" />
-  <link rel="canonical" href="http://hdmi2usb.tv//firmware/">
+  <link rel="canonical" href="http://hdmi2usb.tv//flash-gateware/">
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
@@ -39,7 +39,7 @@
     <li class="">
       <a href="/news/">NEWS</a>
     </li>
-    <li class="">
+    <li class="active">
       <a href="/hardware/">HARDWARE</a>
     </li>
     <li class="">
@@ -47,7 +47,7 @@
       <li><a href="/digilent-atlys/">Digilent Atlys</a></li>
      </ul>
     </li>
-    <li class="">
+    <li class="active">
      <ul>
       <li><a href="/numato-opsis/">Numato Opsis</a></li>
      </ul>
@@ -67,7 +67,7 @@
      
      </ul>
     </li>
-    <li class="active">
+    <li class="">
       <a href="/firmware/">FIRMWARE</a>
     </li>
     <li class="">
@@ -97,77 +97,21 @@
   <div class="col-sm-12">
     <div class="panel panel-default">
         <span class="edit-link pull-right">
-          <a href="http://editor.timvideos.us/#timvideos/hdmi2usb.tv/edit/master/Firmware.md" target="_blank">
+          <a href="http://editor.timvideos.us/#timvideos/hdmi2usb.tv/edit/master/flash-gateware.md" target="_blank">
             <i class="fa fa-edit"></i>
           </a>
         </span>
       <div class="panel-body">
-        <h1 id="hdmi2usb---firmware">HDMI2USB - Firmware</h1>
+        <h1 id="flash-gateware">flash-gateware</h1>
 
-<p>This page talks about using the <strong>LiteX Firmware</strong> which is the firmware currently
-used in production.</p>
+<p>Known Problems </p>
 
-<p>See the <a href="#history">History</a> section for more information about the older
-firmware versions.</p>
-
-<h2 id="quick-links">Quick Links</h2>
-
-<ul>
-  <li><a href="https://github.com/timvideos/HDMI2USB-litex-firmware">Firmware Repository</a></li>
-  <li><a href="https://github.com/timvideos/HDMI2USB-litex-firmware/issues/new">Report a bug</a></li>
-  <li><a href="https://github.com/timvideos/HDMI2USB/wiki">Wiki</a></li>
-  <li><a href="https://groups.google.com/forum/#!forum/hdmi2usb">Mailing List</a> [<a href="https://groups.google.com/forum/#!forum/hdmi2usb/join">Join</a>]</li>
-  <li><a href="http://webchat.freenode.net/?nick=hdmi2usb-user.&amp;channels=%23timvideos">IRC Channel</a></li>
-</ul>
-
-<h2 id="getting-started">Getting Started</h2>
-
-<p>If you are user, look at the <a href="#flashing-prebuilt-firmware">&#8216;Flashing prebuilt firmware&#8217;</a> section.
-If you are a developer, look at <a href="#setting-up-a-developer-environment">&#8216;Setting up a Developer Environment&#8217;</a> section
-below. </p>
-
-<p><br />
-<br />
-<br />
-<br />
-<br />
-<br /></p>
-
-<h3 id="flashing-prebuilt-firmwarehttpsgithubcomtimvideoshdmi2usbwikiflashing-firmware"><a href="https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware">Flashing prebuilt firmware</a></h3>
-
-<p><a href="https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware">Full instructions on flashing</a> your <a href="https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware#numato-opsis">Numato Opsis</a> or <a href="https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware#digilent-atlys">Digilent Atlys</a> with <a href="https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware">prebuilt firmware can be found on the Wiki</a>.</p>
-
-<p><br />
-<br />
-<br />
-<br />
-<br /></p>
-
-<h3 id="setting-up-developer-environment">Setting up Developer Environment</h3>
-
-<p>To setup a developer environment
-<a href="https://github.com/timvideos/HDMI2USB-litex-firmware/blob/master/getting-started.md">follow the &#8216;Getting Started&#8217; instructions in the TimVideos/HDMI2USB-litex-firmware repo</a>.</p>
-
-<p><br />
-<br />
-<br />
-<br /></p>
-
-<h2 id="history">History</h2>
-
-<p>The HDMI2USB firmware was originally developed by
-<a href="https://github.com/jahanzeb">Jahanzeb Ahmad</a> using hand coded VHDL/Verilog and with
-cores from <a href="OpenCores.org">OpenCores</a> and the
-<a href="http://www.xilinx.com/ise/products/coregen_overview.pdf">Xilinx LogiCORE IP Core Generator</a>.</p>
-
-<p>This firmware (called the <a href="../firmware-jahanzeb">Jahanzeb firmware</a>) <strong>was
-replaced</strong> by the &#8220;MiSoC Firmware&#8221; starting middle of 2015. The &#8220;MiSoC Firmware&#8221; was
-renamed to the &#8220;LiteX Firmware&#8221; after we started using 
-<a href="http://enjoy-digital.fr/">Enjoy Digital&#8217;s</a> 
-<a href="https://github.com/enjoy-digital/litex">soft fork or MiSoC called LiteX</a>. (We use
-the term &#8220;MiSoC&#8221; and &#8220;LiteX&#8221; interchangably through the documentation.)</p>
-
-<p>You can find a <a href="../firmware-compare">comparison between the two firmware here</a>.</p>
+<p><code>
+If you see: 
+DNA = 110000001100000011000000110000001100000011000000110000001 (0x181818181818181)  
+try 2 or 3 times, then power cycle it." 
+-- you probably want to try switching the device into serial mode and then back out on the Opsis
+</code></p>
 
 <!-- gst-switch References -->
 
