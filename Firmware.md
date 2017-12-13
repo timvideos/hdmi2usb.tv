@@ -15,6 +15,13 @@ used in production.
 See the [History](#history) section for more information about the older
 firmware versions.
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 ## Quick Links
 
  * [Firmware Repository](https://github.com/timvideos/HDMI2USB-litex-firmware)
@@ -23,10 +30,18 @@ firmware versions.
  * [Mailing List](https://groups.google.com/forum/#!forum/hdmi2usb) [[Join](https://groups.google.com/forum/#!forum/hdmi2usb/join)]
  * [IRC Channel](http://webchat.freenode.net/?nick=hdmi2usb-user.&channels=%23timvideos)
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 ## Getting Started
 
-If you are user, look at the ['Flashing prebuilt firmware'](#flashing-prebuilt-firmware) section.
-If you are a developer, look at ['Setting up a Developer Environment'](#setting-up-a-developer-environment) section
+ * If you are user, look at the ['Flashing prebuilt firmware'](#flashing-prebuilt-firmware) section.
+
+ * If you are a developer, look at ['Setting up a Developer Environment'](#setting-up-a-developer-environment) section
 below. 
 
 <br>
@@ -36,9 +51,15 @@ below.
 <br>
 <br>
 
-### [Flashing prebuilt firmware](https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware)
+### Flashing prebuilt firmware
 
-[Full instructions on flashing](https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware) your [Numato Opsis](https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware#numato-opsis) or [Digilent Atlys](https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware#digilent-atlys) with [prebuilt firmware can be found on the Wiki](https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware).
+<br>
+
+[Instructions on flashing](https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware) your [Numato Opsis](https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware#numato-opsis) or [Digilent Atlys](https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware#digilent-atlys) with [prebuilt firmware can be found on the Wiki](https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware).
+
+<br>
+
+<a href="https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware" style="font-size: larger;">Click here to goto flashing instructions on the wiki.</a>
 
 <br>
 <br>
