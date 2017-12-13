@@ -21,11 +21,6 @@ callback([
   },
 
   {
-    "text": "flash-gateware",
-    "href": "/flash-gateware/"
-  },
-
-  {
     "text": "",
     "href": "/feed/"
   },
