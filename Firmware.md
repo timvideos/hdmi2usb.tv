@@ -9,41 +9,53 @@ redirect_from: "/firmware-litex/"
 
 # HDMI2USB - Firmware
 
-This page talks about using the **MiSoC Firmware**, see the [History](#history)
-section for more information about the different firmware versions.
+This page talks about using the **LiteX Firmware** which is the firmware currently
+used in production.
 
+See the [History](#history) section for more information about the older
+firmware versions.
 
 ## Quick Links
 
- * [Firmware Repository](https://github.com/timvideos/HDMI2USB-misoc-firmware)
- * [Report a bug](https://github.com/timvideos/HDMI2USB-misoc-firmware/issues/new)
- * [misoc + migen website](https://m-labs.hk/gateware.html)
-
+ * [Firmware Repository](https://github.com/timvideos/HDMI2USB-litex-firmware)
+ * [Report a bug](https://github.com/timvideos/HDMI2USB-litex-firmware/issues/new)
+ * [Wiki](https://github.com/timvideos/HDMI2USB/wiki)
+ * [Mailing List](https://groups.google.com/forum/#!forum/hdmi2usb) [[Join](https://groups.google.com/forum/#!forum/hdmi2usb/join)]
+ * [IRC Channel](http://webchat.freenode.net/?nick=hdmi2usb-user.&channels=%23timvideos)
 
 ## Getting Started
 
-If you are user, look at the 'Flashing prebuilt firmware' section.
-If you are a developer, look at 'Setting up a Developer Environment' section
+If you are user, look at the ['Flashing prebuilt firmware'](#flashing-prebuilt-firmware) section.
+If you are a developer, look at ['Setting up a Developer Environment'](#setting-up-a-developer-environment) section
 below. 
 
-### Flashing prebuilt firmware
-```
-sudo add-apt-repository --yes --update ppa:timvideos/fpga-support
-sudo apt install hdmi2usb-mode-switch  hdmi2usb-udev
-git clone https://github.com/timvideos/HDMI2USB-firmware-prebuilt.git  
-cd HDMI2USB-firmware-prebuilt/opsis/firmware/testing
-hdmi2usb-modeswitch --flash-gateware flash.bin
-```
-[problems and solutions](flash-gateware)
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+### [Flashing prebuilt firmware](https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware)
+
+[Full instructions on flashing](https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware) your [Numato Opsis](https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware#numato-opsis) or [Digilent Atlys](https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware#digilent-atlys) with [prebuilt firmware can be found on the Wiki](https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware).
+
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ### Setting up Developer Environment
 
 To setup a developer environment
 [follow the 'Getting Started' instructions in the TimVideos/HDMI2USB-litex-firmware repo](https://github.com/timvideos/HDMI2USB-litex-firmware/blob/master/getting-started.md).
 
-## Status
+<br>
+<br>
+<br>
+<br>
 
-[What works on what boards](status)
 
 ## History
 
@@ -51,6 +63,12 @@ The HDMI2USB firmware was originally developed by
 [Jahanzeb Ahmad](https://github.com/jahanzeb) using hand coded VHDL/Verilog and with
 cores from [OpenCores](OpenCores.org) and the
 [Xilinx LogiCORE IP Core Generator](http://www.xilinx.com/ise/products/coregen_overview.pdf).
+
 This firmware (called the [Jahanzeb firmware](../firmware-jahanzeb)) **was
-replaced** by the "MiSoC Firmware" starting middle of 2015. You can find a
-[comparison between the two firmware here](../firmware-compare).
+replaced** by the "MiSoC Firmware" starting middle of 2015. The "MiSoC Firmware" was
+renamed to the "LiteX Firmware" after we started using 
+[Enjoy Digital's](http://enjoy-digital.fr/) 
+[soft fork or MiSoC called LiteX](https://github.com/enjoy-digital/litex). (We use
+the term "MiSoC" and "LiteX" interchangably through the documentation.)
+
+You can find a [comparison between the two firmware here](../firmware-compare).
