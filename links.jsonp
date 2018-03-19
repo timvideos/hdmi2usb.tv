@@ -229,6 +229,11 @@ callback([
   {
     "text": "AXIOM Team Talk Volume 13.1- SDI Module, SMT Workshop and Exhibition",
     "href": "/axiom/fpga/hardware/python/sdi/photon-sdi/photonsdi/2017/09/18/axiom-team-talk/"
+  },
+
+  {
+    "text": "Welcome GSoC Students",
+    "href": "/2018/02/26/gsoc-announcement/"
   }
 
 ])
