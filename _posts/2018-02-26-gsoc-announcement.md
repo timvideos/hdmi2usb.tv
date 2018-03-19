@@ -7,7 +7,7 @@ tags: summer-of-code
 
 # Become a GSoC student 2018!
 
-Stefan Wallentowitz posted this on https://fossi-foundation.org/2018/02/12/gsoc – It applies to us too, we can’t say it any better, so here it is.
+Stefan Wallentowitz posted this on [FOSSi Foundation Blog](https://fossi-foundation.org/2018/02/12/gsoc) – It applies to us too, we can’t say it any better, so here it is.
 
 <blockquote>
 
@@ -19,7 +19,6 @@ As there are more student proposals than we have seats, a well-written project i
 
 </blockquote>
 
-Please get in touch with the project maintainers from the list of ideas or with other projects you like. We are happy to answer questions about the program and the application procedure at the timvideos@googlegroups.com mail list.
+Please get in touch with the project maintainers from the list of ideas or with other projects you like. We are happy to answer questions about the program and the application procedure at the [timvideos@googlegroups.com mail list](mailto:timvideos@googlegroups.com).
 
-
-You can find instructions on how to craft a good proposal: https://code.timvideos.us/summer-of-code/
+You can find [instructions on how to craft a good proposal on the TimVideos website.](https://code.timvideos.us/summer-of-code/)
