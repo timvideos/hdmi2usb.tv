@@ -9,9 +9,9 @@ tags: hardware, numato-opsis
 
 The Numato Opsis is the first HDMI2USB production board developed specifically for the HDMI2USB project (as part of the TimVideos project).
 
-The board is entirely open; both the firmware that runs on the device, and the schematics for the device.  
+The board is entirely open; both the firmware that runs on the device, and the schematics for the device.
 
-<a href="https://www.crowdsupply.com/numato-lab/opsis">The board can now be ordered on <img src="https://www.crowdsupply.com/_teal/images/crowd-supply-logo-dark.png" style="padding: 2px; height: 2em; vertical-align: middle;"></a>
+<a href="https://numato.com/product/numato-opsis-fpga-based-open-video-platform">The board can now be ordered from Numato Labs</a>
 
 <iframe src="https://player.vimeo.com/video/138276604" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="height:281px; width: 500px;"></iframe>
 
@@ -19,7 +19,7 @@ The board is entirely open; both the firmware that runs on the device, and the s
 ## Getting Started
 
   * Purchase a board from
-    [CrowdSupply](https://www.crowdsupply.com/numato-lab/opsis)
+    [Numato Labs](https://numato.com/product/numato-opsis-fpga-based-open-video-platform)
     or directly from [Numato.com](http://numato.com).
   * Load the firmware (see [Firmware](../firmware)).
   * Test and use the device.  (see [Numato Opsis - Using](../digilent-atlys-using)).

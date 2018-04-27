@@ -9,13 +9,13 @@ tags: hardware, tofe, milkymist
 
  * [Repository](https://github.com/timvideos/HDMI2USB-TOFE-Milkymist)
 
-The [Numato Opsis board](https://www.crowdsupply.com/numato-lab/opsis) is
-already very similar to the [Milkymist M1](http://m-labs.hk/m1.html) and 
+The [Numato Opsis board](https://numato.com/product/numato-opsis-fpga-based-open-video-platform)
+is already very similar to the [Milkymist M1](http://m-labs.hk/m1.html) and
 [Mixxeo](http://m-labs.hk/mixxeo.html) devices created by
 [M-Labs](http://m-labs.hk/), but lacks the DJ hardware interfaces. This
 expansion board adds these missing components.
 
-This board can be ordered from the 
+This board can be ordered from the
 [Numato Opsis page on CrowdSupply.com](https://www.crowdsupply.com/numato-lab/opsis).
 
 This extension board has the following features;

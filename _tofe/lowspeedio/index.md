@@ -9,7 +9,7 @@ tags: hardware, tofe, expansion, lowspeedio
 
  * [Repository](https://github.com/timvideos/HDMI2USB-TOFE-LowSpeedIO)
 
-While the [Numato Opsis board](https://www.crowdsupply.com/numato-lab/opsis)
+While the [Numato Opsis board](https://numato.com/product/numato-opsis-fpga-based-open-video-platform)
 has a massive amount of high speed I/O interfaces, it doesn't include many
 features for interfacing with more pedestrian speed devices such as buttons or
 LEDs. To help solve this problem “Low speed I/O” TOFE expansion board was
