@@ -27,13 +27,13 @@ firmware versions.
 
 ### Flashing prebuilt firmware
 
-Instructions on flashing your [Numato Opsis](https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware#numato-opsis) or [Digilent Atlys](https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware#digilent-atlys) with prebuilt firmwar: https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware
+Instructions on flashing your [Numato Opsis](https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware#numato-opsis) or [Digilent Atlys](https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware#digilent-atlys) with prebuilt firmware: https://github.com/timvideos/HDMI2USB/wiki/Flashing-Firmware
 
 <br>
 
 ### Setting up Developer Environment
 
-To build from source, use the Lite-X environment: https://github.com/timvideos/litex-buildenv/wiki/Building-HDMI2USB-Gateware
+To build from source, use the LiteX-BuildEnv: https://github.com/timvideos/litex-buildenv/wiki/Building-HDMI2USB-Gateware
 
 <br>
 
@@ -53,3 +53,62 @@ the term "MiSoC" and "LiteX" interchangably through the documentation.)
 
 You can find a [comparison between the two firmware here](../firmware-compare).
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
